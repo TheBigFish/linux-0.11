@@ -77,6 +77,12 @@ static inline volatile void oom(void) {
 static long HIGH_MEMORY = 0;  // 全局变量，存放实际物理内存最高端地址。
 
 // 复制1 页内存（4K 字节）。
+/**
+ * $ 编译器初始化输入操作数：
+ * $ from -> esi
+ * $ to - > edx
+ * $ 1024 -> ecx
+ */
 #define copy_page(from, to)                                   \
   __asm__("cld ; rep ; movsl" ::"S"(from), "D"(to), "c"(1024) \
           : "cx", "di", "si")
@@ -104,6 +110,7 @@ static unsigned char mem_map[PAGING_PAGES] = {
 // 注意！本函数只是指出在主内存区的一页空闲页面，但并没有映射到某个进程的线性地址去。后面
 // 的put_page()函数就是用来作映射的。
 unsigned long get_free_page(void) {
+  // $ __res是寄存器级变量，值保存在ax寄存器中
   register unsigned long __res asm("ax");
 
   __asm__(
