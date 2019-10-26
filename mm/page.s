@@ -9,32 +9,32 @@
 * the real work is done in mm.c
 */
 /*
-* page.s ³ÌĞò°üº¬µ×²ãÒ³Òì³£´¦Àí´úÂë¡£Êµ¼ÊµÄ¹¤×÷ÔÚmemory.c ÖĞÍê³É¡£
+* page.s ç¨‹åºåŒ…å«åº•å±‚é¡µå¼‚å¸¸å¤„ç†ä»£ç ã€‚å®é™…çš„å·¥ä½œåœ¨memory.c ä¸­å®Œæˆã€‚
 */
 
 .globl _page_fault
 
 _page_fault:
-xchgl %eax,(%esp) # È¡³ö´íÂëµ½eax¡£
+xchgl %eax,(%esp) # å–å‡ºé”™ç åˆ°eaxã€‚
 pushl %ecx
 pushl %edx
 push %ds
 push %es
 push %fs
-movl $0x10,%edx # ÖÃÄÚºËÊı¾İ¶ÎÑ¡Ôñ·û¡£
+movl $0x10,%edx # ç½®å†…æ ¸æ•°æ®æ®µé€‰æ‹©ç¬¦ã€‚
 mov %dx,%ds
 mov %dx,%es
 mov %dx,%fs
-movl %cr2,%edx # È¡ÒıÆğÒ³ÃæÒì³£µÄÏßĞÔµØÖ·
-pushl %edx # ½«¸ÃÏßĞÔµØÖ·ºÍ³ö´íÂëÑ¹Èë¶ÑÕ»£¬×÷Îªµ÷ÓÃº¯ÊıµÄ²ÎÊı¡£
+movl %cr2,%edx # å–å¼•èµ·é¡µé¢å¼‚å¸¸çš„çº¿æ€§åœ°å€
+pushl %edx # å°†è¯¥çº¿æ€§åœ°å€å’Œå‡ºé”™ç å‹å…¥å †æ ˆï¼Œä½œä¸ºè°ƒç”¨å‡½æ•°çš„å‚æ•°ã€‚
 pushl %eax
-testl $1,%eax # ²âÊÔ±êÖ¾P£¬Èç¹û²»ÊÇÈ±Ò³ÒıÆğµÄÒì³£ÔòÌø×ª¡£
-10.5 page.s ³ÌĞò
+testl $1,%eax # æµ‹è¯•æ ‡å¿—Pï¼Œå¦‚æœä¸æ˜¯ç¼ºé¡µå¼•èµ·çš„å¼‚å¸¸åˆ™è·³è½¬ã€‚
+10.5 page.s ç¨‹åº
 jne 1f
-call _do_no_page # µ÷ÓÃÈ±Ò³´¦Àíº¯Êı£¨mm/memory.c,365 ĞĞ£©¡£
+call _do_no_page # è°ƒç”¨ç¼ºé¡µå¤„ç†å‡½æ•°ï¼ˆmm/memory.c,365 è¡Œï¼‰ã€‚
 jmp 2f
-1: call _do_wp_page # µ÷ÓÃĞ´±£»¤´¦Àíº¯Êı£¨mm/memory.c,247 ĞĞ£©¡£
-2: addl $8,%esp # ¶ªÆúÑ¹ÈëÕ»µÄÁ½¸ö²ÎÊı¡£
+1: call _do_wp_page # è°ƒç”¨å†™ä¿æŠ¤å¤„ç†å‡½æ•°ï¼ˆmm/memory.c,247 è¡Œï¼‰ã€‚
+2: addl $8,%esp # ä¸¢å¼ƒå‹å…¥æ ˆçš„ä¸¤ä¸ªå‚æ•°ã€‚
 pop %fs
 pop %es
 pop %ds

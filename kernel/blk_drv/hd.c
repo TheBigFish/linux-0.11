@@ -13,55 +13,55 @@
 * modified by Drew Eckhardt to check nr of hd's from the CMOS.
 */
 /*
-* �������ǵײ�Ӳ���жϸ���������Ҫ����ɨ�������б���ʹ���ж��ں���֮����ת��
-* �������еĺ����������ж�����õģ�������Щ����������˯�ߡ����ر�ע�⡣
-* ��Drew Eckhardt �޸ģ�����CMOS ��Ϣ���Ӳ������
+* 本程序是底层硬盘中断辅助程序。主要用于扫描请求列表，使用中断在函数之间跳转。
+* 由于所有的函数都是在中断里调用的，所以这些函数不可以睡眠。请特别注意。
+* 由Drew Eckhardt 修改，利用CMOS 信息检测硬盘数。
 */
 
-#include <linux/config.h>	// �ں�����ͷ�ļ�������������Ժ�Ӳ�����ͣ�HD_TYPE����ѡ�
-#include <linux/sched.h>	// ���ȳ���ͷ�ļ�������������ṹtask_struct����ʼ����0 �����ݣ�
-// ����һЩ�й��������������úͻ�ȡ��Ƕ��ʽ��ຯ������䡣
-#include <linux/fs.h>		// �ļ�ϵͳͷ�ļ��������ļ����ṹ��file,buffer_head,m_inode �ȣ���
-#include <linux/kernel.h>	// �ں�ͷ�ļ�������һЩ�ں˳��ú�����ԭ�ζ��塣
-#include <linux/hdreg.h>	// Ӳ�̲���ͷ�ļ����������Ӳ�̼Ĵ����˿ڣ�״̬�룬����������Ϣ��
-#include <asm/system.h>		// ϵͳͷ�ļ������������û��޸�������/�ж��ŵȵ�Ƕ��ʽ���ꡣ
-#include <asm/io.h>		// io ͷ�ļ�������Ӳ���˿�����/���������䡣
-#include <asm/segment.h>	// �β���ͷ�ļ����������йضμĴ���������Ƕ��ʽ��ຯ����
+#include <linux/config.h>	// 内核配置头文件。定义键盘语言和硬盘类型（HD_TYPE）可选项。
+#include <linux/sched.h>	// 调度程序头文件，定义了任务结构task_struct、初始任务0 的数据，
+// 还有一些有关描述符参数设置和获取的嵌入式汇编函数宏语句。
+#include <linux/fs.h>		// 文件系统头文件。定义文件表结构（file,buffer_head,m_inode 等）。
+#include <linux/kernel.h>	// 内核头文件。含有一些内核常用函数的原形定义。
+#include <linux/hdreg.h>	// 硬盘参数头文件。定义访问硬盘寄存器端口，状态码，分区表等信息。
+#include <asm/system.h>		// 系统头文件。定义了设置或修改描述符/中断门等的嵌入式汇编宏。
+#include <asm/io.h>		// io 头文件。定义硬件端口输入/输出宏汇编语句。
+#include <asm/segment.h>	// 段操作头文件。定义了有关段寄存器操作的嵌入式汇编函数。
 
-#define MAJOR_NR 3		// Ӳ�����豸����3��
-#include "blk.h"		// ���豸ͷ�ļ��������������ݽṹ�����豸���ݽṹ�ͺ꺯������Ϣ��
+#define MAJOR_NR 3		// 硬盘主设备号是3。
+#include "blk.h"		// 块设备头文件。定义请求数据结构、块设备数据结构和宏函数等信息。
 
-#define CMOS_READ(addr) ({ \	// ��CMOS �����꺯����
+#define CMOS_READ(addr) ({ \	// 读CMOS 参数宏函数。
 outb_p (0x80 | addr, 0x70);
 inb_p (0x71);
 }
 
 )
 /* Max read/write errors/sector */
-#define MAX_ERRORS 7		// ��/дһ������ʱ������������������
-#define MAX_HD 2		// ϵͳ֧�ֵ����Ӳ������
-     static void recal_intr (void);	// Ӳ���жϳ����ڸ�λ����ʱ����õ�����У������(287 ��)��
+#define MAX_ERRORS 7		// 读/写一个扇区时允许的最多出错次数。
+#define MAX_HD 2		// 系统支持的最多硬盘数。
+     static void recal_intr (void);	// 硬盘中断程序在复位操作时会调用的重新校正函数(287 行)。
 
-     static int recalibrate = 1;	// ����У����־��
-     static int reset = 1;	// ��λ��־��
+     static int recalibrate = 1;	// 重新校正标志。
+     static int reset = 1;	// 复位标志。
 
 /*
 * This struct defines the HD's and their types.
 */
-/* ����ṹ������Ӳ�̲��������� */
-// ���ֶηֱ��Ǵ�ͷ����ÿ�ŵ�����������������дǰԤ��������š���ͷ��½������š������ֽڡ�
+/* 下面结构定义了硬盘参数及类型 */
+// 各字段分别是磁头数、每磁道扇区数、柱面数、写前预补偿柱面号、磁头着陆区柱面号、控制字节。
      struct hd_i_struct
      {
        int head, sect, cyl, wpcom, lzone, ctl;
      };
 
-#ifdef HD_TYPE			// ����Ѿ���include/linux/config.h �ж�����HD_TYPE��
+#ifdef HD_TYPE			// 如果已经在include/linux/config.h 中定义了HD_TYPE…
 struct hd_i_struct hd_info[] =
 {
-HD_TYPE};			// ȡ����õĲ�����Ϊhd_info[]�����ݡ�
+HD_TYPE};			// 取定义好的参数作为hd_info[]的数据。
 
-#define NR_HD ((sizeof (hd_info))/(sizeof (struct hd_i_struct)))	// ����Ӳ������
-#else // ���򣬶���Ϊ0 ֵ��
+#define NR_HD ((sizeof (hd_info))/(sizeof (struct hd_i_struct)))	// 计算硬盘数。
+#else // 否则，都设为0 值。
 struct hd_i_struct hd_info[] =
 {
   {
@@ -73,8 +73,8 @@ struct hd_i_struct hd_info[] =
 static int NR_HD = 0;
 #endif
 
-// ����Ӳ�̷����ṹ������ÿ��������������ʼ�����š���������������
-// ����5 �ı������������hd[0]��hd[5]�ȣ���������Ӳ���еĲ�����
+// 定义硬盘分区结构。给出每个分区的物理起始扇区号、分区扇区总数。
+// 其中5 的倍数处的项（例如hd[0]和hd[5]等）代表整个硬盘中的参数。
 static struct hd_struct
 {
   long start_sect;
@@ -87,11 +87,11 @@ hd[5 * MAX_HD] =
   0, 0}
 ,};
 
-// ���˿�port������nr �֣�������buf �С�
+// 读端口port，共读nr 字，保存在buf 中。
 #define port_read(port,buf,nr) \
 __asm__( "cld;rep;insw":: "d" (port), "D" (buf), "c" (nr): "cx", "di")
 
-// д�˿�port����дnr �֣���buf ��ȡ���ݡ�
+// 写端口port，共写nr 字，从buf 中取数据。
 #define port_write(port,buf,nr) \
 __asm__( "cld;rep;outsw":: "d" (port), "S" (buf), "c" (nr): "cx", "si")
 
@@ -99,11 +99,11 @@ extern void hd_interrupt (void);
 extern void rd_load (void);
 
 /* This may be used only once, enforced by 'static int callable' */
-/* ����ú���ֻ�ڳ�ʼ��ʱ������һ�Ρ��þ�̬����callable ��Ϊ�ɵ��ñ�־��*/
-// �ú����Ĳ����ɳ�ʼ������init/main.c ��init �ӳ�������Ϊָ��0x90080 �����˴������setup.s
-// �����BIOS ȡ�õ�2 ��Ӳ�̵Ļ���������(32 �ֽ�)��Ӳ�̲�������Ϣ�μ������б����˵����
-// ��������Ҫ�����Ƕ�ȡCMOS ��Ӳ�̲�������Ϣ����������Ӳ�̷����ṹhd��������RAM �����̺�
-// ���ļ�ϵͳ��
+/* 下面该函数只在初始化时被调用一次。用静态变量callable 作为可调用标志。*/
+// 该函数的参数由初始化程序init/main.c 的init 子程序设置为指向0x90080 处，此处存放着setup.s
+// 程序从BIOS 取得的2 个硬盘的基本参数表(32 字节)。硬盘参数表信息参见下面列表后的说明。
+// 本函数主要功能是读取CMOS 和硬盘参数表信息，用于设置硬盘分区结构hd，并加载RAM 虚拟盘和
+// 根文件系统。
 int sys_setup (void *BIOS)
 {
   static int callable = 1;
@@ -112,34 +112,34 @@ int sys_setup (void *BIOS)
   struct partition *p;
   struct buffer_head *bh;
 
-// ��ʼ��ʱcallable=1�������иú���ʱ��������Ϊ0��ʹ������ֻ��ִ��һ�Ρ�
+// 初始化时callable=1，当运行该函数时将其设置为0，使本函数只能执行一次。
   if (!callable)
       return -1;
     callable = 0;
-// ���û����config.h �ж���Ӳ�̲������ʹ�0x90080 �����롣
+// 如果没有在config.h 中定义硬盘参数，就从0x90080 处读入。
 #ifndef HD_TYPE
   for (drive = 0; drive < 2; drive++)
     {
-      hd_info[drive].cyl = *(unsigned short *) BIOS;	// ��������
-      hd_info[drive].head = *(unsigned char *) (2 + BIOS);	// ��ͷ����
-      hd_info[drive].wpcom = *(unsigned short *) (5 + BIOS);	// дǰԤ��������š�
-      hd_info[drive].ctl = *(unsigned char *) (8 + BIOS);	// �����ֽڡ�
-      hd_info[drive].lzone = *(unsigned short *) (12 + BIOS);	// ��ͷ��½������š�
-      hd_info[drive].sect = *(unsigned char *) (14 + BIOS);	// ÿ�ŵ���������
-      BIOS += 16;		// ÿ��Ӳ�̵Ĳ�������16 �ֽڣ�����BIOS ָ����һ������
+      hd_info[drive].cyl = *(unsigned short *) BIOS;	// 柱面数。
+      hd_info[drive].head = *(unsigned char *) (2 + BIOS);	// 磁头数。
+      hd_info[drive].wpcom = *(unsigned short *) (5 + BIOS);	// 写前预补偿柱面号。
+      hd_info[drive].ctl = *(unsigned char *) (8 + BIOS);	// 控制字节。
+      hd_info[drive].lzone = *(unsigned short *) (12 + BIOS);	// 磁头着陆区柱面号。
+      hd_info[drive].sect = *(unsigned char *) (14 + BIOS);	// 每磁道扇区数。
+      BIOS += 16;		// 每个硬盘的参数表长16 字节，这里BIOS 指向下一个表。
     }
-// setup.s ������ȡBIOS �е�Ӳ�̲�������Ϣʱ�����ֻ��1 ��Ӳ�̣��ͻὫ��Ӧ��2 ��Ӳ�̵�
-// 16 �ֽ�ȫ�����㡣�������ֻҪ�жϵ�2 ��Ӳ���������Ƿ�Ϊ0 �Ϳ���֪����û�е�2 ��Ӳ���ˡ�
+// setup.s 程序在取BIOS 中的硬盘参数表信息时，如果只有1 个硬盘，就会将对应第2 个硬盘的
+// 16 字节全部清零。因此这里只要判断第2 个硬盘柱面数是否为0 就可以知道有没有第2 个硬盘了。
   if (hd_info[1].cyl)
-      NR_HD = 2;		// Ӳ������Ϊ2��
+      NR_HD = 2;		// 硬盘数置为2。
   else
     NR_HD = 1;
 #endif
-// ����ÿ��Ӳ�̵���ʼ�����ź��������������б��i*5 ����μ����������й�˵����
+// 设置每个硬盘的起始扇区号和扇区总数。其中编号i*5 含义参见本程序后的有关说明。
   for (i = 0; i < NR_HD; i++)
     {
-      hd[i * 5].start_sect = 0;	// Ӳ����ʼ�����š�
-      hd[i * 5].nr_sects = hd_info[i].head * hd_info[i].sect * hd_info[i].cyl;	// Ӳ������������
+      hd[i * 5].start_sect = 0;	// 硬盘起始扇区号。
+      hd[i * 5].nr_sects = hd_info[i].head * hd_info[i].sect * hd_info[i].cyl;	// 硬盘总扇区数。
     }
 
 /*
@@ -164,18 +164,18 @@ an AT controller hard disk for that drive.
 
 */
 /*
-* ���Ƕ�CMOS �й�Ӳ�̵���Ϣ��Щ���ɣ����ܻ���������������������һ��SCSI/ESDI/�ȵ�
-* ��������������ST-506 ��ʽ��BIOS ���ݵģ��������������ǵ�BIOS �������У���ȴ�ֲ�
-* �ǼĴ������ݵģ������Щ������CMOS ���ֲ����ڡ�
-* ���⣬���Ǽ���ST-506 ������������еĻ�����ϵͳ�еĻ�����������Ҳ����������1 ��2
-* ���ֵ���������
-* ��1 �����������������CMOS �ֽ�0x12 �ĸ߰��ֽ��У���2 ������ڵͰ��ֽ��С���4 λ�ֽ�
-* ��Ϣ���������������ͣ�Ҳ���ܽ���0xf��0xf ��ʾʹ��CMOS ��0x19 �ֽ���Ϊ������1 ��8 λ
-* �����ֽڣ�ʹ��CMOS ��0x1A �ֽ���Ϊ������2 �������ֽڡ�
-* ��֮��һ������ֵ��ζ��������һ��AT ������Ӳ�̼��ݵ���������
+* 我们对CMOS 有关硬盘的信息有些怀疑：可能会出现这样的情况，我们有一块SCSI/ESDI/等的
+* 控制器，它是以ST-506 方式与BIOS 兼容的，因而会出现在我们的BIOS 参数表中，但却又不
+* 是寄存器兼容的，因此这些参数在CMOS 中又不存在。
+* 另外，我们假设ST-506 驱动器（如果有的话）是系统中的基本驱动器，也即以驱动器1 或2
+* 出现的驱动器。
+* 第1 个驱动器参数存放在CMOS 字节0x12 的高半字节中，第2 个存放在低半字节中。该4 位字节
+* 信息可以是驱动器类型，也可能仅是0xf。0xf 表示使用CMOS 中0x19 字节作为驱动器1 的8 位
+* 类型字节，使用CMOS 中0x1A 字节作为驱动器2 的类型字节。
+* 总之，一个非零值意味着我们有一个AT 控制器硬盘兼容的驱动器。
 */
 
-// �����������ԭ�������Ӳ�̵����Ƿ���AT ���������ݵġ��й�CMOS ��Ϣ��μ�4.2.3.1 �ڡ�
+// 这里根据上述原理来检测硬盘到底是否是AT 控制器兼容的。有关CMOS 信息请参见4.2.3.1 节。
   if ((cmos_disks = CMOS_READ (0x12)) & 0xf0)
     if (cmos_disks & 0x0f)
       NR_HD = 2;
@@ -183,130 +183,130 @@ an AT controller hard disk for that drive.
       NR_HD = 1;
   else
     NR_HD = 0;
-// ��NR_HD=0��������Ӳ�̶�����AT ���������ݵģ�Ӳ�����ݽṹ���㡣
-// ��NR_HD=1���򽫵�2 ��Ӳ�̵Ĳ������㡣
+// 若NR_HD=0，则两个硬盘都不是AT 控制器兼容的，硬盘数据结构清零。
+// 若NR_HD=1，则将第2 个硬盘的参数清零。
   for (i = NR_HD; i < 2; i++)
     {
       hd[i * 5].start_sect = 0;
       hd[i * 5].nr_sects = 0;
     }
-// ��ȡÿһ��Ӳ���ϵ�1 �����ݣ���1 ���������ã�����ȡ���еķ�������Ϣ��
-// �������ú���bread()��Ӳ�̵�1 ������(fs/buffer.c,267)�������е�0x300 ��Ӳ�̵����豸��
-// (�μ��б����˵��)��Ȼ�����Ӳ��ͷ1 ������λ��0x1fe ���������ֽ��Ƿ�Ϊ'55AA'���ж�
-// ��������λ��0x1BE ��ʼ�ķ������Ƿ���Ч����󽫷�������Ϣ����Ӳ�̷������ݽṹhd �С�
+// 读取每一个硬盘上第1 块数据（第1 个扇区有用），获取其中的分区表信息。
+// 首先利用函数bread()读硬盘第1 块数据(fs/buffer.c,267)，参数中的0x300 是硬盘的主设备号
+// (参见列表后的说明)。然后根据硬盘头1 个扇区位置0x1fe 处的两个字节是否为'55AA'来判断
+// 该扇区中位于0x1BE 开始的分区表是否有效。最后将分区表信息放入硬盘分区数据结构hd 中。
   for (drive = 0; drive < NR_HD; drive++)
     {
       if (!(bh = bread (0x300 + drive * 5, 0)))
-	{			// 0x300, 0x305 �߼��豸�š�
+	{			// 0x300, 0x305 逻辑设备号。
 	  printk ("Unable to read partition table of drive %d\n\r", drive);
 	  panic ("");
 	}
       if (bh->b_data[510] != 0x55 || (unsigned char) bh->b_data[511] != 0xAA)
-	{			// �ж�Ӳ����Ϣ��Ч��־'55AA'��
+	{			// 判断硬盘信息有效标志'55AA'。
 	  printk ("Bad partition table on drive %d\n\r", drive);
 	  panic ("");
 	}
-      p = 0x1BE + (void *) bh->b_data;	// ������λ��Ӳ�̵�1 ������0x1BE ����
+      p = 0x1BE + (void *) bh->b_data;	// 分区表位于硬盘第1 扇区的0x1BE 处。
       for (i = 1; i < 5; i++, p++)
 	{
 	  hd[i + 5 * drive].start_sect = p->start_sect;
 	  hd[i + 5 * drive].nr_sects = p->nr_sects;
 	}
-      brelse (bh);		// �ͷ�Ϊ���Ӳ�̿��������ڴ滺����ҳ��
+      brelse (bh);		// 释放为存放硬盘块而申请的内存缓冲区页。
     }
-  if (NR_HD)			// �����Ӳ�̴��ڲ����Ѷ�������������ӡ������������Ϣ��
+  if (NR_HD)			// 如果有硬盘存在并且已读入分区表，则打印分区表正常信息。
     printk ("Partition table%s ok.\n\r", (NR_HD > 1) ? "s" : "");
-  rd_load ();			// ���أ�������RAMDISK(kernel/blk_drv/ramdisk.c,71)��
-  mount_root ();		// ��װ���ļ�ϵͳ(fs/super.c,242)��
+  rd_load ();			// 加载（创建）RAMDISK(kernel/blk_drv/ramdisk.c,71)。
+  mount_root ();		// 安装根文件系统(fs/super.c,242)。
   return (0);
 }
 
-//// �жϲ�ѭ���ȴ�������������
-// ��Ӳ�̿�����״̬�Ĵ����˿�HD_STATUS(0x1f7)����ѭ�������������������λ�Ϳ�����æλ��
+//// 判断并循环等待驱动器就绪。
+// 读硬盘控制器状态寄存器端口HD_STATUS(0x1f7)，并循环检测驱动器就绪比特位和控制器忙位。
 static int controller_ready (void)
 {
   int retries = 10000;
 
   while (--retries && (inb_p (HD_STATUS) & 0xc0) != 0x40);
-    return (retries);		// ���صȴ�ѭ���Ĵ�����
+    return (retries);		// 返回等待循环的次数。
 }
 
-//// ���Ӳ��ִ��������״̬��(win_��ʾ����˹��Ӳ�̵���д)
-// ��ȡ״̬�Ĵ����е�����ִ�н��״̬������0 ��ʾ������1 ���������ִ���������
-// ���ٶ�����Ĵ���HD_ERROR(0x1f1)��
+//// 检测硬盘执行命令后的状态。(win_表示温切斯特硬盘的缩写)
+// 读取状态寄存器中的命令执行结果状态。返回0 表示正常，1 出错。如果执行命令错，
+// 则再读错误寄存器HD_ERROR(0x1f1)。
 static int win_result (void)
 {
-  int i = inb_p (HD_STATUS);	// ȡ״̬��Ϣ��
+  int i = inb_p (HD_STATUS);	// 取状态信息。
 
   if ((i & (BUSY_STAT | READY_STAT | WRERR_STAT | SEEK_STAT | ERR_STAT))
       == (READY_STAT | SEEK_STAT))
       return (0);		/* ok */
   if (i & 1)
-      i = inb (HD_ERROR);	// ��ERR_STAT ��λ�����ȡ����Ĵ�����
+      i = inb (HD_ERROR);	// 若ERR_STAT 置位，则读取错误寄存器。
     return (1);
 }
 
-//// ��Ӳ�̿�������������飨�μ��б����˵������
-// ���ò�����drive - Ӳ�̺�(0-1)�� nsect - ��д��������
-// sect - ��ʼ������ head - ��ͷ�ţ�
-// cyl - ����ţ� cmd - �����룻
-// *intr_addr() - Ӳ���жϴ��������н����õ�C ����������
+//// 向硬盘控制器发送命令块（参见列表后的说明）。
+// 调用参数：drive - 硬盘号(0-1)； nsect - 读写扇区数；
+// sect - 起始扇区； head - 磁头号；
+// cyl - 柱面号； cmd - 命令码；
+// *intr_addr() - 硬盘中断处理程序中将调用的C 处理函数。
 static void hd_out (unsigned int drive, unsigned int nsect, unsigned int sect,
 		    unsigned int head, unsigned int cyl, unsigned int cmd,
 		    void (*intr_addr) (void))
 {
-  register int port asm ("dx");	// port ������Ӧ�Ĵ���dx��
+  register int port asm ("dx");	// port 变量对应寄存器dx。
 
-  if (drive > 1 || head > 15)	// �����������(0,1)>1 ���ͷ��>15�������֧�֡�
+  if (drive > 1 || head > 15)	// 如果驱动器号(0,1)>1 或磁头号>15，则程序不支持。
     panic ("Trying to write bad sector");
-  if (!controller_ready ())	// ����ȴ�һ��ʱ�����δ�����������������
+  if (!controller_ready ())	// 如果等待一段时间后仍未就绪则出错，死机。
     panic ("HD controller not ready");
-  do_hd = intr_addr;		// do_hd ����ָ�뽫��Ӳ���жϳ����б����á�
-  outb_p (hd_info[drive].ctl, HD_CMD);	// ����ƼĴ���(0x3f6)��������ֽڡ�
-  port = HD_DATA;		// ��dx Ϊ���ݼĴ����˿�(0x1f0)��
-  outb_p (hd_info[drive].wpcom >> 2, ++port);	// ������дԤ���������(���4)��
-  outb_p (nsect, ++port);	// ��������/д����������
-  outb_p (sect, ++port);	// ��������ʼ������
-  outb_p (cyl, ++port);		// ����������ŵ�8 λ��
-  outb_p (cyl >> 8, ++port);	// ����������Ÿ�8 λ��
-  outb_p (0xA0 | (drive << 4) | head, ++port);	// ��������������+��ͷ�š�
-  outb (cmd, ++port);		// ���Ӳ�̿������
+  do_hd = intr_addr;		// do_hd 函数指针将在硬盘中断程序中被调用。
+  outb_p (hd_info[drive].ctl, HD_CMD);	// 向控制寄存器(0x3f6)输出控制字节。
+  port = HD_DATA;		// 置dx 为数据寄存器端口(0x1f0)。
+  outb_p (hd_info[drive].wpcom >> 2, ++port);	// 参数：写预补偿柱面号(需除4)。
+  outb_p (nsect, ++port);	// 参数：读/写扇区总数。
+  outb_p (sect, ++port);	// 参数：起始扇区。
+  outb_p (cyl, ++port);		// 参数：柱面号低8 位。
+  outb_p (cyl >> 8, ++port);	// 参数：柱面号高8 位。
+  outb_p (0xA0 | (drive << 4) | head, ++port);	// 参数：驱动器号+磁头号。
+  outb (cmd, ++port);		// 命令：硬盘控制命令。
 }
 
-//// �ȴ�Ӳ�̾�����Ҳ��ѭ���ȴ���״̬������æ��־λ��λ�������о�����Ѱ��������־
-// ��λ����ɹ�������0��������һ��ʱ����Ϊæ���򷵻�1��
+//// 等待硬盘就绪。也即循环等待主状态控制器忙标志位复位。若仅有就绪或寻道结束标志
+// 置位，则成功，返回0。若经过一段时间仍为忙，则返回1。
 static int drive_busy (void)
 {
   unsigned int i;
 
-  for (i = 0; i < 10000; i++)	// ѭ���ȴ�������־λ��λ��
+  for (i = 0; i < 10000; i++)	// 循环等待就绪标志位置位。
     if (READY_STAT == (inb_p (HD_STATUS) & (BUSY_STAT | READY_STAT)))
         break;
-    i = inb (HD_STATUS);	// ��ȡ��������״̬�ֽڡ�
-    i &= BUSY_STAT | READY_STAT | SEEK_STAT;	// ���æλ������λ��Ѱ������λ��
-  if (i == READY_STAT | SEEK_STAT)	// �����о�����Ѱ��������־���򷵻�0��
+    i = inb (HD_STATUS);	// 再取主控制器状态字节。
+    i &= BUSY_STAT | READY_STAT | SEEK_STAT;	// 检测忙位、就绪位和寻道结束位。
+  if (i == READY_STAT | SEEK_STAT)	// 若仅有就绪或寻道结束标志，则返回0。
       return (0);
-    printk ("HD controller times out\n\r");	// ����ȴ���ʱ����ʾ��Ϣ��������1��
+    printk ("HD controller times out\n\r");	// 否则等待超时，显示信息。并返回1。
     return (1);
 }
 
-//// ��ϸ�λ������У����Ӳ�̿�������
+//// 诊断复位（重新校正）硬盘控制器。
 static void reset_controller (void)
 {
   int i;
 
-    outb (4, HD_CMD);		// ����ƼĴ����˿ڷ��Ϳ����ֽ�(4-��λ)��
+    outb (4, HD_CMD);		// 向控制寄存器端口发送控制字节(4-复位)。
   for (i = 0; i < 100; i++)
-      nop ();			// �ȴ�һ��ʱ�䣨ѭ���ղ�������
-    outb (hd_info[0].ctl & 0x0f, HD_CMD);	// �ٷ��������Ŀ����ֽ�(����ֹ���ԡ��ض�)��
-  if (drive_busy ())		// ���ȴ�Ӳ�̾�����ʱ������ʾ������Ϣ��
+      nop ();			// 等待一段时间（循环空操作）。
+    outb (hd_info[0].ctl & 0x0f, HD_CMD);	// 再发送正常的控制字节(不禁止重试、重读)。
+  if (drive_busy ())		// 若等待硬盘就绪超时，则显示出错信息。
       printk ("HD-controller still busy\n\r");
-  if ((i = inb (HD_ERROR)) != 1)	// ȡ����Ĵ�������������1���޴����������
+  if ((i = inb (HD_ERROR)) != 1)	// 取错误寄存器，若不等于1（无错误）则出错。
       printk ("HD-controller reset failed: %02x\n\r", i);
 }
 
-//// ��λӲ��nr�����ȸ�λ������У����Ӳ�̿�������Ȼ����Ӳ�̿��������������������������
-// ����recal_intr()����Ӳ���жϴ��������е��õ�����У������������
+//// 复位硬盘nr。首先复位（重新校正）硬盘控制器。然后发送硬盘控制器命令“建立驱动器参数”，
+// 其中recal_intr()是在硬盘中断处理程序中调用的重新校正处理函数。
 static void reset_hd (int nr)
 {
   reset_controller ();
@@ -314,71 +314,71 @@ static void reset_hd (int nr)
 	  hd_info[nr].cyl, WIN_SPECIFY, &recal_intr);
 }
 
-//// ����Ӳ���жϵ��ú�����
-// ��������Ӳ���ж�ʱ��Ӳ���жϴ��������е��õ�Ĭ��C �����������ڱ����ú���ָ��Ϊ��ʱ
-// ���øú������μ�(kernel/system_call.s,241 ��)��
+//// 意外硬盘中断调用函数。
+// 发生意外硬盘中断时，硬盘中断处理程序中调用的默认C 处理函数。在被调用函数指针为空时
+// 调用该函数。参见(kernel/system_call.s,241 行)。
 void unexpected_hd_interrupt (void)
 {
   printk ("Unexpected HD interrupt\n\r");
 }
 
-//// ��дӲ��ʧ�ܴ������ú�����
+//// 读写硬盘失败处理调用函数。
 static void bad_rw_intr (void)
 {
-  if (++CURRENT->errors >= MAX_ERRORS)	// ���������ʱ�ĳ����������ڻ����7 ��ʱ��
-    end_request (0);		// ��������󲢻��ѵȴ�������Ľ��̣�����
-// ��Ӧ���������±�־��λ��û�и��£���
-  if (CURRENT->errors > MAX_ERRORS / 2)	// �����һ����ʱ�ĳ��������Ѿ�����3 �Σ�
-    reset = 1;			// ��Ҫ��ִ�и�λӲ�̿�����������
+  if (++CURRENT->errors >= MAX_ERRORS)	// 如果读扇区时的出错次数大于或等于7 次时，
+    end_request (0);		// 则结束请求并唤醒等待该请求的进程，而且
+// 对应缓冲区更新标志复位（没有更新）。
+  if (CURRENT->errors > MAX_ERRORS / 2)	// 如果读一扇区时的出错次数已经大于3 次，
+    reset = 1;			// 则要求执行复位硬盘控制器操作。
 }
 
-//// �������жϵ��ú���������ִ��Ӳ���жϴ��������б����á�
+//// 读操作中断调用函数。将在执行硬盘中断处理程序中被调用。
 static void read_intr (void)
 {
   if (win_result ())
-    {				// ��������æ����д��������ִ�д���
-      bad_rw_intr ();		// ����ж�дӲ��ʧ�ܴ���
-      do_hd_request ();		// Ȼ���ٴ�����Ӳ������Ӧ(��λ)������
+    {				// 若控制器忙、读写错或命令执行错，
+      bad_rw_intr ();		// 则进行读写硬盘失败处理
+      do_hd_request ();		// 然后再次请求硬盘作相应(复位)处理。
       return;
     }
-  port_read (HD_DATA, CURRENT->buffer, 256);	// �����ݴ����ݼĴ����ڶ�������ṹ��������
-  CURRENT->errors = 0;		// �����������
-  CURRENT->buffer += 512;	// ����������ָ�룬ָ���µĿ�����
-  CURRENT->sector++;		// ��ʼ�����ż�1��
+  port_read (HD_DATA, CURRENT->buffer, 256);	// 将数据从数据寄存器口读到请求结构缓冲区。
+  CURRENT->errors = 0;		// 清出错次数。
+  CURRENT->buffer += 512;	// 调整缓冲区指针，指向新的空区。
+  CURRENT->sector++;		// 起始扇区号加1，
   if (--CURRENT->nr_sectors)
-    {				// ��������������������û�ж��꣬��
-      do_hd = &read_intr;	// �ٴ���Ӳ�̵���C ����ָ��Ϊread_intr()
-      return;			// ��ΪӲ���жϴ�������ÿ�ε���do_hd ʱ
-    }				// ���Ὣ�ú���ָ���ÿա��μ�system_call.s
-  end_request (1);		// ��ȫ�����������Ѿ����꣬��������������ˣ�
-  do_hd_request ();		// ִ������Ӳ�����������
+    {				// 如果所需读出的扇区数还没有读完，则
+      do_hd = &read_intr;	// 再次置硬盘调用C 函数指针为read_intr()
+      return;			// 因为硬盘中断处理程序每次调用do_hd 时
+    }				// 都会将该函数指针置空。参见system_call.s
+  end_request (1);		// 若全部扇区数据已经读完，则处理请求结束事宜，
+  do_hd_request ();		// 执行其它硬盘请求操作。
 }
 
-//// д�����жϵ��ú�������Ӳ���жϴ��������б����á�
-// ��д����ִ�к󣬻����Ӳ���ж��źţ�ִ��Ӳ���жϴ������򣬴�ʱ��Ӳ���жϴ��������е��õ�
-// C ����ָ��do_hd()�Ѿ�ָ��write_intr()����˻���д������ɣ����������ִ�иú�����
+//// 写扇区中断调用函数。在硬盘中断处理程序中被调用。
+// 在写命令执行后，会产生硬盘中断信号，执行硬盘中断处理程序，此时在硬盘中断处理程序中调用的
+// C 函数指针do_hd()已经指向write_intr()，因此会在写操作完成（或出错）后，执行该函数。
 static void write_intr (void)
 {
   if (win_result ())
-    {				// ���Ӳ�̿��������ش�����Ϣ��
-      bad_rw_intr ();		// �����Ƚ���Ӳ�̶�дʧ�ܴ�����
-      do_hd_request ();		// Ȼ���ٴ�����Ӳ������Ӧ(��λ)������
-      return;			// Ȼ�󷵻أ�Ҳ�˳��˴˴�Ӳ���жϣ���
+    {				// 如果硬盘控制器返回错误信息，
+      bad_rw_intr ();		// 则首先进行硬盘读写失败处理，
+      do_hd_request ();		// 然后再次请求硬盘作相应(复位)处理，
+      return;			// 然后返回（也退出了此次硬盘中断）。
     }
   if (--CURRENT->nr_sectors)
-    {				// ������д��������1������������Ҫд����
-      CURRENT->sector++;	// ��ǰ������ʼ������+1��
-      CURRENT->buffer += 512;	// �������󻺳���ָ�룬
-      do_hd = &write_intr;	// ��Ӳ���жϳ�����ú���ָ��Ϊwrite_intr()��
-      port_write (HD_DATA, CURRENT->buffer, 256);	// �������ݼĴ����˿�д256 �ֽڡ�
-      return;			// ���صȴ�Ӳ���ٴ����д��������жϴ�����
+    {				// 否则将欲写扇区数减1，若还有扇区要写，则
+      CURRENT->sector++;	// 当前请求起始扇区号+1，
+      CURRENT->buffer += 512;	// 调整请求缓冲区指针，
+      do_hd = &write_intr;	// 置硬盘中断程序调用函数指针为write_intr()，
+      port_write (HD_DATA, CURRENT->buffer, 256);	// 再向数据寄存器端口写256 字节。
+      return;			// 返回等待硬盘再次完成写操作后的中断处理。
     }
-  end_request (1);		// ��ȫ�����������Ѿ�д�꣬��������������ˣ�
-  do_hd_request ();		// ִ������Ӳ�����������
+  end_request (1);		// 若全部扇区数据已经写完，则处理请求结束事宜，
+  do_hd_request ();		// 执行其它硬盘请求操作。
 }
 
-//// Ӳ������У������λ���жϵ��ú�������Ӳ���жϴ��������б����á�
-// ���Ӳ�̿��������ش�����Ϣ�������Ƚ���Ӳ�̶�дʧ�ܴ�����Ȼ������Ӳ������Ӧ(��λ)������
+//// 硬盘重新校正（复位）中断调用函数。在硬盘中断处理程序中被调用。
+// 如果硬盘控制器返回错误信息，则首先进行硬盘读写失败处理，然后请求硬盘作相应(复位)处理。
 static void recal_intr (void)
 {
   if (win_result ())
@@ -386,7 +386,7 @@ static void recal_intr (void)
   do_hd_request ();
 }
 
-// ִ��Ӳ�̶�д���������
+// 执行硬盘读写请求操作。
 void do_hd_request (void)
 {
   int i, r;
@@ -394,22 +394,22 @@ void do_hd_request (void)
   unsigned int sec, head, cyl;
   unsigned int nsect;
 
-    INIT_REQUEST;		// ���������ĺϷ���(�μ�kernel/blk_drv/blk.h,127)��
-// ȡ�豸���е����豸��(���б����Ӳ���豸�ŵ�˵��)�����豸�ż���Ӳ���ϵķ����š�
-    dev = MINOR (CURRENT->dev);	// CURRENT ����Ϊ(blk_dev[MAJOR_NR].current_request)��
-    block = CURRENT->sector;	// �������ʼ������
-// ������豸�Ų����ڻ�����ʼ�������ڸ÷���������-2������������󣬲���ת�����repeat ��
-// ��������INIT_REQUEST ��ʼ��������Ϊһ��Ҫ���д2 ��������512*2 �ֽڣ������������������
-// ���ܴ��ڷ�����������ڶ��������š�
+    INIT_REQUEST;		// 检测请求项的合法性(参见kernel/blk_drv/blk.h,127)。
+// 取设备号中的子设备号(见列表后对硬盘设备号的说明)。子设备号即是硬盘上的分区号。
+    dev = MINOR (CURRENT->dev);	// CURRENT 定义为(blk_dev[MAJOR_NR].current_request)。
+    block = CURRENT->sector;	// 请求的起始扇区。
+// 如果子设备号不存在或者起始扇区大于该分区扇区数-2，则结束该请求，并跳转到标号repeat 处
+// （定义在INIT_REQUEST 开始处）。因为一次要求读写2 个扇区（512*2 字节），所以请求的扇区号
+// 不能大于分区中最后倒数第二个扇区号。
   if (dev >= 5 * NR_HD || block + 2 > hd[dev].nr_sects)
     {
       end_request (0);
-      goto repeat;		// �ñ����blk.h ����档
+      goto repeat;		// 该标号在blk.h 最后面。
     }
-  block += hd[dev].start_sect;	// ��������Ŀ��Ӧ������Ӳ���ϵľ��������š�
-  dev /= 5;			// ��ʱdev ����Ӳ�̺ţ�0 ��1����
-// ����Ƕ�������������Ӳ����Ϣ�ṹ�и�����ʼ�����ź�ÿ�ŵ������������ڴŵ��е�
-// ������(sec)�����������(cyl)�ʹ�ͷ��(head)��
+  block += hd[dev].start_sect;	// 将所需读的块对应到整个硬盘上的绝对扇区号。
+  dev /= 5;			// 此时dev 代表硬盘号（0 或1）。
+// 下面嵌入汇编代码用来从硬盘信息结构中根据起始扇区号和每磁道扇区数计算在磁道中的
+// 扇区号(sec)、所在柱面号(cyl)和磁头号(head)。
 __asm__ ("divl %4": "=a" (block), "=d" (sec):"" (block), "1" (0),
 	   "r" (hd_info[dev].
 		sect));
@@ -417,8 +417,8 @@ __asm__ ("divl %4": "=a" (cyl), "=d" (head):"" (block), "1" (0),
 	   "r" (hd_info[dev].
 		head));
   sec++;
-  nsect = CURRENT->nr_sectors;	// ����/д����������
-// ���reset ��1����ִ�и�λ��������λӲ�̺Ϳ�������������Ҫ����У����־�����ء�
+  nsect = CURRENT->nr_sectors;	// 欲读/写的扇区数。
+// 如果reset 置1，则执行复位操作。复位硬盘和控制器，并置需要重新校正标志，返回。
   if (reset)
     {
       reset = 0;
@@ -426,7 +426,7 @@ __asm__ ("divl %4": "=a" (cyl), "=d" (head):"" (block), "1" (0),
       reset_hd (CURRENT_DEV);
       return;
     }
-// �������У����־(recalibrate)��λ�������ȸ�λ�ñ�־��Ȼ����Ӳ�̿�������������У�����
+// 如果重新校正标志(recalibrate)置位，则首先复位该标志，然后向硬盘控制器发送重新校正命令。
   if (recalibrate)
     {
       recalibrate = 0;
@@ -434,22 +434,22 @@ __asm__ ("divl %4": "=a" (cyl), "=d" (head):"" (block), "1" (0),
 	      WIN_RESTORE, &recal_intr);
       return;
     }
-// �����ǰ������д��������������д���ѭ����ȡ״̬�Ĵ�����Ϣ���ж���������־
-// DRQ_STAT �Ƿ���λ��DRQ_STAT ��Ӳ��״̬�Ĵ������������λ��include/linux/hdreg.h��27����
+// 如果当前请求是写扇区操作，则发送写命令，循环读取状态寄存器信息并判断请求服务标志
+// DRQ_STAT 是否置位。DRQ_STAT 是硬盘状态寄存器的请求服务位（include/linux/hdreg.h，27）。
   if (CURRENT->cmd == WRITE)
     {
       hd_out (dev, nsect, sec, head, cyl, WIN_WRITE, &write_intr);
       for (i = 0; i < 3000 && !(r = inb_p (HD_STATUS) & DRQ_STAT); i++)
 /* nothing */ ;
-// ����������λ��λ���˳�ѭ�������ȵ�ѭ������Ҳû����λ����˴�дӲ�̲���ʧ�ܣ�ȥ����
-// ��һ��Ӳ�����󡣷�����Ӳ�̿��������ݼĴ����˿�HD_DATA д��1 �����������ݡ�
+// 如果请求服务位置位则退出循环。若等到循环结束也没有置位，则此次写硬盘操作失败，去处理
+// 下一个硬盘请求。否则向硬盘控制器数据寄存器端口HD_DATA 写入1 个扇区的数据。
       if (!r)
 	{
 	  bad_rw_intr ();
-	  goto repeat;		// �ñ����blk.h ����棬Ҳ������301 �С�
+	  goto repeat;		// 该标号在blk.h 最后面，也即跳到301 行。
 	}
       port_write (HD_DATA, CURRENT->buffer, 256);
-// �����ǰ�����Ƕ�Ӳ������������Ӳ�̿��������Ͷ��������
+// 如果当前请求是读硬盘扇区，则向硬盘控制器发送读扇区命令。
     }
   else if (CURRENT->cmd == READ)
     {
@@ -459,14 +459,14 @@ __asm__ ("divl %4": "=a" (cyl), "=d" (head):"" (block), "1" (0),
     panic ("unknown hd-command");
 }
 
-// Ӳ��ϵͳ��ʼ����
+// 硬盘系统初始化。
 void hd_init (void)
 {
-  blk_dev[MAJOR_NR].request_fn = DEVICE_REQUEST;	// do_hd_request()��
-  set_intr_gate (0x2E, &hd_interrupt);	// ����Ӳ���ж������� int 0x2E(46)��
-// hd_interrupt ��(kernel/system_call.s,221)��
-  outb_p (inb_p (0x21) & 0xfb, 0x21);	// ��λ��������8259A int2 ������λ��������Ƭ
-// �����ж������źš�
-  outb (inb_p (0xA1) & 0xbf, 0xA1);	// ��λӲ�̵��ж���������λ���ڴ�Ƭ�ϣ�������
-// Ӳ�̿����������ж������źš�
+  blk_dev[MAJOR_NR].request_fn = DEVICE_REQUEST;	// do_hd_request()。
+  set_intr_gate (0x2E, &hd_interrupt);	// 设置硬盘中断门向量 int 0x2E(46)。
+// hd_interrupt 在(kernel/system_call.s,221)。
+  outb_p (inb_p (0x21) & 0xfb, 0x21);	// 复位接联的主8259A int2 的屏蔽位，允许从片
+// 发出中断请求信号。
+  outb (inb_p (0xA1) & 0xbf, 0xA1);	// 复位硬盘的中断请求屏蔽位（在从片上），允许
+// 硬盘控制器发送中断请求信号。
 }

@@ -1,5 +1,35 @@
 # gnu 嵌入汇编
 
+## stos
+  串存储指令，英文缩写 store string ， 将 eax 中的数据传送到目的地址(目的地址默认为 es:[edi])，以下两条指令相当于一条 stos 指令
+```
+mov [edi], eax
+add edi, 4          // 或者 sub edi, 4 
+```
+至于到底是加 4 还是减 4 ，是由方向标志 DF 来决定，可以由指令 cld 和 std 指令设置
+cld： 从低地址往高地址传送
+std： 从高地址往低地址传送
+
+## rep
+重复前缀指令，英文缩写 repeat，每执行一次， ecx 减 1，直到 ecx 减至0，重复执行结束，以下代码模拟 rep
+```
+AGAIN:  stos        // mov [edi], eax
+                    // add edi, 4
+        dec ecx
+        jnz AGAIN
+```
+
+```c
+if(AddressSize == 16) Counter = &CX; //use CX
+else Counter = &ECX; //AddressSize == 32, use ECX
+
+while(Counter != 0) {
+    ServiceInterrupts(); //service pending interrupts (if any)
+    ExecuteStringInstruction(); //execute associated string instruction
+    Counter = Counter - 1;
+    if(((Instruction == REPZ || Instruction == REPE) && ZF == 0) || ((Instruction == REPNZ || Instruction == REPNE) && ZF == 1) break;
+}
+```
 ## repne scasb
 
 扫描字符串
@@ -9,27 +39,27 @@ cld
 repne scasb
 ```
 等同于：
-
 ```asm
 scans:
-    inc edi
+    scasb       // cmp byte [edi],al
+                // inc edi
     dec ecx
-    je loopdone
-    cmp byte [edi-1],al
-    jne scans
+    jnz scans
+    je loopdone 
 loopdone:
 ```
+可见，指令结束后，edi 指向最后一个不相等的位置的下一个位置。
 
 示例：
-```asm
+```c
 extern inline int strlen(const char * s)
 {
 register int __res __asm__('cx');   // __res 关联寄存器 cx
 __asm__("cld\n\t"                   // DF=0，所以scasb执行递增操作，从前到后扫描
     "repne\n\t"
     "scasb\n\t"
-    "notl %0\n\t"                   // 取反 -1 得到长度     
-    "decl %0"
+    "notl %0\n\t"                   // 取反得到总长度     
+    "decl %0"                       // 去掉末尾 0 
     :"=c"(__res)                    // %0 寄存器 cx
     :"D"(s),"a"(0),"0"(0xffffffff):"di");      
     // __res 作为输出
@@ -37,6 +67,37 @@ __asm__("cld\n\t"                   // DF=0，所以scasb执行递增操作，�
     // eax 初始化为 0 （字符串结束符）
     // "0"(0xffffffff) 表示寄存器0，此时为 cx（__res）初始化为0xffffffff 
 return __res;
+```
+
+```asm
+ .file "hello.c"
+ .text                                      
+
+.globl strlen                           
+ .type strlen, @function
+strlen:                                  
+ pushl %ebp                        
+ movl %esp, %ebp            
+
+ pushl %edi                      
+ movl 8(%ebp), %edi       
+
+ movl $0, %eax
+ movl $-1, %ecx
+#APP
+ cld
+ repne
+ scasb
+ notl %ecx
+ decl %ecx
+#NO_APP
+ movl %ecx, %eax
+ popl %edi
+ popl %ebp
+ ret
+ .size strlen, .-strlen
+ .ident "GCC: (GNU) 4.1.3 20070929 (prerelease) (Ubuntu 4.1.2-16ubuntu2)"
+ .section .note.GNU-stack,"",@progbits
 ```
 
 ## 通用约束 0-9

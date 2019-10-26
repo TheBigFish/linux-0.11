@@ -4,7 +4,7 @@
 * (C) 1991 Linus Torvalds
 */
 
-#include <linux/fs.h>		// ÎÄ¼þÏµÍ³Í·ÎÄ¼þ¡£¶¨ÒåÎÄ¼þ±í½á¹¹£¨file,buffer_head,m_inode µÈ£©¡£
+#include <linux/fs.h>		// æ–‡ä»¶ç³»ç»Ÿå¤´æ–‡ä»¶ã€‚å®šä¹‰æ–‡ä»¶è¡¨ç»“æž„ï¼ˆfile,buffer_head,m_inode ç­‰ï¼‰ã€‚
 
-struct file file_table[NR_FILE];	// ÎÄ¼þ±íÊý×é(64 Ïî)¡£
+struct file file_table[NR_FILE];	// æ–‡ä»¶è¡¨æ•°ç»„(64 é¡¹)ã€‚
 10

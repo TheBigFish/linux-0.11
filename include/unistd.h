@@ -2,77 +2,77 @@
 #define _UNISTD_H
 
 /* ok, this may be a joke, but I'm working on it */
-/* ok, ÕâÒ²ĞíÊÇ¸öÍæĞ¦£¬µ«ÎÒÕıÔÚ×ÅÊÖ´¦Àí */
-// ÏÂÃæ·ûºÅ³£ÊıÖ¸³ö·ûºÏIEEE ±ê×¼1003.1 ÊµÏÖµÄ°æ±¾ºÅ£¬ÊÇÒ»¸öÕûÊıÖµ¡£
+/* ok, è¿™ä¹Ÿè®¸æ˜¯ä¸ªç©ç¬‘ï¼Œä½†æˆ‘æ­£åœ¨ç€æ‰‹å¤„ç† */
+// ä¸‹é¢ç¬¦å·å¸¸æ•°æŒ‡å‡ºç¬¦åˆIEEE æ ‡å‡†1003.1 å®ç°çš„ç‰ˆæœ¬å·ï¼Œæ˜¯ä¸€ä¸ªæ•´æ•°å€¼ã€‚
 #define _POSIX_VERSION 198808L
 
-// chown()ºÍfchown()µÄÊ¹ÓÃÊÜÏŞÓÚ½ø³ÌµÄÈ¨ÏŞ¡£/* Ö»ÓĞ³¬¼¶ÓÃ»§¿ÉÒÔÖ´ĞĞchown£¨ÎÒÏë..£©*/
+// chown()å’Œfchown()çš„ä½¿ç”¨å—é™äºè¿›ç¨‹çš„æƒé™ã€‚/* åªæœ‰è¶…çº§ç”¨æˆ·å¯ä»¥æ‰§è¡Œchownï¼ˆæˆ‘æƒ³..ï¼‰*/
 #define _POSIX_CHOWN_RESTRICTED	/* only root can do a chown (I think..) */
-// ³¤ÓÚ(NAME_MAX)µÄÂ·¾¶Ãû½«²úÉú´íÎó£¬¶ø²»»á×Ô¶¯½Ø¶Ï¡£/* Â·¾¶Ãû²»½Ø¶Ï£¨µ«ÊÇÇë¿´ÄÚºË´úÂë£©*/
+// é•¿äº(NAME_MAX)çš„è·¯å¾„åå°†äº§ç”Ÿé”™è¯¯ï¼Œè€Œä¸ä¼šè‡ªåŠ¨æˆªæ–­ã€‚/* è·¯å¾„åä¸æˆªæ–­ï¼ˆä½†æ˜¯è¯·çœ‹å†…æ ¸ä»£ç ï¼‰*/
 #define _POSIX_NO_TRUNC		/* no pathname truncation (but see in kernel) */
-// ÏÂÃæÕâ¸ö·ûºÅ½«¶¨Òå³É×Ö·ûÖµ£¬¸ÃÖµ½«½ûÖ¹ÖÕ¶Ë¶ÔÆäµÄ´¦Àí¡£/* ½ûÖ¹Ïó^C ÕâÑùµÄ×Ö·û */
+// ä¸‹é¢è¿™ä¸ªç¬¦å·å°†å®šä¹‰æˆå­—ç¬¦å€¼ï¼Œè¯¥å€¼å°†ç¦æ­¢ç»ˆç«¯å¯¹å…¶çš„å¤„ç†ã€‚/* ç¦æ­¢è±¡^C è¿™æ ·çš„å­—ç¬¦ */
 #define _POSIX_VDISABLE '\0'	/* character to disable things like ^C */
-// Ã¿¸ö½ø³Ì¶¼ÓĞÒ»±£´æµÄset-user-ID ºÍÒ»±£´æµÄset-group-ID¡£ /* ÎÒÃÇ½«×ÅÊÖ¶Ô´Ë½øĞĞ´¦Àí */
+// æ¯ä¸ªè¿›ç¨‹éƒ½æœ‰ä¸€ä¿å­˜çš„set-user-ID å’Œä¸€ä¿å­˜çš„set-group-IDã€‚ /* æˆ‘ä»¬å°†ç€æ‰‹å¯¹æ­¤è¿›è¡Œå¤„ç† */
 /*#define _POSIX_SAVED_IDS *//* we'll get to this yet */
-// ÏµÍ³ÊµÏÖÖ§³Ö×÷Òµ¿ØÖÆ¡£ /* ÎÒÃÇ»¹Ã»ÓĞÖ§³ÖÕâÏî±ê×¼£¬Ï£ÍûºÜ¿ì¾ÍĞĞ */
+// ç³»ç»Ÿå®ç°æ”¯æŒä½œä¸šæ§åˆ¶ã€‚ /* æˆ‘ä»¬è¿˜æ²¡æœ‰æ”¯æŒè¿™é¡¹æ ‡å‡†ï¼Œå¸Œæœ›å¾ˆå¿«å°±è¡Œ */
 /*#define _POSIX_JOB_CONTROL *//* we aren't there quite yet. Soon hopefully */
 
-#define STDIN_FILENO 0		// ±ê×¼ÊäÈëÎÄ¼ş¾ä±ú£¨ÃèÊö·û£©ºÅ¡£
-#define STDOUT_FILENO 1		// ±ê×¼Êä³öÎÄ¼ş¾ä±úºÅ¡£
-#define STDERR_FILENO 2		// ±ê×¼³ö´íÎÄ¼ş¾ä±úºÅ¡£
+#define STDIN_FILENO 0		// æ ‡å‡†è¾“å…¥æ–‡ä»¶å¥æŸ„ï¼ˆæè¿°ç¬¦ï¼‰å·ã€‚
+#define STDOUT_FILENO 1		// æ ‡å‡†è¾“å‡ºæ–‡ä»¶å¥æŸ„å·ã€‚
+#define STDERR_FILENO 2		// æ ‡å‡†å‡ºé”™æ–‡ä»¶å¥æŸ„å·ã€‚
 
 #ifndef NULL
-#define NULL ((void *)0)	// ¶¨Òå¿ÕÖ¸Õë¡£
+#define NULL ((void *)0)	// å®šä¹‰ç©ºæŒ‡é’ˆã€‚
 #endif
 
-/* access *//* ÎÄ¼ş·ÃÎÊ */
-// ÒÔÏÂ¶¨ÒåµÄ·ûºÅ³£ÊıÓÃÓÚaccess()º¯Êı¡£
-#define F_OK 0			// ¼ì²âÎÄ¼şÊÇ·ñ´æÔÚ¡£
-#define X_OK 1			// ¼ì²âÊÇ·ñ¿ÉÖ´ĞĞ£¨ËÑË÷£©¡£
-#define W_OK 2			// ¼ì²âÊÇ·ñ¿ÉĞ´¡£
-#define R_OK 4			// ¼ì²âÊÇ·ñ¿É¶Á¡£
+/* access *//* æ–‡ä»¶è®¿é—® */
+// ä»¥ä¸‹å®šä¹‰çš„ç¬¦å·å¸¸æ•°ç”¨äºaccess()å‡½æ•°ã€‚
+#define F_OK 0			// æ£€æµ‹æ–‡ä»¶æ˜¯å¦å­˜åœ¨ã€‚
+#define X_OK 1			// æ£€æµ‹æ˜¯å¦å¯æ‰§è¡Œï¼ˆæœç´¢ï¼‰ã€‚
+#define W_OK 2			// æ£€æµ‹æ˜¯å¦å¯å†™ã€‚
+#define R_OK 4			// æ£€æµ‹æ˜¯å¦å¯è¯»ã€‚
 
-/* lseek *//* ÎÄ¼şÖ¸ÕëÖØ¶¨Î» */
-// ÒÔÏÂ·ûºÅ³£ÊıÓÃÓÚlseek()ºÍfcntl()º¯Êı¡£
-#define SEEK_SET 0		// ½«ÎÄ¼ş¶ÁĞ´Ö¸ÕëÉèÖÃÎªÆ«ÒÆÖµ¡£
-#define SEEK_CUR 1		// ½«ÎÄ¼ş¶ÁĞ´Ö¸ÕëÉèÖÃÎªµ±Ç°Öµ¼ÓÉÏÆ«ÒÆÖµ¡£
-#define SEEK_END 2		// ½«ÎÄ¼ş¶ÁĞ´Ö¸ÕëÉèÖÃÎªÎÄ¼ş³¤¶È¼ÓÉÏÆ«ÒÆÖµ¡£
+/* lseek *//* æ–‡ä»¶æŒ‡é’ˆé‡å®šä½ */
+// ä»¥ä¸‹ç¬¦å·å¸¸æ•°ç”¨äºlseek()å’Œfcntl()å‡½æ•°ã€‚
+#define SEEK_SET 0		// å°†æ–‡ä»¶è¯»å†™æŒ‡é’ˆè®¾ç½®ä¸ºåç§»å€¼ã€‚
+#define SEEK_CUR 1		// å°†æ–‡ä»¶è¯»å†™æŒ‡é’ˆè®¾ç½®ä¸ºå½“å‰å€¼åŠ ä¸Šåç§»å€¼ã€‚
+#define SEEK_END 2		// å°†æ–‡ä»¶è¯»å†™æŒ‡é’ˆè®¾ç½®ä¸ºæ–‡ä»¶é•¿åº¦åŠ ä¸Šåç§»å€¼ã€‚
 
 /* _SC stands for System Configuration. We don't use them much */
-/* _SC ±íÊ¾ÏµÍ³ÅäÖÃ¡£ÎÒÃÇºÜÉÙÊ¹ÓÃ */
-// ÏÂÃæµÄ·ûºÅ³£ÊıÓÃÓÚsysconf()º¯Êı¡£
-#define _SC_ARG_MAX 1		// ×î´ó±äÁ¿Êı¡£
-#define _SC_CHILD_MAX 2		// ×Ó½ø³Ì×î´óÊı¡£
-#define _SC_CLOCKS_PER_SEC 3	// Ã¿ÃëµÎ´ğÊı¡£
-#define _SC_NGROUPS_MAX 4	// ×î´ó×éÊı¡£
-#define _SC_OPEN_MAX 5		// ×î´ó´ò¿ªÎÄ¼şÊı¡£
-#define _SC_JOB_CONTROL 6	// ×÷Òµ¿ØÖÆ¡£
-#define _SC_SAVED_IDS 7		// ±£´æµÄ±êÊ¶·û¡£
-#define _SC_VERSION 8		// °æ±¾¡£
+/* _SC è¡¨ç¤ºç³»ç»Ÿé…ç½®ã€‚æˆ‘ä»¬å¾ˆå°‘ä½¿ç”¨ */
+// ä¸‹é¢çš„ç¬¦å·å¸¸æ•°ç”¨äºsysconf()å‡½æ•°ã€‚
+#define _SC_ARG_MAX 1		// æœ€å¤§å˜é‡æ•°ã€‚
+#define _SC_CHILD_MAX 2		// å­è¿›ç¨‹æœ€å¤§æ•°ã€‚
+#define _SC_CLOCKS_PER_SEC 3	// æ¯ç§’æ»´ç­”æ•°ã€‚
+#define _SC_NGROUPS_MAX 4	// æœ€å¤§ç»„æ•°ã€‚
+#define _SC_OPEN_MAX 5		// æœ€å¤§æ‰“å¼€æ–‡ä»¶æ•°ã€‚
+#define _SC_JOB_CONTROL 6	// ä½œä¸šæ§åˆ¶ã€‚
+#define _SC_SAVED_IDS 7		// ä¿å­˜çš„æ ‡è¯†ç¬¦ã€‚
+#define _SC_VERSION 8		// ç‰ˆæœ¬ã€‚
 
 /* more (possibly) configurable things - now pathnames */
-/* ¸ü¶àµÄ£¨¿ÉÄÜµÄ£©¿ÉÅäÖÃ²ÎÊı - ÏÖÔÚÓÃÓÚÂ·¾¶Ãû */
-// ÏÂÃæµÄ·ûºÅ³£ÊıÓÃÓÚpathconf()º¯Êı¡£
-#define _PC_LINK_MAX 1		// Á¬½Ó×î´óÊı¡£
-#define _PC_MAX_CANON 2		// ×î´ó³£¹æÎÄ¼şÊı¡£
-#define _PC_MAX_INPUT 3		// ×î´óÊäÈë³¤¶È¡£
-#define _PC_NAME_MAX 4		// Ãû³Æ×î´ó³¤¶È¡£
-#define _PC_PATH_MAX 5		// Â·¾¶×î´ó³¤¶È¡£
-#define _PC_PIPE_BUF 6		// ¹ÜµÀ»º³å´óĞ¡¡£
-#define _PC_NO_TRUNC 7		// ÎÄ¼şÃû²»½Ø¶Ï¡£
+/* æ›´å¤šçš„ï¼ˆå¯èƒ½çš„ï¼‰å¯é…ç½®å‚æ•° - ç°åœ¨ç”¨äºè·¯å¾„å */
+// ä¸‹é¢çš„ç¬¦å·å¸¸æ•°ç”¨äºpathconf()å‡½æ•°ã€‚
+#define _PC_LINK_MAX 1		// è¿æ¥æœ€å¤§æ•°ã€‚
+#define _PC_MAX_CANON 2		// æœ€å¤§å¸¸è§„æ–‡ä»¶æ•°ã€‚
+#define _PC_MAX_INPUT 3		// æœ€å¤§è¾“å…¥é•¿åº¦ã€‚
+#define _PC_NAME_MAX 4		// åç§°æœ€å¤§é•¿åº¦ã€‚
+#define _PC_PATH_MAX 5		// è·¯å¾„æœ€å¤§é•¿åº¦ã€‚
+#define _PC_PIPE_BUF 6		// ç®¡é“ç¼“å†²å¤§å°ã€‚
+#define _PC_NO_TRUNC 7		// æ–‡ä»¶åä¸æˆªæ–­ã€‚
 #define _PC_VDISABLE 8		//
-#define _PC_CHOWN_RESTRICTED 9	// ¸Ä±äËŞÖ÷ÊÜÏŞ¡£
+#define _PC_CHOWN_RESTRICTED 9	// æ”¹å˜å®¿ä¸»å—é™ã€‚
 
-#include <sys/stat.h>		// ÎÄ¼ş×´Ì¬Í·ÎÄ¼ş¡£º¬ÓĞÎÄ¼ş»òÎÄ¼şÏµÍ³×´Ì¬½á¹¹stat{}ºÍ³£Á¿¡£
-#include <sys/times.h>		// ¶¨ÒåÁË½ø³ÌÖĞÔËĞĞÊ±¼ä½á¹¹tms ÒÔ¼°times()º¯ÊıÔ­ĞÍ¡£
-#include <sys/utsname.h>	// ÏµÍ³Ãû³Æ½á¹¹Í·ÎÄ¼ş¡£
-#include <utime.h>		// ÓÃ»§Ê±¼äÍ·ÎÄ¼ş¡£¶¨ÒåÁË·ÃÎÊºÍĞŞ¸ÄÊ±¼ä½á¹¹ÒÔ¼°utime()Ô­ĞÍ¡£
+#include <sys/stat.h>		// æ–‡ä»¶çŠ¶æ€å¤´æ–‡ä»¶ã€‚å«æœ‰æ–‡ä»¶æˆ–æ–‡ä»¶ç³»ç»ŸçŠ¶æ€ç»“æ„stat{}å’Œå¸¸é‡ã€‚
+#include <sys/times.h>		// å®šä¹‰äº†è¿›ç¨‹ä¸­è¿è¡Œæ—¶é—´ç»“æ„tms ä»¥åŠtimes()å‡½æ•°åŸå‹ã€‚
+#include <sys/utsname.h>	// ç³»ç»Ÿåç§°ç»“æ„å¤´æ–‡ä»¶ã€‚
+#include <utime.h>		// ç”¨æˆ·æ—¶é—´å¤´æ–‡ä»¶ã€‚å®šä¹‰äº†è®¿é—®å’Œä¿®æ”¹æ—¶é—´ç»“æ„ä»¥åŠutime()åŸå‹ã€‚
 
 #ifdef __LIBRARY__
 
-// ÒÔÏÂÊÇÄÚºËÊµÏÖµÄÏµÍ³µ÷ÓÃ·ûºÅ³£Êı£¬ÓÃÓÚ×÷ÎªÏµÍ³µ÷ÓÃº¯Êı±íÖĞµÄË÷ÒıÖµ¡£( include/linux/sys.h )
+// ä»¥ä¸‹æ˜¯å†…æ ¸å®ç°çš„ç³»ç»Ÿè°ƒç”¨ç¬¦å·å¸¸æ•°ï¼Œç”¨äºä½œä¸ºç³»ç»Ÿè°ƒç”¨å‡½æ•°è¡¨ä¸­çš„ç´¢å¼•å€¼ã€‚( include/linux/sys.h )
 #define __NR_setup 0		/* used only by init, to get system going */
-/* __NR_setup ½öÓÃÓÚ³õÊ¼»¯£¬ÒÔÆô¶¯ÏµÍ³ */
+/* __NR_setup ä»…ç”¨äºåˆå§‹åŒ–ï¼Œä»¥å¯åŠ¨ç³»ç»Ÿ */
 #define __NR_exit 1
 #define __NR_fork 2
 #define __NR_read 3
@@ -145,25 +145,25 @@
 #define __NR_setreuid 70
 #define __NR_setregid 71
 
-// ÒÔÏÂ¶¨ÒåÏµÍ³µ÷ÓÃÇ¶ÈëÊ½»ã±àºêº¯Êı¡£
-// ²»´ø²ÎÊıµÄÏµÍ³µ÷ÓÃºêº¯Êı¡£type name(void)¡£
-// %0 - eax(__res)£¬%1 - eax(__NR_##name)¡£ÆäÖĞname ÊÇÏµÍ³µ÷ÓÃµÄÃû³Æ£¬Óë __NR_ ×éºÏĞÎ³ÉÉÏÃæ
-// µÄÏµÍ³µ÷ÓÃ·ûºÅ³£Êı£¬´Ó¶øÓÃÀ´¶ÔÏµÍ³µ÷ÓÃ±íÖĞº¯ÊıÖ¸ÕëÑ°Ö·¡£
-// ·µ»Ø£ºÈç¹û·µ»ØÖµ´óÓÚµÈÓÚ0£¬Ôò·µ»Ø¸ÃÖµ£¬·ñÔòÖÃ³ö´íºÅerrno£¬²¢·µ»Ø-1¡£
+// ä»¥ä¸‹å®šä¹‰ç³»ç»Ÿè°ƒç”¨åµŒå…¥å¼æ±‡ç¼–å®å‡½æ•°ã€‚
+// ä¸å¸¦å‚æ•°çš„ç³»ç»Ÿè°ƒç”¨å®å‡½æ•°ã€‚type name(void)ã€‚
+// %0 - eax(__res)ï¼Œ%1 - eax(__NR_##name)ã€‚å…¶ä¸­name æ˜¯ç³»ç»Ÿè°ƒç”¨çš„åç§°ï¼Œä¸ __NR_ ç»„åˆå½¢æˆä¸Šé¢
+// çš„ç³»ç»Ÿè°ƒç”¨ç¬¦å·å¸¸æ•°ï¼Œä»è€Œç”¨æ¥å¯¹ç³»ç»Ÿè°ƒç”¨è¡¨ä¸­å‡½æ•°æŒ‡é’ˆå¯»å€ã€‚
+// è¿”å›ï¼šå¦‚æœè¿”å›å€¼å¤§äºç­‰äº0ï¼Œåˆ™è¿”å›è¯¥å€¼ï¼Œå¦åˆ™ç½®å‡ºé”™å·errnoï¼Œå¹¶è¿”å›-1ã€‚
 #define _syscall0(type,name) \
 type name(void) \
 { \
 long __res; \
-__asm__ volatile ( "int $0x80" \	// µ÷ÓÃÏµÍ³ÖĞ¶Ï0x80¡£
-:"=a" (__res) \		// ·µ»ØÖµ??eax(__res)¡£
+__asm__ volatile ( "int $0x80" \	// è°ƒç”¨ç³»ç»Ÿä¸­æ–­0x80ã€‚
+:"=a" (__res) \		// è¿”å›å€¼??eax(__res)ã€‚
 :"" (__NR_
-##name)); \			// ÊäÈëÎªÏµÍ³ÖĞ¶Ïµ÷ÓÃºÅ__NR_name¡£
-      if (__res >= 0) \		// Èç¹û·µ»ØÖµ>=0£¬ÔòÖ±½Ó·µ»Ø¸ÃÖµ¡£
-      return (type) __res; errno = -__res; \	// ·ñÔòÖÃ³ö´íºÅ£¬²¢·µ»Ø-1¡£
+##name)); \			// è¾“å…¥ä¸ºç³»ç»Ÿä¸­æ–­è°ƒç”¨å·__NR_nameã€‚
+      if (__res >= 0) \		// å¦‚æœè¿”å›å€¼>=0ï¼Œåˆ™ç›´æ¥è¿”å›è¯¥å€¼ã€‚
+      return (type) __res; errno = -__res; \	// å¦åˆ™ç½®å‡ºé”™å·ï¼Œå¹¶è¿”å›-1ã€‚
       return -1;}
 
-// ÓĞ1 ¸ö²ÎÊıµÄÏµÍ³µ÷ÓÃºêº¯Êı¡£type name(atype a)
-// %0 - eax(__res)£¬%1 - eax(__NR_name)£¬%2 - ebx(a)¡£
+// æœ‰1 ä¸ªå‚æ•°çš„ç³»ç»Ÿè°ƒç”¨å®å‡½æ•°ã€‚type name(atype a)
+// %0 - eax(__res)ï¼Œ%1 - eax(__NR_name)ï¼Œ%2 - ebx(a)ã€‚
 #define _syscall1(type,name,atype,a) \
 type name(atype a) \
 { \
@@ -177,8 +177,8 @@ errno = -__res; \
 return -1; \
 }
 
-// ÓĞ2 ¸ö²ÎÊıµÄÏµÍ³µ÷ÓÃºêº¯Êı¡£type name(atype a, btype b)
-// %0 - eax(__res)£¬%1 - eax(__NR_name)£¬%2 - ebx(a)£¬%3 - ecx(b)¡£
+// æœ‰2 ä¸ªå‚æ•°çš„ç³»ç»Ÿè°ƒç”¨å®å‡½æ•°ã€‚type name(atype a, btype b)
+// %0 - eax(__res)ï¼Œ%1 - eax(__NR_name)ï¼Œ%2 - ebx(a)ï¼Œ%3 - ecx(b)ã€‚
 #define _syscall2(type,name,atype,a,btype,b) \
 type name(atype a,btype b) \
 { \
@@ -192,8 +192,8 @@ errno = -__res; \
 return -1; \
 }
 
-// ÓĞ3 ¸ö²ÎÊıµÄÏµÍ³µ÷ÓÃºêº¯Êı¡£type name(atype a, btype b, ctype c)
-// %0 - eax(__res)£¬%1 - eax(__NR_name)£¬%2 - ebx(a)£¬%3 - ecx(b)£¬%4 - edx(c)¡£
+// æœ‰3 ä¸ªå‚æ•°çš„ç³»ç»Ÿè°ƒç”¨å®å‡½æ•°ã€‚type name(atype a, btype b, ctype c)
+// %0 - eax(__res)ï¼Œ%1 - eax(__NR_name)ï¼Œ%2 - ebx(a)ï¼Œ%3 - ecx(b)ï¼Œ%4 - edx(c)ã€‚
 #define _syscall3(type,name,atype,a,btype,b,ctype,c) \
 type name(atype a,btype b,ctype c) \
 { \
@@ -209,8 +209,8 @@ return -1; \
 
 #endif /* __LIBRARY__ */
 
-      extern int errno;		// ³ö´íºÅ£¬È«¾Ö±äÁ¿¡£
-// ¶ÔÓ¦¸÷ÏµÍ³µ÷ÓÃµÄº¯ÊıÔ­ĞÍ¶¨Òå¡£
+      extern int errno;		// å‡ºé”™å·ï¼Œå…¨å±€å˜é‡ã€‚
+// å¯¹åº”å„ç³»ç»Ÿè°ƒç”¨çš„å‡½æ•°åŸå‹å®šä¹‰ã€‚
       int access (const char *filename, mode_t mode);
       int acct (const char *filename);
       int alarm (int sec);

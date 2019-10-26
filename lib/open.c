@@ -5,33 +5,33 @@
 */
 
 #define __LIBRARY__
-#include <unistd.h>		// Linux ±ê×¼Í·ÎÄ¼þ¡£¶¨ÒåÁË¸÷ÖÖ·ûºÅ³£ÊýºÍÀàÐÍ£¬²¢ÉêÃ÷ÁË¸÷ÖÖº¯Êý¡£
-// Èç¶¨ÒåÁË__LIBRARY__£¬Ôò»¹°üÀ¨ÏµÍ³µ÷ÓÃºÅºÍÄÚÇ¶»ã±à_syscall0()µÈ¡£
-#include <stdarg.h>		// ±ê×¼²ÎÊýÍ·ÎÄ¼þ¡£ÒÔºêµÄÐÎÊ½¶¨Òå±äÁ¿²ÎÊýÁÐ±í¡£Ö÷ÒªËµÃ÷ÁË-¸ö
-// ÀàÐÍ(va_list)ºÍÈý¸öºê(va_start, va_arg ºÍva_end)£¬ÓÃÓÚ
-// vsprintf¡¢vprintf¡¢vfprintf º¯Êý¡£
+#include <unistd.h>		// Linux æ ‡å‡†å¤´æ–‡ä»¶ã€‚å®šä¹‰äº†å„ç§ç¬¦å·å¸¸æ•°å’Œç±»åž‹ï¼Œå¹¶ç”³æ˜Žäº†å„ç§å‡½æ•°ã€‚
+// å¦‚å®šä¹‰äº†__LIBRARY__ï¼Œåˆ™è¿˜åŒ…æ‹¬ç³»ç»Ÿè°ƒç”¨å·å’Œå†…åµŒæ±‡ç¼–_syscall0()ç­‰ã€‚
+#include <stdarg.h>		// æ ‡å‡†å‚æ•°å¤´æ–‡ä»¶ã€‚ä»¥å®çš„å½¢å¼å®šä¹‰å˜é‡å‚æ•°åˆ—è¡¨ã€‚ä¸»è¦è¯´æ˜Žäº†-ä¸ª
+// ç±»åž‹(va_list)å’Œä¸‰ä¸ªå®(va_start, va_arg å’Œva_end)ï¼Œç”¨äºŽ
+// vsprintfã€vprintfã€vfprintf å‡½æ•°ã€‚
 
-//// ´ò¿ªÎÄ¼þº¯Êý¡£
-// ´ò¿ª²¢ÓÐ¿ÉÄÜ´´½¨Ò»¸öÎÄ¼þ¡£
-// ²ÎÊý£ºfilename - ÎÄ¼þÃû£»flag - ÎÄ¼þ´ò¿ª±êÖ¾£»...
-// ·µ»Ø£ºÎÄ¼þÃèÊö·û£¬Èô³ö´íÔòÖÃ³ö´íÂë£¬²¢·µ»Ø-1¡£
+//// æ‰“å¼€æ–‡ä»¶å‡½æ•°ã€‚
+// æ‰“å¼€å¹¶æœ‰å¯èƒ½åˆ›å»ºä¸€ä¸ªæ–‡ä»¶ã€‚
+// å‚æ•°ï¼šfilename - æ–‡ä»¶åï¼›flag - æ–‡ä»¶æ‰“å¼€æ ‡å¿—ï¼›...
+// è¿”å›žï¼šæ–‡ä»¶æè¿°ç¬¦ï¼Œè‹¥å‡ºé”™åˆ™ç½®å‡ºé”™ç ï¼Œå¹¶è¿”å›ž-1ã€‚
 int
 open (const char *filename, int flag, ...)
 {
   register int res;
   va_list arg;
 
-// ÀûÓÃva_start()ºêº¯Êý£¬È¡µÃflag ºóÃæ²ÎÊýµÄÖ¸Õë£¬È»ºóµ÷ÓÃÏµÍ³ÖÐ¶Ïint 0x80£¬¹¦ÄÜopen ½øÐÐ
-// ÎÄ¼þ´ò¿ª²Ù×÷¡£
-// %0 - eax(·µ»ØµÄÃèÊö·û»ò³ö´íÂë)£»%1 - eax(ÏµÍ³ÖÐ¶Ïµ÷ÓÃ¹¦ÄÜºÅ__NR_open)£»
-// %2 - ebx(ÎÄ¼þÃûfilename)£»%3 - ecx(´ò¿ªÎÄ¼þ±êÖ¾flag)£»%4 - edx(ºóËæ²ÎÊýÎÄ¼þÊôÐÔmode)¡£
+// åˆ©ç”¨va_start()å®å‡½æ•°ï¼Œå–å¾—flag åŽé¢å‚æ•°çš„æŒ‡é’ˆï¼Œç„¶åŽè°ƒç”¨ç³»ç»Ÿä¸­æ–­int 0x80ï¼ŒåŠŸèƒ½open è¿›è¡Œ
+// æ–‡ä»¶æ‰“å¼€æ“ä½œã€‚
+// %0 - eax(è¿”å›žçš„æè¿°ç¬¦æˆ–å‡ºé”™ç )ï¼›%1 - eax(ç³»ç»Ÿä¸­æ–­è°ƒç”¨åŠŸèƒ½å·__NR_open)ï¼›
+// %2 - ebx(æ–‡ä»¶åfilename)ï¼›%3 - ecx(æ‰“å¼€æ–‡ä»¶æ ‡å¿—flag)ï¼›%4 - edx(åŽéšå‚æ•°æ–‡ä»¶å±žæ€§mode)ã€‚
   va_start (arg, flag);
 __asm__ ("int $0x80": "=a" (res):"" (__NR_open), "b" (filename), "c" (flag),
 	   "d" (va_arg (arg, int)));
-// ÏµÍ³ÖÐ¶Ïµ÷ÓÃ·µ»ØÖµ´óÓÚ»òµÈÓÚ0£¬±íÊ¾ÊÇÒ»¸öÎÄ¼þÃèÊö·û£¬ÔòÖ±½Ó·µ»ØÖ®¡£
+// ç³»ç»Ÿä¸­æ–­è°ƒç”¨è¿”å›žå€¼å¤§äºŽæˆ–ç­‰äºŽ0ï¼Œè¡¨ç¤ºæ˜¯ä¸€ä¸ªæ–‡ä»¶æè¿°ç¬¦ï¼Œåˆ™ç›´æŽ¥è¿”å›žä¹‹ã€‚
   if (res >= 0)
     return res;
-// ·ñÔòËµÃ÷·µ»ØÖµÐ¡ÓÚ0£¬Ôò´ú±íÒ»¸ö³ö´íÂë¡£ÉèÖÃ¸Ã³ö´íÂë²¢·µ»Ø-1¡£
+// å¦åˆ™è¯´æ˜Žè¿”å›žå€¼å°äºŽ0ï¼Œåˆ™ä»£è¡¨ä¸€ä¸ªå‡ºé”™ç ã€‚è®¾ç½®è¯¥å‡ºé”™ç å¹¶è¿”å›ž-1ã€‚
   errno = -res;
   return -1;
 }

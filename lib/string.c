@@ -4,7 +4,7 @@
 * (C) 1991 Linus Torvalds
 */
 
-#ifndef __GNUC__		// ĞèÒªGNU µÄC ±àÒëÆ÷±àÒë¡£
+#ifndef __GNUC__		// éœ€è¦GNU çš„C ç¼–è¯‘å™¨ç¼–è¯‘ã€‚
 #error I want gcc!
 #endif
 

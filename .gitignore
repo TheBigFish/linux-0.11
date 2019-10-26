@@ -1,20 +1,2419 @@
-# Object files
-*.o
-*.ko
-
-# Libraries
-*.lib
-*.a
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABRT_ERR	.\include\linux\hdreg.h	68;"	d
+ACC_MODE	.\fs\namei.c	27;"	d	file:
+ALRMMASK	.\kernel\chr_drv\tty_io.c	24;"	d	file:
+B0	.\include\termios.h	185;"	d
+B110	.\include\termios.h	188;"	d
+B1200	.\include\termios.h	194;"	d
+B134	.\include\termios.h	189;"	d
+B150	.\include\termios.h	190;"	d
+B1800	.\include\termios.h	195;"	d
+B19200	.\include\termios.h	199;"	d
+B200	.\include\termios.h	191;"	d
+B2400	.\include\termios.h	196;"	d
+B300	.\include\termios.h	192;"	d
+B38400	.\include\termios.h	200;"	d
+B4800	.\include\termios.h	197;"	d
+B50	.\include\termios.h	186;"	d
+B600	.\include\termios.h	193;"	d
+B75	.\include\termios.h	187;"	d
+B9600	.\include\termios.h	198;"	d
+BADNESS	.\fs\buffer.c	296;"	d	file:
+BBD_ERR	.\include\linux\hdreg.h	71;"	d
+BLOCK_SIZE	.\include\linux\fs.h	65;"	d
+BLOCK_SIZE_BITS	.\include\linux\fs.h	66;"	d
+BOOTSEG	.\boot\bootsect.s	/^BOOTSEG = 0x07c0    ! original address of boot-sector$/;"	d
+BRKINT	.\include\termios.h	134;"	d
+BS0	.\include\termios.h	173;"	d
+BS1	.\include\termios.h	174;"	d
+BSDLY	.\include\termios.h	172;"	d
+BUFFER_END	.\include\const.h	4;"	d
+BUSY_STAT	.\include\linux\hdreg.h	37;"	d
+CBAUD	.\include\termios.h	184;"	d
+CHARS	.\include\linux\tty.h	47;"	d
+CIBAUD	.\include\termios.h	214;"	d
+CLOCAL	.\include\termios.h	213;"	d
+CLOCKS_PER_SEC	.\include\time.h	14;"	d
+CMOS_READ	.\init\main.c	108;"	d	file:
+CMOS_READ	.\kernel\blk_drv\hd.c	34;"	d	file:
+CODE_SPACE	.\mm\memory.c	74;"	d	file:
+COPYBLK	.\fs\buffer.c	420;"	d	file:
+CPARENB	.\include\termios.h	210;"	d
+CPARODD	.\include\termios.h	211;"	d
+CR0	.\include\termios.h	162;"	d
+CR1	.\include\termios.h	163;"	d
+CR2	.\include\termios.h	164;"	d
+CR3	.\include\termios.h	165;"	d
+CRDLY	.\include\termios.h	161;"	d
+CREAD	.\include\termios.h	209;"	d
+CRTSCTS	.\include\termios.h	215;"	d
+CS	.\kernel\system_call.s	/^CS = 0x20$/;"	d
+CS5	.\include\termios.h	204;"	d
+CS6	.\include\termios.h	205;"	d
+CS7	.\include\termios.h	206;"	d
+CS8	.\include\termios.h	207;"	d
+CSIZE	.\include\termios.h	203;"	d
+CSTOPB	.\include\termios.h	208;"	d
+CURRENT	.\kernel\blk_drv\blk.h	116;"	d
+CURRENT_DEV	.\kernel\blk_drv\blk.h	117;"	d
+DAY	.\kernel\mktime.c	29;"	d	file:
+DEC	.\include\linux\tty.h	37;"	d
+DEFAULT_MAJOR_ROOT	.\tools\build.c	51;"	d	file:
+DEFAULT_MINOR_ROOT	.\tools\build.c	52;"	d	file:
+DEVICE_INTR	.\kernel\blk_drv\blk.h	/^void (*DEVICE_INTR) (void) = NULL;$/;"	v
+DEVICE_INTR	.\kernel\blk_drv\blk.h	104;"	d
+DEVICE_INTR	.\kernel\blk_drv\blk.h	95;"	d
+DEVICE_NAME	.\kernel\blk_drv\blk.h	103;"	d
+DEVICE_NAME	.\kernel\blk_drv\blk.h	86;"	d
+DEVICE_NAME	.\kernel\blk_drv\blk.h	94;"	d
+DEVICE_NR	.\kernel\blk_drv\blk.h	106;"	d
+DEVICE_NR	.\kernel\blk_drv\blk.h	88;"	d
+DEVICE_NR	.\kernel\blk_drv\blk.h	97;"	d
+DEVICE_OFF	.\kernel\blk_drv\blk.h	108;"	d
+DEVICE_OFF	.\kernel\blk_drv\blk.h	90;"	d
+DEVICE_OFF	.\kernel\blk_drv\blk.h	99;"	d
+DEVICE_ON	.\kernel\blk_drv\blk.h	107;"	d
+DEVICE_ON	.\kernel\blk_drv\blk.h	89;"	d
+DEVICE_ON	.\kernel\blk_drv\blk.h	98;"	d
+DEVICE_REQUEST	.\kernel\blk_drv\blk.h	105;"	d
+DEVICE_REQUEST	.\kernel\blk_drv\blk.h	87;"	d
+DEVICE_REQUEST	.\kernel\blk_drv\blk.h	96;"	d
+DIR_ENTRIES_PER_BLOCK	.\include\linux\fs.h	74;"	d
+DRIVE	.\kernel\blk_drv\floppy.c	74;"	d	file:
+DRIVE_INFO	.\init\main.c	93;"	d	file:
+DRQ_STAT	.\include\linux\hdreg.h	33;"	d
+DS	.\kernel\system_call.s	/^DS = 0x18$/;"	d
+E2BIG	.\include\errno.h	36;"	d
+EACCES	.\include\errno.h	42;"	d
+EAGAIN	.\include\errno.h	40;"	d
+EAX	.\kernel\system_call.s	/^EAX = 0x00 # 閸棙鐖ゆ稉顓炴倗娑擃亜鐦庣€涙ê娅掗惃鍕焊缁夎缍呯純顔衡偓锟�$/;"	d
+EBADF	.\include\errno.h	38;"	d
+EBUSY	.\include\errno.h	45;"	d
+EBX	.\kernel\system_call.s	/^EBX = 0x04$/;"	d
+ECC_ERR	.\include\linux\hdreg.h	70;"	d
+ECC_STAT	.\include\linux\hdreg.h	32;"	d
+ECHILD	.\include\errno.h	39;"	d
+ECHO	.\include\termios.h	225;"	d
+ECHOCTL	.\include\termios.h	233;"	d
+ECHOE	.\include\termios.h	226;"	d
+ECHOK	.\include\termios.h	227;"	d
+ECHOKE	.\include\termios.h	236;"	d
+ECHONL	.\include\termios.h	228;"	d
+ECHOPRT	.\include\termios.h	235;"	d
+ECX	.\kernel\system_call.s	/^ECX = 0x08$/;"	d
+EDEADLK	.\include\errno.h	64;"	d
+EDOM	.\include\errno.h	62;"	d
+EDX	.\kernel\system_call.s	/^EDX = 0x0C$/;"	d
+EEXIST	.\include\errno.h	46;"	d
+EFAULT	.\include\errno.h	43;"	d
+EFBIG	.\include\errno.h	56;"	d
+EFLAGS	.\kernel\system_call.s	/^EFLAGS = 0x24$/;"	d
+EINTR	.\include\errno.h	33;"	d
+EINVAL	.\include\errno.h	51;"	d
+EIO	.\include\errno.h	34;"	d
+EIP	.\kernel\system_call.s	/^EIP = 0x1C$/;"	d
+EISDIR	.\include\errno.h	50;"	d
+EMFILE	.\include\errno.h	53;"	d
+EMLINK	.\include\errno.h	60;"	d
+EMPTY	.\include\linux\tty.h	39;"	d
+ENAMETOOLONG	.\include\errno.h	65;"	d
+ENDSEG	.\boot\bootsect.s	/^ENDSEG = SYSSEG + SYSSIZE   ! where to stop loading$/;"	d
+ENFILE	.\include\errno.h	52;"	d
+ENODEV	.\include\errno.h	48;"	d
+ENOENT	.\include\errno.h	31;"	d
+ENOEXEC	.\include\errno.h	37;"	d
+ENOLCK	.\include\errno.h	66;"	d
+ENOMEM	.\include\errno.h	41;"	d
+ENOSPC	.\include\errno.h	57;"	d
+ENOSYS	.\include\errno.h	67;"	d
+ENOTBLK	.\include\errno.h	44;"	d
+ENOTDIR	.\include\errno.h	49;"	d
+ENOTEMPTY	.\include\errno.h	68;"	d
+ENOTTY	.\include\errno.h	54;"	d
+ENXIO	.\include\errno.h	35;"	d
+EOF_CHAR	.\include\linux\tty.h	60;"	d
+EPERM	.\include\errno.h	30;"	d
+EPIPE	.\include\errno.h	61;"	d
+ERANGE	.\include\errno.h	63;"	d
+ERASE_CHAR	.\include\linux\tty.h	58;"	d
+EROFS	.\include\errno.h	59;"	d
+ERROR	.\include\errno.h	29;"	d
+ERR_STAT	.\include\linux\hdreg.h	30;"	d
+ES	.\kernel\system_call.s	/^ES = 0x14$/;"	d
+ESPIPE	.\include\errno.h	58;"	d
+ESRCH	.\include\errno.h	32;"	d
+ETXTBSY	.\include\errno.h	55;"	d
+EXDEV	.\include\errno.h	47;"	d
+EXTA	.\include\termios.h	201;"	d
+EXTB	.\include\termios.h	202;"	d
+EXT_MEM_K	.\init\main.c	92;"	d	file:
+FD_CLOEXEC	.\include\fcntl.h	43;"	d
+FF0	.\include\termios.h	179;"	d
+FF1	.\include\termios.h	180;"	d
+FFDLY	.\include\termios.h	178;"	d
+FIRST_TASK	.\include\linux\sched.h	7;"	d
+FLUSHO	.\include\termios.h	237;"	d
+FS	.\kernel\system_call.s	/^FS = 0x10$/;"	d
+FULL	.\include\linux\tty.h	45;"	d
+F_DUPFD	.\include\fcntl.h	30;"	d
+F_GETFD	.\include\fcntl.h	31;"	d
+F_GETFL	.\include\fcntl.h	33;"	d
+F_GETLK	.\include\fcntl.h	36;"	d
+F_OK	.\include\unistd.h	30;"	d
+F_RDLCK	.\include\fcntl.h	51;"	d
+F_SETFD	.\include\fcntl.h	32;"	d
+F_SETFL	.\include\fcntl.h	34;"	d
+F_SETLK	.\include\fcntl.h	37;"	d
+F_SETLKW	.\include\fcntl.h	38;"	d
+F_UNLCK	.\include\fcntl.h	53;"	d
+F_WRLCK	.\include\fcntl.h	52;"	d
+GCC_HEADER	.\tools\build.c	46;"	d	file:
+GDT_CODE	.\include\linux\head.h	14;"	d
+GDT_DATA	.\include\linux\head.h	15;"	d
+GDT_NUL	.\include\linux\head.h	13;"	d
+GDT_TMP	.\include\linux\head.h	16;"	d
+GETCH	.\include\linux\tty.h	49;"	d
+HD_CMD	.\include\linux\hdreg.h	26;"	d
+HD_COMMAND	.\include\linux\hdreg.h	24;"	d
+HD_CURRENT	.\include\linux\hdreg.h	21;"	d
+HD_DATA	.\include\linux\hdreg.h	15;"	d
+HD_ERROR	.\include\linux\hdreg.h	16;"	d
+HD_HCYL	.\include\linux\hdreg.h	20;"	d
+HD_LCYL	.\include\linux\hdreg.h	19;"	d
+HD_NSECTOR	.\include\linux\hdreg.h	17;"	d
+HD_PRECOMP	.\include\linux\hdreg.h	23;"	d
+HD_SECTOR	.\include\linux\hdreg.h	18;"	d
+HD_STATUS	.\include\linux\hdreg.h	22;"	d
+HIGH_MEMORY	.\mm\memory.c	/^static long HIGH_MEMORY = 0;  \/\/ 闁稿繈鍔岄惇顒勫矗濮椻偓閸ｆ椽鏁嶇仦鐣屾憼闁衡偓閹呮澖闂傚嫬鎳愭晶鍧楁偠閸℃鏁堕悗娑櫳戝〒鑸殿殗濡⒈浼傞柛锔芥緲濞煎啴濡撮敓锟�$/;"	v	file:
+HOUR	.\kernel\mktime.c	28;"	d	file:
+HUPCL	.\include\termios.h	212;"	d
+HZ	.\include\linux\sched.h	5;"	d
+ICANON	.\include\termios.h	223;"	d
+ICRNL	.\include\termios.h	141;"	d
+ID_ERR	.\include\linux\hdreg.h	69;"	d
+IEXTEN	.\include\termios.h	239;"	d
+IGNBRK	.\include\termios.h	133;"	d
+IGNCR	.\include\termios.h	140;"	d
+IGNPAR	.\include\termios.h	135;"	d
+IMAXBEL	.\include\termios.h	146;"	d
+INC	.\include\linux\tty.h	35;"	d
+INC_PIPE	.\include\linux\fs.h	82;"	d
+INDEX_STAT	.\include\linux\hdreg.h	31;"	d
+INITSEG	.\boot\bootsect.s	/^INITSEG = 0x9000 ! we move boot here - out of the way$/;"	d
+INITSEG	.\boot\setup.s	/^INITSEG = 0x9000 ! we move boot here - out of the way ! 閸樼喐娼礲ootsect 閹碘偓婢跺嫮娈戝▓鐐光偓锟�$/;"	d
+INIT_C_CC	.\include\linux\tty.h	92;"	d
+INIT_REQUEST	.\kernel\blk_drv\blk.h	156;"	d
+INIT_TASK	.\include\linux\sched.h	177;"	d
+INLCR	.\include\termios.h	139;"	d
+INODES_PER_BLOCK	.\include\linux\fs.h	72;"	d
+INPCK	.\include\termios.h	137;"	d
+INTMASK	.\kernel\chr_drv\tty_io.c	26;"	d	file:
+INTR_CHAR	.\include\linux\tty.h	56;"	d
+IN_ORDER	.\kernel\blk_drv\blk.h	58;"	d
+ISIG	.\include\termios.h	222;"	d
+ISTRIP	.\include\termios.h	138;"	d
+IS_SEEKABLE	.\include\linux\fs.h	40;"	d
+IUCLC	.\include\termios.h	142;"	d
+IXANY	.\include\termios.h	144;"	d
+IXOFF	.\include\termios.h	145;"	d
+IXON	.\include\termios.h	143;"	d
+I_BLOCK_SPECIAL	.\include\const.h	10;"	d
+I_CHAR_SPECIAL	.\include\const.h	11;"	d
+I_CRNL	.\kernel\chr_drv\tty_io.c	52;"	d	file:
+I_DIRECTORY	.\include\const.h	8;"	d
+I_MAP_SLOTS	.\include\linux\fs.h	55;"	d
+I_NAMED_PIPE	.\include\const.h	12;"	d
+I_NLCR	.\kernel\chr_drv\tty_io.c	51;"	d	file:
+I_NOCR	.\kernel\chr_drv\tty_io.c	53;"	d	file:
+I_REGULAR	.\include\const.h	9;"	d
+I_SET_GID_BIT	.\include\const.h	14;"	d
+I_SET_UID_BIT	.\include\const.h	13;"	d
+I_TYPE	.\include\const.h	7;"	d
+I_UCLC	.\kernel\chr_drv\tty_io.c	50;"	d	file:
+KBD_FINNISH	.\include\linux\config.h	30;"	d
+KILLMASK	.\kernel\chr_drv\tty_io.c	25;"	d	file:
+KILL_CHAR	.\include\linux\tty.h	59;"	d
+L6	.\boot\head.s	/^L6:$/;"	l
+LAST	.\include\linux\tty.h	43;"	d
+LAST_TASK	.\include\linux\sched.h	8;"	d
+LATCH	.\kernel\sched.c	59;"	d	file:
+LDT_CODE	.\include\linux\head.h	19;"	d
+LDT_DATA	.\include\linux\head.h	20;"	d
+LDT_NUL	.\include\linux\head.h	18;"	d
+LEFT	.\include\linux\tty.h	41;"	d
+LEFT	.\kernel\vsprintf.c	37;"	d	file:
+LOW_MEM	.\mm\memory.c	65;"	d	file:
+L_CANON	.\kernel\chr_drv\tty_io.c	41;"	d	file:
+L_ECHO	.\kernel\chr_drv\tty_io.c	43;"	d	file:
+L_ECHOCTL	.\kernel\chr_drv\tty_io.c	46;"	d	file:
+L_ECHOE	.\kernel\chr_drv\tty_io.c	44;"	d	file:
+L_ECHOK	.\kernel\chr_drv\tty_io.c	45;"	d	file:
+L_ECHOKE	.\kernel\chr_drv\tty_io.c	47;"	d	file:
+L_ISIG	.\kernel\chr_drv\tty_io.c	42;"	d	file:
+MAJOR	.\include\linux\fs.h	49;"	d
+MAJOR_NR	.\kernel\blk_drv\floppy.c	60;"	d	file:
+MAJOR_NR	.\kernel\blk_drv\hd.c	31;"	d	file:
+MAJOR_NR	.\kernel\blk_drv\ramdisk.c	28;"	d	file:
+MAP_NR	.\mm\memory.c	68;"	d	file:
+MARK_ERR	.\include\linux\hdreg.h	66;"	d
+MAX	.\fs\file_dev.c	16;"	d	file:
+MAX_ARG_PAGES	.\fs\exec.c	55;"	d	file:
+MAX_ERRORS	.\kernel\blk_drv\floppy.c	84;"	d	file:
+MAX_REPLIES	.\kernel\blk_drv\floppy.c	90;"	d	file:
+MAY_EXEC	.\fs\namei.c	38;"	d	file:
+MAY_READ	.\fs\namei.c	40;"	d	file:
+MAY_WRITE	.\fs\namei.c	39;"	d	file:
+MIN	.\fs\file_dev.c	15;"	d	file:
+MINIX_HEADER	.\tools\build.c	45;"	d	file:
+MINOR	.\include\linux\fs.h	50;"	d
+MINUTE	.\kernel\mktime.c	27;"	d	file:
+NAME_LEN	.\include\linux\fs.h	52;"	d
+NCC	.\include\termios.h	88;"	d
+NCCS	.\include\termios.h	100;"	d
+NL0	.\include\termios.h	159;"	d
+NL1	.\include\termios.h	160;"	d
+NLDLY	.\include\termios.h	158;"	d
+NMAGIC	.\include\a.out.h	40;"	d
+NOFLSH	.\include\termios.h	229;"	d
+NPAR	.\kernel\chr_drv\console.c	77;"	d	file:
+NRDEVS	.\fs\char_dev.c	118;"	d	file:
+NRDEVS	.\fs\ioctl.c	20;"	d	file:
+NR_BLK_DEV	.\kernel\blk_drv\blk.h	4;"	d
+NR_BUFFERS	.\fs\buffer.c	/^int NR_BUFFERS = 0;$/;"	v
+NR_BUFFERS	.\include\linux\fs.h	64;"	d
+NR_FILE	.\include\linux\fs.h	61;"	d
+NR_HASH	.\include\linux\fs.h	63;"	d
+NR_INODE	.\include\linux\fs.h	60;"	d
+NR_OPEN	.\include\linux\fs.h	59;"	d
+NR_REQUEST	.\kernel\blk_drv\blk.h	23;"	d
+NR_SUPER	.\include\linux\fs.h	62;"	d
+NR_TASKS	.\include\linux\sched.h	4;"	d
+NSIG	.\include\signal.h	10;"	d
+NULL	.\include\linux\fs.h	68;"	d
+NULL	.\include\linux\sched.h	27;"	d
+NULL	.\include\stddef.h	14;"	d
+NULL	.\include\stddef.h	15;"	d
+NULL	.\include\string.h	5;"	d
+NULL	.\include\sys\types.h	20;"	d
+NULL	.\include\unistd.h	25;"	d
+N_ABS	.\include\a.out.h	165;"	d
+N_BADMAG	.\include\a.out.h	48;"	d
+N_BSS	.\include\a.out.h	174;"	d
+N_BSSADDR	.\include\a.out.h	139;"	d
+N_COMM	.\include\a.out.h	177;"	d
+N_DATA	.\include\a.out.h	171;"	d
+N_DATADDR	.\include\a.out.h	131;"	d
+N_DATOFF	.\include\a.out.h	68;"	d
+N_DRELOFF	.\include\a.out.h	78;"	d
+N_EXT	.\include\a.out.h	184;"	d
+N_FN	.\include\a.out.h	180;"	d
+N_INDR	.\include\a.out.h	206;"	d
+N_MAGIC	.\include\a.out.h	31;"	d
+N_SETA	.\include\a.out.h	226;"	d
+N_SETB	.\include\a.out.h	232;"	d
+N_SETD	.\include\a.out.h	230;"	d
+N_SETT	.\include\a.out.h	228;"	d
+N_SETV	.\include\a.out.h	237;"	d
+N_STAB	.\include\a.out.h	190;"	d
+N_STROFF	.\include\a.out.h	88;"	d
+N_SYMOFF	.\include\a.out.h	83;"	d
+N_TEXT	.\include\a.out.h	168;"	d
+N_TRELOFF	.\include\a.out.h	73;"	d
+N_TXTADDR	.\include\a.out.h	94;"	d
+N_TXTOFF	.\include\a.out.h	62;"	d
+N_TYPE	.\include\a.out.h	187;"	d
+N_UNDF	.\include\a.out.h	162;"	d
+OCRNL	.\include\termios.h	153;"	d
+OFDEL	.\include\termios.h	157;"	d
+OFILL	.\include\termios.h	156;"	d
+OLCUC	.\include\termios.h	151;"	d
+OLDESP	.\kernel\system_call.s	/^OLDESP = 0x28 # 瑜版挻婀侀悧瑙勬綀缁狙冨綁閸栨牗妞傞妴锟�$/;"	d
+OLDSS	.\kernel\system_call.s	/^OLDSS = 0x2C$/;"	d
+OMAGIC	.\include\a.out.h	37;"	d
+ONLCR	.\include\termios.h	152;"	d
+ONLRET	.\include\termios.h	155;"	d
+ONOCR	.\include\termios.h	154;"	d
+OPOST	.\include\termios.h	150;"	d
+ORIG_ROOT_DEV	.\init\main.c	94;"	d	file:
+ORIG_VIDEO_COLS	.\kernel\chr_drv\console.c	65;"	d	file:
+ORIG_VIDEO_EGA_AX	.\kernel\chr_drv\console.c	67;"	d	file:
+ORIG_VIDEO_EGA_BX	.\kernel\chr_drv\console.c	68;"	d	file:
+ORIG_VIDEO_EGA_CX	.\kernel\chr_drv\console.c	69;"	d	file:
+ORIG_VIDEO_LINES	.\kernel\chr_drv\console.c	66;"	d	file:
+ORIG_VIDEO_MODE	.\kernel\chr_drv\console.c	64;"	d	file:
+ORIG_VIDEO_PAGE	.\kernel\chr_drv\console.c	63;"	d	file:
+ORIG_X	.\kernel\chr_drv\console.c	61;"	d	file:
+ORIG_Y	.\kernel\chr_drv\console.c	62;"	d	file:
+O_ACCMODE	.\include\fcntl.h	8;"	d
+O_APPEND	.\include\fcntl.h	18;"	d
+O_CREAT	.\include\fcntl.h	14;"	d
+O_CRNL	.\kernel\chr_drv\tty_io.c	58;"	d	file:
+O_EXCL	.\include\fcntl.h	15;"	d
+O_LCUC	.\kernel\chr_drv\tty_io.c	60;"	d	file:
+O_NDELAY	.\include\fcntl.h	20;"	d
+O_NLCR	.\kernel\chr_drv\tty_io.c	57;"	d	file:
+O_NLRET	.\kernel\chr_drv\tty_io.c	59;"	d	file:
+O_NOCTTY	.\include\fcntl.h	16;"	d
+O_NONBLOCK	.\include\fcntl.h	19;"	d
+O_POST	.\kernel\chr_drv\tty_io.c	56;"	d	file:
+O_RDONLY	.\include\fcntl.h	10;"	d
+O_RDWR	.\include\fcntl.h	12;"	d
+O_TRUNC	.\include\fcntl.h	17;"	d
+O_WRONLY	.\include\fcntl.h	11;"	d
+PAGE_SIZE	.\include\a.out.h	107;"	d
+PAGE_SIZE	.\include\a.out.h	116;"	d
+PAGE_SIZE	.\include\a.out.h	120;"	d
+PAGE_SIZE	.\include\linux\mm.h	4;"	d
+PAGING_MEMORY	.\mm\memory.c	66;"	d	file:
+PAGING_PAGES	.\mm\memory.c	67;"	d	file:
+PARENB	.\include\termios.h	217;"	d
+PARMRK	.\include\termios.h	136;"	d
+PARODD	.\include\termios.h	218;"	d
+PENDIN	.\include\termios.h	238;"	d
+PIPE_EMPTY	.\include\linux\fs.h	80;"	d
+PIPE_FULL	.\include\linux\fs.h	81;"	d
+PIPE_HEAD	.\include\linux\fs.h	77;"	d
+PIPE_SIZE	.\include\linux\fs.h	79;"	d
+PIPE_TAIL	.\include\linux\fs.h	78;"	d
+PLUS	.\kernel\vsprintf.c	35;"	d	file:
+PUTCH	.\include\linux\tty.h	52;"	d
+QUITMASK	.\kernel\chr_drv\tty_io.c	27;"	d	file:
+QUIT_CHAR	.\include\linux\tty.h	57;"	d
+READ	.\include\linux\fs.h	42;"	d
+READA	.\include\linux\fs.h	44;"	d
+READY_STAT	.\include\linux\hdreg.h	36;"	d
+RESPONSE	.\kernel\chr_drv\console.c	126;"	d	file:
+ROOT_DEV	.\boot\bootsect.s	/^ROOT_DEV = 0x306 ! 闁圭ǹ娲ら悾楣冨冀鐟欏嫭鐎ù鐘插闁绱掗悢娲诲晭濠㈣泛娲﹀Σ鍝ョ箔閿燂拷2 濞戞搩浜為垾鏍儎濡吋鐣辩紒妤嬫嫹1 濞戞搩浜滈崹搴ㄥ礌閹巻鍋撻崒婵堢闁哄嫮鏋甶nux 闁奸绀佺槐锟犳儍閸曨厸鈧牠鎯勫Ο鐑樺殥闁告熬鎷�$/;"	d
+ROOT_DEV	.\fs\super.c	/^int ROOT_DEV = 0;$/;"	v
+ROOT_INO	.\include\linux\fs.h	53;"	d
+R_OK	.\include\unistd.h	33;"	d
+SA_NOCLDSTOP	.\include\signal.h	39;"	d
+SA_NOMASK	.\include\signal.h	40;"	d
+SA_ONESHOT	.\include\signal.h	41;"	d
+SEEK_CUR	.\include\unistd.h	38;"	d
+SEEK_END	.\include\unistd.h	39;"	d
+SEEK_SET	.\include\unistd.h	37;"	d
+SEEK_STAT	.\include\linux\hdreg.h	34;"	d
+SEGMENT_SIZE	.\include\a.out.h	104;"	d
+SEGMENT_SIZE	.\include\a.out.h	110;"	d
+SEGMENT_SIZE	.\include\a.out.h	113;"	d
+SEGMENT_SIZE	.\include\a.out.h	117;"	d
+SEGMENT_SIZE	.\include\a.out.h	121;"	d
+SETUPLEN	.\boot\bootsect.s	/^SETUPLEN = 4        ! nr of setup-sectors$/;"	d
+SETUPSEG	.\boot\bootsect.s	/^SETUPSEG = 0x9020 ! setup starts here$/;"	d
+SETUPSEG	.\boot\setup.s	/^SETUPSEG = 0x9020 ! this is the current segment ! 閺堫剛鈻兼惔蹇斿閸︺劎娈戝▓闈涙勾閸р偓閵嗭拷$/;"	d
+SIGABRT	.\include\signal.h	18;"	d
+SIGALRM	.\include\signal.h	27;"	d
+SIGCHLD	.\include\signal.h	30;"	d
+SIGCONT	.\include\signal.h	31;"	d
+SIGFPE	.\include\signal.h	21;"	d
+SIGHUP	.\include\signal.h	13;"	d
+SIGILL	.\include\signal.h	16;"	d
+SIGINT	.\include\signal.h	14;"	d
+SIGIOT	.\include\signal.h	19;"	d
+SIGKILL	.\include\signal.h	22;"	d
+SIGN	.\kernel\vsprintf.c	34;"	d	file:
+SIGPIPE	.\include\signal.h	26;"	d
+SIGQUIT	.\include\signal.h	15;"	d
+SIGSEGV	.\include\signal.h	24;"	d
+SIGSTKFLT	.\include\signal.h	29;"	d
+SIGSTOP	.\include\signal.h	32;"	d
+SIGTERM	.\include\signal.h	28;"	d
+SIGTRAP	.\include\signal.h	17;"	d
+SIGTSTP	.\include\signal.h	33;"	d
+SIGTTIN	.\include\signal.h	34;"	d
+SIGTTOU	.\include\signal.h	35;"	d
+SIGUNUSED	.\include\signal.h	20;"	d
+SIGUSR1	.\include\signal.h	23;"	d
+SIGUSR2	.\include\signal.h	25;"	d
+SIG_BLOCK	.\include\signal.h	44;"	d
+SIG_CHLD	.\kernel\system_call.s	/^SIG_CHLD = 17 # 鐎规矮绠烻IG_CHLD 娣団€冲娇閿涘牆鐡欐潻娑氣柤閸嬫粍顒涢幋鏍波閺夌噦绱氶妴锟�$/;"	d
+SIG_DFL	.\include\signal.h	51;"	d
+SIG_IGN	.\include\signal.h	53;"	d
+SIG_SETMASK	.\include\signal.h	48;"	d
+SIG_UNBLOCK	.\include\signal.h	46;"	d
+SMALL	.\kernel\vsprintf.c	39;"	d	file:
+SPACE	.\kernel\vsprintf.c	36;"	d	file:
+SPECIAL	.\kernel\vsprintf.c	38;"	d	file:
+ST0	.\kernel\blk_drv\floppy.c	92;"	d	file:
+ST1	.\kernel\blk_drv\floppy.c	93;"	d	file:
+ST2	.\kernel\blk_drv\floppy.c	94;"	d	file:
+ST3	.\kernel\blk_drv\floppy.c	95;"	d	file:
+START_CHAR	.\include\linux\tty.h	61;"	d
+STDERR_FILENO	.\include\unistd.h	22;"	d
+STDIN_FILENO	.\include\unistd.h	20;"	d
+STDOUT_FILENO	.\include\unistd.h	21;"	d
+STOP_CHAR	.\include\linux\tty.h	62;"	d
+STRINGIFY	.\tools\build.c	59;"	d	file:
+SUPER_MAGIC	.\include\linux\fs.h	57;"	d
+SUSPEND_CHAR	.\include\linux\tty.h	63;"	d
+SYSSEG	.\boot\bootsect.s	/^SYSSEG = 0x1000 ! system loaded at 0x10000 (65536).$/;"	d
+SYSSEG	.\boot\setup.s	/^SYSSEG = 0x1000 ! system loaded at 0x10000 (65536). ! system 閸︼拷0x10000(64k)婢跺嫨鈧拷$/;"	d
+SYSSIZE	.\boot\bootsect.s	/^SYSSIZE = 0x3000 ! 闁圭ǹ娲ㄧ槐顏嗘嫚閹达絿绠鹃柟鎭掑劚閹ⅴystem 婵☆垪鈧櫕鍋ラ柣銊ュ閵囧洨浜歌箛瀣у亾閸屾艾妫橀悷娆庣閸亞鎮伴敓锟�1.2 濞戞搩鍘鹃锟�92 闁汇劌瀚鈺呭及鎼存稈鍋撻敓锟�$/;"	d
+SYS_SIZE	.\tools\build.c	48;"	d	file:
+S_IFBLK	.\include\sys\stat.h	25;"	d
+S_IFCHR	.\include\sys\stat.h	27;"	d
+S_IFDIR	.\include\sys\stat.h	26;"	d
+S_IFIFO	.\include\sys\stat.h	28;"	d
+S_IFMT	.\include\sys\stat.h	23;"	d
+S_IFREG	.\include\sys\stat.h	24;"	d
+S_IRGRP	.\include\sys\stat.h	46;"	d
+S_IROTH	.\include\sys\stat.h	51;"	d
+S_IRUSR	.\include\sys\stat.h	41;"	d
+S_IRWXG	.\include\sys\stat.h	45;"	d
+S_IRWXO	.\include\sys\stat.h	50;"	d
+S_IRWXU	.\include\sys\stat.h	40;"	d
+S_ISBLK	.\include\sys\stat.h	37;"	d
+S_ISCHR	.\include\sys\stat.h	36;"	d
+S_ISDIR	.\include\sys\stat.h	35;"	d
+S_ISFIFO	.\include\sys\stat.h	38;"	d
+S_ISGID	.\include\sys\stat.h	31;"	d
+S_ISREG	.\include\sys\stat.h	34;"	d
+S_ISUID	.\include\sys\stat.h	30;"	d
+S_ISVTX	.\include\sys\stat.h	32;"	d
+S_IWGRP	.\include\sys\stat.h	47;"	d
+S_IWOTH	.\include\sys\stat.h	52;"	d
+S_IWUSR	.\include\sys\stat.h	42;"	d
+S_IXGRP	.\include\sys\stat.h	48;"	d
+S_IXOTH	.\include\sys\stat.h	53;"	d
+S_IXUSR	.\include\sys\stat.h	43;"	d
+TAB0	.\include\termios.h	167;"	d
+TAB1	.\include\termios.h	168;"	d
+TAB2	.\include\termios.h	169;"	d
+TAB3	.\include\termios.h	170;"	d
+TABDLY	.\include\termios.h	166;"	d
+TASK_INTERRUPTIBLE	.\include\linux\sched.h	21;"	d
+TASK_RUNNING	.\include\linux\sched.h	20;"	d
+TASK_STOPPED	.\include\linux\sched.h	24;"	d
+TASK_UNINTERRUPTIBLE	.\include\linux\sched.h	22;"	d
+TASK_ZOMBIE	.\include\linux\sched.h	23;"	d
+TCFLSH	.\include\termios.h	38;"	d
+TCGETA	.\include\termios.h	22;"	d
+TCGETS	.\include\termios.h	12;"	d
+TCIFLUSH	.\include\termios.h	261;"	d
+TCIOFF	.\include\termios.h	257;"	d
+TCIOFLUSH	.\include\termios.h	263;"	d
+TCION	.\include\termios.h	258;"	d
+TCOFLUSH	.\include\termios.h	262;"	d
+TCOOFF	.\include\termios.h	255;"	d
+TCOON	.\include\termios.h	256;"	d
+TCSADRAIN	.\include\termios.h	267;"	d
+TCSAFLUSH	.\include\termios.h	268;"	d
+TCSANOW	.\include\termios.h	266;"	d
+TCSBRK	.\include\termios.h	32;"	d
+TCSETA	.\include\termios.h	24;"	d
+TCSETAF	.\include\termios.h	30;"	d
+TCSETAW	.\include\termios.h	27;"	d
+TCSETS	.\include\termios.h	14;"	d
+TCSETSF	.\include\termios.h	20;"	d
+TCSETSW	.\include\termios.h	17;"	d
+TCXONC	.\include\termios.h	35;"	d
+TIME_REQUESTS	.\kernel\sched.c	375;"	d	file:
+TIOCEXCL	.\include\termios.h	41;"	d
+TIOCGPGRP	.\include\termios.h	47;"	d
+TIOCGSOFTCAR	.\include\termios.h	71;"	d
+TIOCGWINSZ	.\include\termios.h	56;"	d
+TIOCINQ	.\include\termios.h	75;"	d
+TIOCMBIC	.\include\termios.h	64;"	d
+TIOCMBIS	.\include\termios.h	62;"	d
+TIOCMGET	.\include\termios.h	60;"	d
+TIOCMSET	.\include\termios.h	66;"	d
+TIOCM_CAR	.\include\termios.h	248;"	d
+TIOCM_CD	.\include\termios.h	251;"	d
+TIOCM_CTS	.\include\termios.h	247;"	d
+TIOCM_DSR	.\include\termios.h	250;"	d
+TIOCM_DTR	.\include\termios.h	243;"	d
+TIOCM_LE	.\include\termios.h	242;"	d
+TIOCM_RI	.\include\termios.h	252;"	d
+TIOCM_RNG	.\include\termios.h	249;"	d
+TIOCM_RTS	.\include\termios.h	244;"	d
+TIOCM_SR	.\include\termios.h	246;"	d
+TIOCM_ST	.\include\termios.h	245;"	d
+TIOCNXCL	.\include\termios.h	43;"	d
+TIOCOUTQ	.\include\termios.h	51;"	d
+TIOCSCTTY	.\include\termios.h	45;"	d
+TIOCSPGRP	.\include\termios.h	49;"	d
+TIOCSSOFTCAR	.\include\termios.h	73;"	d
+TIOCSTI	.\include\termios.h	54;"	d
+TIOCSWINSZ	.\include\termios.h	58;"	d
+TOSTOP	.\include\termios.h	231;"	d
+TRK0_ERR	.\include\linux\hdreg.h	67;"	d
+TSTPMASK	.\kernel\chr_drv\tty_io.c	28;"	d	file:
+TTY_BUF_SIZE	.\include\linux\tty.h	20;"	d
+TTY_BUF_SIZE	.\include\termios.h	4;"	d
+TYPE	.\kernel\blk_drv\floppy.c	73;"	d	file:
+USED	.\mm\memory.c	69;"	d	file:
+VDISCARD	.\include\termios.h	126;"	d
+VEOF	.\include\termios.h	117;"	d
+VEOL	.\include\termios.h	124;"	d
+VEOL2	.\include\termios.h	129;"	d
+VERASE	.\include\termios.h	115;"	d
+VIDEO_TYPE_CGA	.\kernel\chr_drv\console.c	73;"	d	file:
+VIDEO_TYPE_EGAC	.\kernel\chr_drv\console.c	75;"	d	file:
+VIDEO_TYPE_EGAM	.\kernel\chr_drv\console.c	74;"	d	file:
+VIDEO_TYPE_MDA	.\kernel\chr_drv\console.c	72;"	d	file:
+VINTR	.\include\termios.h	113;"	d
+VKILL	.\include\termios.h	116;"	d
+VLNEXT	.\include\termios.h	128;"	d
+VMIN	.\include\termios.h	119;"	d
+VQUIT	.\include\termios.h	114;"	d
+VREPRINT	.\include\termios.h	125;"	d
+VSTART	.\include\termios.h	121;"	d
+VSTOP	.\include\termios.h	122;"	d
+VSUSP	.\include\termios.h	123;"	d
+VSWTC	.\include\termios.h	120;"	d
+VT0	.\include\termios.h	176;"	d
+VT1	.\include\termios.h	177;"	d
+VTDLY	.\include\termios.h	175;"	d
+VTIME	.\include\termios.h	118;"	d
+VWERASE	.\include\termios.h	127;"	d
+WAKEUP_CHARS	.\kernel\chr_drv\serial.c	29;"	d	file:
+WEXITSTATUS	.\include\sys\wait.h	16;"	d
+WIFEXITED	.\include\sys\wait.h	14;"	d
+WIFSIGNALED	.\include\sys\wait.h	19;"	d
+WIFSTOPPED	.\include\sys\wait.h	15;"	d
+WIN_DIAGNOSE	.\include\linux\hdreg.h	48;"	d
+WIN_FORMAT	.\include\linux\hdreg.h	45;"	d
+WIN_INIT	.\include\linux\hdreg.h	46;"	d
+WIN_READ	.\include\linux\hdreg.h	42;"	d
+WIN_RESTORE	.\include\linux\hdreg.h	41;"	d
+WIN_SEEK	.\include\linux\hdreg.h	47;"	d
+WIN_SPECIFY	.\include\linux\hdreg.h	49;"	d
+WIN_VERIFY	.\include\linux\hdreg.h	44;"	d
+WIN_WRITE	.\include\linux\hdreg.h	43;"	d
+WNOHANG	.\include\sys\wait.h	11;"	d
+WRERR_STAT	.\include\linux\hdreg.h	35;"	d
+WRITE	.\include\linux\fs.h	43;"	d
+WRITEA	.\include\linux\fs.h	45;"	d
+WSTOPSIG	.\include\sys\wait.h	18;"	d
+WTERMSIG	.\include\sys\wait.h	17;"	d
+WUNTRACED	.\include\sys\wait.h	12;"	d
+W_OK	.\include\unistd.h	32;"	d
+XCASE	.\include\termios.h	224;"	d
+XTABS	.\include\termios.h	171;"	d
+X_OK	.\include\unistd.h	31;"	d
+YEAR	.\kernel\mktime.c	30;"	d	file:
+ZEROPAD	.\kernel\vsprintf.c	33;"	d	file:
+ZMAGIC	.\include\a.out.h	43;"	d
+Z_MAP_SLOTS	.\include\linux\fs.h	56;"	d
+_A_OUT_H	.\include\a.out.h	2;"	d
+_BLK_H	.\kernel\blk_drv\blk.h	2;"	d
+_BLOCKABLE	.\kernel\sched.c	31;"	d	file:
+_C	.\include\ctype.h	7;"	d
+_CONFIG_H	.\include\linux\config.h	2;"	d
+_CONST_H	.\include\const.h	2;"	d
+_CTYPE_H	.\include\ctype.h	2;"	d
+_D	.\include\ctype.h	6;"	d
+_ERRNO_H	.\include\errno.h	2;"	d
+_FCNTL_H	.\include\fcntl.h	2;"	d
+_FS_H	.\include\linux\fs.h	10;"	d
+_HDREG_H	.\include\linux\hdreg.h	11;"	d
+_HEAD_H	.\include\linux\head.h	2;"	d
+_HIGH	.\include\sys\wait.h	7;"	d
+_I_FLAG	.\kernel\chr_drv\tty_io.c	37;"	d	file:
+_L	.\include\ctype.h	5;"	d
+_LOW	.\include\sys\wait.h	6;"	d
+_L_FLAG	.\kernel\chr_drv\tty_io.c	36;"	d	file:
+_MM_H	.\include\linux\mm.h	2;"	d
+_NSIG	.\include\signal.h	9;"	d
+_N_BADMAG	.\include\a.out.h	53;"	d
+_N_HDROFF	.\include\a.out.h	58;"	d
+_N_SEGMENT_ROUND	.\include\a.out.h	124;"	d
+_N_TXTENDADDR	.\include\a.out.h	127;"	d
+_O_FLAG	.\kernel\chr_drv\tty_io.c	38;"	d	file:
+_P	.\include\ctype.h	8;"	d
+_PC_CHOWN_RESTRICTED	.\include\unistd.h	64;"	d
+_PC_LINK_MAX	.\include\unistd.h	56;"	d
+_PC_MAX_CANON	.\include\unistd.h	57;"	d
+_PC_MAX_INPUT	.\include\unistd.h	58;"	d
+_PC_NAME_MAX	.\include\unistd.h	59;"	d
+_PC_NO_TRUNC	.\include\unistd.h	62;"	d
+_PC_PATH_MAX	.\include\unistd.h	60;"	d
+_PC_PIPE_BUF	.\include\unistd.h	61;"	d
+_PC_VDISABLE	.\include\unistd.h	63;"	d
+_POSIX_CHOWN_RESTRICTED	.\include\unistd.h	10;"	d
+_POSIX_NO_TRUNC	.\include\unistd.h	12;"	d
+_POSIX_VDISABLE	.\include\unistd.h	14;"	d
+_POSIX_VERSION	.\include\unistd.h	7;"	d
+_PTRDIFF_T	.\include\stddef.h	5;"	d
+_PTRDIFF_T	.\include\sys\types.h	15;"	d
+_S	.\include\ctype.h	9;"	d
+_S	.\kernel\sched.c	29;"	d	file:
+_SCHED_H	.\include\linux\sched.h	2;"	d
+_SC_ARG_MAX	.\include\unistd.h	44;"	d
+_SC_CHILD_MAX	.\include\unistd.h	45;"	d
+_SC_CLOCKS_PER_SEC	.\include\unistd.h	46;"	d
+_SC_JOB_CONTROL	.\include\unistd.h	49;"	d
+_SC_NGROUPS_MAX	.\include\unistd.h	47;"	d
+_SC_OPEN_MAX	.\include\unistd.h	48;"	d
+_SC_SAVED_IDS	.\include\unistd.h	50;"	d
+_SC_VERSION	.\include\unistd.h	51;"	d
+_SIGNAL_H	.\include\signal.h	2;"	d
+_SIZE_T	.\include\stddef.h	10;"	d
+_SIZE_T	.\include\string.h	9;"	d
+_SIZE_T	.\include\sys\types.h	5;"	d
+_SIZE_T	.\include\time.h	10;"	d
+_SP	.\include\ctype.h	11;"	d
+_STDARG_H	.\include\stdarg.h	2;"	d
+_STDDEF_H	.\include\stddef.h	2;"	d
+_STRING_H_	.\include\string.h	2;"	d
+_SYS_STAT_H	.\include\sys\stat.h	2;"	d
+_SYS_TYPES_H	.\include\sys\types.h	2;"	d
+_SYS_UTSNAME_H	.\include\sys\utsname.h	2;"	d
+_SYS_WAIT_H	.\include\sys\wait.h	2;"	d
+_TERMIOS_H	.\include\termios.h	2;"	d
+_TIMES_H	.\include\sys\times.h	2;"	d
+_TIME_H	.\include\time.h	2;"	d
+_TIME_T	.\include\sys\types.h	10;"	d
+_TIME_T	.\include\time.h	5;"	d
+_TTY_H	.\include\linux\tty.h	16;"	d
+_U	.\include\ctype.h	4;"	d
+_UNISTD_H	.\include\unistd.h	2;"	d
+_UTIME_H	.\include\utime.h	2;"	d
+_X	.\include\ctype.h	10;"	d
+__GNU_EXEC_MACROS__	.\include\a.out.h	4;"	d
+__LIBRARY__	.\init\main.c	7;"	d	file:
+__LIBRARY__	.\lib\_exit.c	7;"	d	file:
+__LIBRARY__	.\lib\close.c	7;"	d	file:
+__LIBRARY__	.\lib\dup.c	8;"	d	file:
+__LIBRARY__	.\lib\execve.c	7;"	d	file:
+__LIBRARY__	.\lib\open.c	7;"	d	file:
+__LIBRARY__	.\lib\setsid.c	7;"	d	file:
+__LIBRARY__	.\lib\string.c	13;"	d	file:
+__LIBRARY__	.\lib\wait.c	7;"	d	file:
+__LIBRARY__	.\lib\write.c	7;"	d	file:
+__NR_access	.\include\unistd.h	108;"	d
+__NR_acct	.\include\unistd.h	126;"	d
+__NR_alarm	.\include\unistd.h	102;"	d
+__NR_break	.\include\unistd.h	92;"	d
+__NR_brk	.\include\unistd.h	120;"	d
+__NR_chdir	.\include\unistd.h	87;"	d
+__NR_chmod	.\include\unistd.h	90;"	d
+__NR_chown	.\include\unistd.h	91;"	d
+__NR_chroot	.\include\unistd.h	136;"	d
+__NR_close	.\include\unistd.h	81;"	d
+__NR_creat	.\include\unistd.h	83;"	d
+__NR_dup	.\include\unistd.h	116;"	d
+__NR_dup2	.\include\unistd.h	138;"	d
+__NR_execve	.\include\unistd.h	86;"	d
+__NR_exit	.\include\unistd.h	76;"	d
+__NR_fcntl	.\include\unistd.h	130;"	d
+__NR_fork	.\include\unistd.h	77;"	d
+__NR_fstat	.\include\unistd.h	103;"	d
+__NR_ftime	.\include\unistd.h	110;"	d
+__NR_getegid	.\include\unistd.h	125;"	d
+__NR_geteuid	.\include\unistd.h	124;"	d
+__NR_getgid	.\include\unistd.h	122;"	d
+__NR_getpgrp	.\include\unistd.h	140;"	d
+__NR_getpid	.\include\unistd.h	95;"	d
+__NR_getppid	.\include\unistd.h	139;"	d
+__NR_getuid	.\include\unistd.h	99;"	d
+__NR_gtty	.\include\unistd.h	107;"	d
+__NR_ioctl	.\include\unistd.h	129;"	d
+__NR_kill	.\include\unistd.h	112;"	d
+__NR_link	.\include\unistd.h	84;"	d
+__NR_lock	.\include\unistd.h	128;"	d
+__NR_lseek	.\include\unistd.h	94;"	d
+__NR_mkdir	.\include\unistd.h	114;"	d
+__NR_mknod	.\include\unistd.h	89;"	d
+__NR_mount	.\include\unistd.h	96;"	d
+__NR_mpx	.\include\unistd.h	131;"	d
+__NR_nice	.\include\unistd.h	109;"	d
+__NR_open	.\include\unistd.h	80;"	d
+__NR_pause	.\include\unistd.h	104;"	d
+__NR_phys	.\include\unistd.h	127;"	d
+__NR_pipe	.\include\unistd.h	117;"	d
+__NR_prof	.\include\unistd.h	119;"	d
+__NR_ptrace	.\include\unistd.h	101;"	d
+__NR_read	.\include\unistd.h	78;"	d
+__NR_rename	.\include\unistd.h	113;"	d
+__NR_rmdir	.\include\unistd.h	115;"	d
+__NR_setgid	.\include\unistd.h	121;"	d
+__NR_setpgid	.\include\unistd.h	132;"	d
+__NR_setregid	.\include\unistd.h	146;"	d
+__NR_setreuid	.\include\unistd.h	145;"	d
+__NR_setsid	.\include\unistd.h	141;"	d
+__NR_setuid	.\include\unistd.h	98;"	d
+__NR_setup	.\include\unistd.h	74;"	d
+__NR_sgetmask	.\include\unistd.h	143;"	d
+__NR_sigaction	.\include\unistd.h	142;"	d
+__NR_signal	.\include\unistd.h	123;"	d
+__NR_ssetmask	.\include\unistd.h	144;"	d
+__NR_stat	.\include\unistd.h	93;"	d
+__NR_stime	.\include\unistd.h	100;"	d
+__NR_stty	.\include\unistd.h	106;"	d
+__NR_sync	.\include\unistd.h	111;"	d
+__NR_time	.\include\unistd.h	88;"	d
+__NR_times	.\include\unistd.h	118;"	d
+__NR_ulimit	.\include\unistd.h	133;"	d
+__NR_umask	.\include\unistd.h	135;"	d
+__NR_umount	.\include\unistd.h	97;"	d
+__NR_uname	.\include\unistd.h	134;"	d
+__NR_unlink	.\include\unistd.h	85;"	d
+__NR_ustat	.\include\unistd.h	137;"	d
+__NR_utime	.\include\unistd.h	105;"	d
+__NR_waitpid	.\include\unistd.h	82;"	d
+__NR_write	.\include\unistd.h	79;"	d
+__va_rounded_size	.\include\stdarg.h	12;"	d
+_bmap	.\fs\inode.c	/^_bmap (struct m_inode *inode, int block, int create)$/;"	f	file:
+_bounds	.\kernel\asm.s	/^_bounds:$/;"	l
+_bucket_dir	.\lib\malloc.c	/^struct _bucket_dir$/;"	s	file:
+_coprocessor_error	.\kernel\system_call.s	/^_coprocessor_error:$/;"	l
+_coprocessor_segment_overrun	.\kernel\asm.s	/^_coprocessor_segment_overrun:$/;"	l
+_ctmp	.\lib\ctype.c	/^char _ctmp;			\/\/ 娑撯偓娑擃亙澶嶉弮璺虹摟缁楋箑褰夐柌蹇ョ礉娓氭矞type.h 閺傚洣娆㈡稉顓℃祮閹广垹鐡х粭锕€鐣崙鑺ユ殶娴ｈ法鏁ら妴锟�$/;"	v
+_ctype	.\lib\ctype.c	/^unsigned char _ctype[] = { 0x00,	\/* EOF *\/$/;"	v
+_debug	.\kernel\asm.s	/^_debug:$/;"	l
+_device_not_available	.\kernel\system_call.s	/^_device_not_available:$/;"	l
+_divide_error	.\kernel\asm.s	/^_divide_error:$/;"	l
+_double_fault	.\kernel\asm.s	/^_double_fault:$/;"	l
+_exit	.\lib\_exit.c	/^_exit (int exit_code)$/;"	f
+_floppy_interrupt	.\kernel\system_call.s	/^_floppy_interrupt:$/;"	l
+_fs	.\kernel\traps.c	34;"	d	file:
+_gdt	.\boot\head.s	/^_gdt: .quad 0x0000000000000000 \/* NULL descriptor *\/$/;"	l
+_general_protection	.\kernel\asm.s	/^_general_protection:$/;"	l
+_hashfn	.\fs\buffer.c	185;"	d	file:
+_hd_interrupt	.\kernel\system_call.s	/^_hd_interrupt:$/;"	l
+_idt	.\boot\head.s	/^_idt: .fill 256,8,0 # idt is uninitialized # 256 妞ょ櫢绱濆В蹇涖€�8 鐎涙濡敍灞斤綖0閵嗭拷$/;"	l
+_int3	.\kernel\asm.s	/^_int3:$/;"	l
+_invalid_TSS	.\kernel\asm.s	/^_invalid_TSS:$/;"	l
+_invalid_op	.\kernel\asm.s	/^_invalid_op:$/;"	l
+_irq13	.\kernel\asm.s	/^_irq13:$/;"	l
+_keyboard_interrupt	.\kernel\chr_drv\keyboard.S	/^_keyboard_interrupt:$/;"	l
+_nmi	.\kernel\asm.s	/^_nmi:$/;"	l
+_overflow	.\kernel\asm.s	/^_overflow:$/;"	l
+_page_fault	.\mm\page.s	/^_page_fault:$/;"	l
+_parallel_interrupt	.\kernel\system_call.s	/^_parallel_interrupt:$/;"	l
+_pg_dir	.\boot\head.s	/^_pg_dir: # 妞ょ數娲拌ぐ鏇炵殺娴兼艾鐡ㄩ弨鎯ф躬鏉╂瑩鍣烽妴锟�$/;"	l
+_reserved	.\kernel\asm.s	/^_reserved:$/;"	l
+_rs1_interrupt	.\kernel\chr_drv\rs_io.s	/^_rs1_interrupt:$/;"	l
+_rs2_interrupt	.\kernel\chr_drv\rs_io.s	/^_rs2_interrupt:$/;"	l
+_segment_not_present	.\kernel\asm.s	/^_segment_not_present:$/;"	l
+_set_gate	.\include\asm\system.h	22;"	d
+_set_seg_desc	.\include\asm\system.h	48;"	d
+_stack_segment	.\kernel\asm.s	/^_stack_segment:$/;"	l
+_sys_execve	.\kernel\system_call.s	/^_sys_execve:$/;"	l
+_sys_fork	.\kernel\system_call.s	/^_sys_fork:$/;"	l
+_syscall0	.\include\unistd.h	153;"	d
+_syscall1	.\include\unistd.h	167;"	d
+_syscall2	.\include\unistd.h	182;"	d
+_syscall3	.\include\unistd.h	197;"	d
+_system_call	.\kernel\system_call.s	/^_system_call:$/;"	l
+_timer_interrupt	.\kernel\system_call.s	/^_timer_interrupt:$/;"	l
+_tmp_floppy_area	.\boot\head.s	/^_tmp_floppy_area:$/;"	l
+a	.\include\linux\head.h	/^  unsigned long a, b;		\/\/ 缁楋附妲搁悽锟�8 娑擃亜鐡ч懞鍌涚€幋鎰剁礉濮ｅ繋閲滈幓蹇氬牚缁楋箒銆冮崗杈ㄦ箒256 妞ゅ箍鈧拷$/;"	m	struct:desc_struct
+a	.\kernel\sched.c	/^  long *a;$/;"	m	struct:__anon4	file:
+a_bss	.\include\a.out.h	/^  unsigned a_bss;		\/* length of uninitialized data area for file, in bytes *\/$/;"	m	struct:exec
+a_data	.\include\a.out.h	/^  unsigned a_data;		\/* length of data, in bytes *\/$/;"	m	struct:exec
+a_drsize	.\include\a.out.h	/^  unsigned a_drsize;		\/* length of relocation info for data, in bytes *\/$/;"	m	struct:exec
+a_entry	.\include\a.out.h	/^  unsigned a_entry;		\/* start address *\/$/;"	m	struct:exec
+a_magic	.\include\a.out.h	/^  unsigned long a_magic;	\/* Use macros N_MAGIC, etc for access *\/$/;"	m	struct:exec
+a_syms	.\include\a.out.h	/^  unsigned a_syms;		\/* length of symbol table data in file, in bytes *\/$/;"	m	struct:exec
+a_text	.\include\a.out.h	/^  unsigned a_text;		\/* length of text, in bytes *\/$/;"	m	struct:exec
+a_trsize	.\include\a.out.h	/^  unsigned a_trsize;		\/* length of relocation info for text, in bytes *\/$/;"	m	struct:exec
+actime	.\include\utime.h	/^  time_t actime;		\/\/ 閺傚洣娆㈢拋鍧楁６閺冨爼妫块妴鍌欑矤1970.1.1:0:0:0 瀵偓婵娈戠粔鎺撴殶閵嗭拷$/;"	m	struct:utimbuf
+add	.\boot\setup.s	/^add ax,#0x1000$/;"	l
+add_entry	.\fs\namei.c	/^add_entry (struct m_inode *dir,$/;"	f	file:
+add_request	.\kernel\blk_drv\ll_rw_blk.c	/^add_request (struct blk_dev_struct *dev, struct request *req)$/;"	f	file:
+add_timer	.\kernel\sched.c	/^add_timer (long jiffies, void (*fn) (void))$/;"	f
+addb	.\kernel\chr_drv\keyboard.S	/^addb %al,%al \/\/ 閺勵垽绱濋崚娆掝嚉閹存劕顦叉担宥囨祲鎼存柨褰搁柨顔炬畱閺嶅洤绻旀担锟�(娴ｏ拷3 閹存牔缍�5)閵嗭拷$/;"	l
+addb	.\kernel\chr_drv\keyboard.S	/^addb %al,%al \/\/ 閺勵垽绱濋崚娆愭暭閹存劗鐤嗛惄绋跨安閸欐娊鏁惃鍕垼韫囨ぞ缍�(娴ｏ拷3 閹存牔缍�5)閵嗭拷$/;"	l
+addl	.\boot\head.s	/^addl $8,%edi # edi 閹稿洤鎮滅悰銊よ厬娑撳绔存い骞库偓锟�$/;"	l
+addl	.\kernel\asm.s	/^addl $8,%esp # 閸棙鐖ら幐鍥嫛闁插秵鏌婇幐鍥ф倻閺嶅牅鑵戦弨鍓х枂fs 閸愬懎顔愰惃鍕秴缂冾喓鈧拷$/;"	l
+addl	.\kernel\asm.s	/^addl $8,%esp # 鐠佲晛鐖㈤弽鍫熷瘹闁藉牓鍣搁弬鐗堝瘹閸氭垵鐦庣€涙ê娅抐s 閸忋儲鐖ゆ径鍕┾偓锟�$/;"	l
+addl	.\kernel\chr_drv\keyboard.S	/^addl $4,%esp \/\/ 娑撱垹绱旈崗銉︾垽閻ㄥ嫬寮弫甯礉瀵懓鍤穱婵堟殌閻ㄥ嫬鐦庣€涙ê娅掗敍灞借嫙娑擃厽鏌囨潻鏂挎礀閵嗭拷$/;"	l
+addl	.\kernel\chr_drv\rs_io.s	/^addl $2,%edx \/* interrupt ident. reg *\/ \/* edx 閹稿洤鎮滄稉顓熸焽閺嶅洩鐦戠€靛嫬鐡ㄩ崳锟� *\/$/;"	l
+addl	.\kernel\chr_drv\rs_io.s	/^addl $4,%esp # jump over _table_list entry # 娑撱垹绱旂紓鎾冲暱闂冪喎鍨幐鍥嫛閸︽澘娼冮妴锟�$/;"	l
+addl	.\kernel\chr_drv\rs_io.s	/^addl $4,%esp \/\/ 娑撱垹绱旈崗銉︾垽閸欏倹鏆熼敍灞借嫙鏉╂柨娲栭妴锟�$/;"	l
+addl	.\kernel\chr_drv\rs_io.s	/^addl $5,%edx \/* clear intr by reading line status reg. *\/$/;"	l
+addl	.\kernel\chr_drv\rs_io.s	/^addl $6,%edx \/* clear intr by reading modem status reg *\/$/;"	l
+addl	.\kernel\system_call.s	/^addl $20,%esp # 娑撱垹绱旀潻娆撳櫡閹碘偓閺堝甯囬弽鍫濆敶鐎瑰箍鈧拷$/;"	l
+addl	.\kernel\system_call.s	/^addl $4,%esp # task switching to accounting ...$/;"	l
+addl	.\kernel\system_call.s	/^addl $4,%esp # 娑撱垹绱旂拫鍐暏閺冭泛甯囬崗銉︾垽閻ㄥ嚐IP 閸婄鈧拷$/;"	l
+addr	.\fs\bitmap.c	/^"stosl"::"a" (0), "c" (BLOCK_SIZE \/ 4), "D" ((long) (addr)):"cx", "di")$/;"	v
+addr	.\include\asm\system.h	/^  "o" (*(4 + (char *) (gate_addr))), "d" ((char *) (addr)), "a" (0x00080000))$/;"	v
+after_page_tables	.\boot\head.s	/^after_page_tables:$/;"	l
+alarm	.\include\linux\sched.h	/^  long alarm;$/;"	m	struct:task_struct
+alt	.\kernel\chr_drv\keyboard.S	/^alt: movb $0x10,%al \/\/ 0x10 閺勵垱膩瀵繑鐖ｈ箛姊瀘de 娑擃厼涔廰lt 闁款喖顕惔鏃傛畱濮ｆ梻澹掓担锟�(娴ｏ拷4)閵嗭拷$/;"	l
+alt_map	.\kernel\chr_drv\keyboard.S	/^alt_map:$/;"	l
+and	.\kernel\chr_drv\rs_io.s	/^and must match the value 娑撳窐ty_io.c 娑擃厾娈戦崐鐓庡爱闁帮拷!$/;"	l
+andb	.\kernel\chr_drv\keyboard.S	/^andb $0xfd,mode \/\/ 閺勵垰褰竤hift 闁款喗婢楀鈧敍灞筋槻娴ｅ超ode 娑擃厼顕惔鏃傛畱閺嶅洤绻旀担锟�(娴ｏ拷1)閵嗭拷$/;"	l
+andb	.\kernel\chr_drv\keyboard.S	/^andb $0xfe,mode \/\/ 閺勵垰涔弒hift 闁款喗婢楀鈧敍灞筋槻娴ｅ超ode 娑擃厼顕惔鏃傛畱閺嶅洤绻旀担锟�(娴ｏ拷0)閵嗭拷$/;"	l
+andb	.\kernel\chr_drv\keyboard.S	/^andb %al,mode$/;"	l
+andl	.\boot\head.s	/^andl $0x80000011,%eax # Save PG,PE,ET$/;"	l
+andl	.\kernel\chr_drv\keyboard.S	/^andl $size-1,%ecx \/\/ 娴犮儳绱﹂崘鎻掑隘婢堆冪毈鐠嬪啯鏆ｆ径瀛樺瘹闁斤拷(閼汇儴绉撮崙鍝勫灟鏉╂柨娲栫紓鎾冲暱閸栧搫绱戞慨锟�)閵嗭拷$/;"	l
+andl	.\kernel\chr_drv\rs_io.s	/^andl $size-1,%ebx # nr chars in queue # 鐎佃瀵氶柦鍫濆絿濡ょ箥缁犳ぜ鈧拷$/;"	l
+andl	.\kernel\chr_drv\rs_io.s	/^andl $size-1,%ebx \/\/ 鐏忕偓瀵氶柦鍫ｅ閸掓壆绱﹂崘鎻掑隘閺堫偆顏敍灞藉灟閹舵ê娲栭妴锟�$/;"	l
+andl	.\kernel\chr_drv\rs_io.s	/^andl $size-1,%ebx \/\/ 閻€劎绱﹂崘鎻掑隘婢堆冪毈鐎电懓銇旈幐鍥嫛鏉╂稖顢戝Ο鈩冩惙娴ｆ嚎鈧倹瀵氶柦鍫滅瑝閼冲€熺Т鏉╁洨绱﹂崘鎻掑隘婢堆冪毈閵嗭拷$/;"	l
+andl	.\kernel\system_call.s	/^andl $3,%eax # %eax is CPL (0 or 3, 0=supervisor)$/;"	l
+andl	.\kernel\system_call.s	/^andl %ebx,%ecx # 閼惧嘲绶辩拋绋垮讲閻ㄥ嫪淇婇崣铚傜秴閸ヤ勘鈧拷$/;"	l
+as	.\kernel\chr_drv\keyboard.S	/^as in tty_io.c !!!! *\/$/;"	l
+attr	.\kernel\chr_drv\console.c	/^static unsigned char attr = 0x07;	\/\/ 鐎涙顑佺仦鐐粹偓锟�(姒涙垵绨抽惂钘夌摟)閵嗭拷$/;"	v	file:
+b	.\include\linux\head.h	/^  unsigned long a, b;		\/\/ 缁楋附妲搁悽锟�8 娑擃亜鐡ч懞鍌涚€幋鎰剁礉濮ｅ繋閲滈幓蹇氬牚缁楋箒銆冮崗杈ㄦ箒256 妞ゅ箍鈧拷$/;"	m	struct:desc_struct
+b	.\kernel\sched.c	/^  short b;$/;"	m	struct:__anon4	file:
+b_blocknr	.\include\linux\fs.h	/^  unsigned long b_blocknr;	\/* block number *\/\/\/ 閸ф褰块妴锟�$/;"	m	struct:buffer_head
+b_count	.\include\linux\fs.h	/^  unsigned char b_count;	\/* users using this block *\/\/\/ 娴ｈ法鏁ら惃鍕暏閹撮攱鏆熼妴锟�$/;"	m	struct:buffer_head
+b_data	.\include\linux\fs.h	/^  char *b_data;			\/* pointer to data block (1024 bytes) *\/\/\/閹稿洭鎷￠妴锟�$/;"	m	struct:buffer_head
+b_dev	.\include\linux\fs.h	/^  unsigned short b_dev;		\/* device (0 = free) *\/\/\/ 閺佺増宓佸┃鎰畱鐠佹儳顦崣鏋偓锟�$/;"	m	struct:buffer_head
+b_dirt	.\include\linux\fs.h	/^  unsigned char b_dirt;		\/* 0-clean,1-dirty *\/\/\/娣囶喗鏁奸弽鍥х箶:0 閺堫亙鎱ㄩ弨锟�,1 瀹歌弓鎱ㄩ弨锟�.$/;"	m	struct:buffer_head
+b_lock	.\include\linux\fs.h	/^  unsigned char b_lock;		\/* 0 - ok, 1 -locked *\/\/\/ 缂傛挸鍟块崠鐑樻Ц閸氾箒顫﹂柨浣哥暰閵嗭拷$/;"	m	struct:buffer_head
+b_next	.\include\linux\fs.h	/^  struct buffer_head *b_next;	\/\/ hash 闂冪喎鍨稉濠佺瑓娑撯偓閸фぜ鈧拷$/;"	m	struct:buffer_head	typeref:struct:buffer_head::buffer_head
+b_next_free	.\include\linux\fs.h	/^  struct buffer_head *b_next_free;	\/\/ 缁屾椽妫界悰銊ょ瑐娑撳绔撮崸妞尖偓锟�$/;"	m	struct:buffer_head	typeref:struct:buffer_head::buffer_head
+b_prev	.\include\linux\fs.h	/^  struct buffer_head *b_prev;	\/\/ hash 闂冪喎鍨稉濠傚娑撯偓閸ф绱欐潻娆忔磽娑擃亝瀵氶柦鍫㈡暏娴滃海绱﹂崘鎻掑隘閻ㄥ嫮顓搁悶鍡礆閵嗭拷$/;"	m	struct:buffer_head	typeref:struct:buffer_head::buffer_head
+b_prev_free	.\include\linux\fs.h	/^  struct buffer_head *b_prev_free;	\/\/ 缁屾椽妫界悰銊ょ瑐閸撳秳绔撮崸妞尖偓锟�$/;"	m	struct:buffer_head	typeref:struct:buffer_head::buffer_head
+b_uptodate	.\include\linux\fs.h	/^  unsigned char b_uptodate;	\/\/ 閺囧瓨鏌婇弽鍥х箶閿涙俺銆冪粈鐑樻殶閹诡喗妲搁崥锕€鍑￠弴瀛樻煀閵嗭拷$/;"	m	struct:buffer_head
+b_wait	.\include\linux\fs.h	/^  struct task_struct *b_wait;	\/\/ 閹稿洤鎮滅粵澶婄窡鐠囥儳绱﹂崘鎻掑隘鐟欙綁鏀ｉ惃鍕崲閸斅扳偓锟�$/;"	m	struct:buffer_head	typeref:struct:buffer_head::task_struct
+back_link	.\include\linux\sched.h	/^  long back_link;		\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+bad_flp_intr	.\kernel\blk_drv\floppy.c	/^bad_flp_intr (void)$/;"	f	file:
+bad_rt	.\boot\bootsect.s	/^bad_rt: $/;"	l
+bad_sys_call	.\kernel\system_call.s	/^bad_sys_call:$/;"	l
+beepcount	.\kernel\chr_drv\console.c	/^int beepcount = 0;$/;"	v
+begbss	.\boot\bootsect.s	/^begbss:$/;"	l
+begbss	.\boot\setup.s	/^begbss:$/;"	l
+begdata	.\boot\bootsect.s	/^begdata:$/;"	l
+begdata	.\boot\setup.s	/^begdata:$/;"	l
+begtext	.\boot\bootsect.s	/^begtext:$/;"	l
+begtext	.\boot\setup.s	/^begtext:$/;"	l
+bh	.\kernel\blk_drv\blk.h	/^  struct buffer_head *bh;	\/\/ 缂傛挸鍟块崠鍝勩仈閹稿洭鎷�(include\/linux\/fs.h,68)閵嗭拷$/;"	m	struct:request	typeref:struct:request::buffer_head
+blk_dev	.\kernel\blk_drv\ll_rw_blk.c	/^struct blk_dev_struct blk_dev[NR_BLK_DEV] = {$/;"	v	typeref:struct:blk_dev_struct
+blk_dev_init	.\kernel\blk_drv\ll_rw_blk.c	/^blk_dev_init (void)$/;"	f
+blk_dev_struct	.\kernel\blk_drv\blk.h	/^struct blk_dev_struct$/;"	s
+block_read	.\fs\block_dev.c	/^block_read (int dev, unsigned long *pos, char *buf, int count)$/;"	f
+block_write	.\fs\block_dev.c	/^block_write (int dev, long *pos, char *buf, int count)$/;"	f
+blocked	.\include\linux\sched.h	/^  long blocked;			\/* bitmap of masked signals *\/$/;"	m	struct:task_struct
+blocked	.\kernel\system_call.s	/^blocked = (33*16) \/\/ 閸欐妯嗘繅鐐颁繆閸欒渹缍呴崶鍓ф畱閸嬪繒些闁插繈鈧拷$/;"	d
+bmap	.\fs\inode.c	/^bmap (struct m_inode *inode, int block)$/;"	f
+boot_flag	.\boot\bootsect.s	/^boot_flag:$/;"	l
+boot_ind	.\include\linux\hdreg.h	/^  unsigned char boot_ind;	\/* 0x80 - active (unused) *\/$/;"	m	struct:partition
+bottom	.\kernel\chr_drv\console.c	/^static unsigned long top, bottom;	\/\/ 濠婃艾濮╅弮鍫曘€婄悰宀冾攽閸欏嚖绱辨惔鏇☆攽鐞涘苯褰块妴锟�$/;"	v	file:
+bread	.\fs\buffer.c	/^bread (int dev, int block)$/;"	f
+bread_page	.\fs\buffer.c	/^bread_page (unsigned long address, int dev, int b[4])$/;"	f
+breada	.\fs\buffer.c	/^breada (int dev, int first, ...)$/;"	f
+brelse	.\fs\buffer.c	/^brelse (struct buffer_head *buf)$/;"	f
+brk	.\include\linux\sched.h	/^  unsigned long start_code, end_code, end_data, brk, start_stack;$/;"	m	struct:task_struct
+bsfl	.\kernel\system_call.s	/^bsfl %ecx,%ecx # 娴犲簼缍嗘担宥忕礄娴ｏ拷0閿涘绱戞慨瀣閹诲繋缍呴崶鎾呯礉閻妲搁崥锔芥箒1 閻ㄥ嫪缍呴敍锟�$/;"	l
+btrl	.\kernel\system_call.s	/^btrl %ecx,%ebx # 婢跺秳缍呯拠銉や繆閸欏嚖绱檈bx 閸氼偅婀侀崢鐒gnal 娴ｅ秴娴橀敍澶堚偓锟�$/;"	l
+bucket_desc	.\lib\malloc.c	/^struct bucket_desc$/;"	s	file:
+bucket_dir	.\lib\malloc.c	/^struct _bucket_dir bucket_dir[] = {$/;"	v	typeref:struct:_bucket_dir
+bucket_size	.\lib\malloc.c	/^  unsigned short bucket_size;	\/\/ 閺堫剚寮挎潻鎵儊鐎电懓绨茬€涙ê鍋嶅鍓佹畱婢堆冪毈閵嗭拷$/;"	m	struct:bucket_desc	file:
+buf	.\include\linux\tty.h	/^  char buf[TTY_BUF_SIZE];	\/\/ 闂冪喎鍨惃鍕处閸愭彃灏妴锟�$/;"	m	struct:tty_queue
+buf	.\kernel\chr_drv\keyboard.S	/^buf = 16 \/\/ 缂傛挸鍟块崠鍝勭摟濞堥潧浜哥粔姹団偓锟�$/;"	d
+buf	.\kernel\chr_drv\rs_io.s	/^buf = 16 \/\/ 缂傛挸鍟块崠鍝勭摟濞堥潧浜哥粔姹団偓锟�$/;"	d
+buf	.\kernel\printk.c	/^static char buf[1024];$/;"	v	file:
+buffer	.\kernel\blk_drv\blk.h	/^  char *buffer;			\/\/ 閺佺増宓佺紓鎾冲暱閸栨亽鈧拷$/;"	m	struct:request
+buffer_block	.\include\linux\fs.h	/^typedef char buffer_block[BLOCK_SIZE];	\/\/ 閸ф绱﹂崘鎻掑隘閵嗭拷$/;"	t
+buffer_head	.\include\linux\fs.h	/^struct buffer_head$/;"	s
+buffer_init	.\fs\buffer.c	/^buffer_init (long buffer_end)$/;"	f
+buffer_wait	.\fs\buffer.c	/^static struct task_struct *buffer_wait = NULL;$/;"	v	typeref:struct:task_struct	file:
+c_cc	.\include\termios.h	/^  unsigned char c_cc[NCCS];	\/* control characters *\/\/\/ 閹貉冨煑鐎涙顑侀弫鎵矋閵嗭拷$/;"	m	struct:termios
+c_cc	.\include\termios.h	/^  unsigned char c_cc[NCC];	\/* control characters *\/\/\/ 閹貉冨煑鐎涙顑侀弫鎵矋閵嗭拷$/;"	m	struct:termio
+c_cflag	.\include\termios.h	/^  unsigned long c_cflag;	\/* control mode flags *\/\/\/ 閹貉冨煑濡€崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termios
+c_cflag	.\include\termios.h	/^  unsigned short c_cflag;	\/* control mode flags *\/\/\/ 閹貉冨煑濡€崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termio
+c_iflag	.\include\termios.h	/^  unsigned long c_iflag;	\/* input mode flags *\/\/\/ 鏉堟挸鍙嗗Ο鈥崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termios
+c_iflag	.\include\termios.h	/^  unsigned short c_iflag;	\/* input mode flags *\/\/\/ 鏉堟挸鍙嗗Ο鈥崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termio
+c_lflag	.\include\termios.h	/^  unsigned long c_lflag;	\/* local mode flags *\/\/\/ 閺堫剙婀村Ο鈥崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termios
+c_lflag	.\include\termios.h	/^  unsigned short c_lflag;	\/* local mode flags *\/\/\/ 閺堫剙婀村Ο鈥崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termio
+c_line	.\include\termios.h	/^  unsigned char c_line;		\/* line discipline *\/\/\/ 缁捐儻鐭剧憴鍕柤閿涘牓鈧喓宸奸敍澶堚偓锟�$/;"	m	struct:termio
+c_line	.\include\termios.h	/^  unsigned char c_line;		\/* line discipline *\/\/\/ 缁捐儻鐭剧憴鍕柤閿涘牓鈧喓宸奸敍澶堚偓锟�$/;"	m	struct:termios
+c_oflag	.\include\termios.h	/^  unsigned long c_oflag;	\/* output mode flags *\/\/\/ 鏉堟挸鍤Ο鈥崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termios
+c_oflag	.\include\termios.h	/^  unsigned short c_oflag;	\/* output mode flags *\/\/\/ 鏉堟挸鍤Ο鈥崇础閺嶅洤绻旈妴锟�$/;"	m	struct:termio
+calc_mem	.\mm\memory.c	/^void calc_mem(void) {$/;"	f
+call	.\boot\bootsect.s	/^call kill_motor ! 闁稿繑濞婂Λ瀛樸仚閸楃偛袟闁革絻鍔戦埞鍫熸綇閹惧懐绀夐弶鈺傜懄閻楄京浜搁崡鐐茶濞寸姰鍎抽悡锟犳焼閹剧儵鏀抽柛鏂诲妼濞呮帡鎯冮崟顓炐﹂柟顑挎缁繝濡撮敓锟�$/;"	l
+call	.\boot\bootsect.s	/^call read_it ! 閻犲洩宕甸ˉ鍡涙儎濡湱鐟恠ystem 婵☆垪鈧櫕鍋ラ柨娑樼暥s 濞戞捇缂氱欢顓㈠礂閵夈儱妫橀柡浣藉焽閳ь剨鎷�$/;"	l
+call	.\boot\head.s	/^call _printk # 鐠囥儱鍤遍弫鏉挎躬\/kernel\/printk.c 娑擃厹鈧拷$/;"	l
+call	.\boot\head.s	/^call check_x87$/;"	l
+call	.\boot\head.s	/^call setup_gdt # 鐠嬪啰鏁ょ拋鍓х枂閸忋劌鐪幓蹇氬牚缁楋箒銆冪€涙劗鈻兼惔蹇嬧偓锟�$/;"	l
+call	.\boot\head.s	/^call setup_idt # 鐠嬪啰鏁ょ拋鍓х枂娑擃厽鏌囬幓蹇氬牚缁楋箒銆冪€涙劗鈻兼惔蹇嬧偓锟�$/;"	l
+call	.\boot\setup.s	/^call empty_8042 ! 缁涘绶熸潏鎾冲弳缂傛挸鍟块崳銊р敄閵嗭拷$/;"	l
+call	.\boot\setup.s	/^call empty_8042 ! 缁涘绶熸潏鎾冲弳缂傛挸鍟块崳銊р敄閿涘瞼婀呴崨鎴掓姢閺勵垰鎯佺悮顐ｅ复閸欐ぜ鈧拷$/;"	l
+call	.\boot\setup.s	/^call empty_8042 ! 鏉堟挸鍙嗙紓鎾冲暱閸ｃ劋璐熺粚鐚寸礉閸掓瑨銆冪粈绡�20 缁惧灝鍑＄紒蹇涒偓澶愨偓姘モ偓锟�$/;"	l
+call	.\kernel\asm.s	/^call *%eax # 鐠嬪啰鏁 閸戣姤鏆焏o_divide_error()閵嗭拷$/;"	l
+call	.\kernel\asm.s	/^call *%ebx # 鐠嬪啰鏁ら惄绋跨安閻ㄥ嚋 閸戣姤鏆熼敍灞藉従閸欏倹鏆熷鎻掑弳閺嶅牄鈧拷$/;"	l
+call	.\kernel\chr_drv\keyboard.S	/^call _do_tty_interrupt \/\/ 鐏忓棙鏁归崚鎵畱閺佺増宓佹径宥呭煑閹存劘顫夐懠鍐┠佸蹇旀殶閹诡喖鑻熺€涙ɑ鏂侀崷銊潐閼煎啫鐡х粭锔剧处閸愭煡妲﹂崚妞捐厬閵嗭拷$/;"	l
+call	.\kernel\chr_drv\keyboard.S	/^call _show_stat \/\/ 鐠嬪啰鏁ら弰鍓с仛閸氬嫪鎹㈤崝锛勫Ц閹礁鍤遍弫锟�(kernl\/sched.c, 37)閵嗭拷$/;"	l
+call	.\kernel\chr_drv\keyboard.S	/^call kb_wait \/\/ 缁涘绶熼柨顔炬磸閹貉冨煑閸ｃ劏绶崗銉х处閸愯尙鈹栭妴锟�$/;"	l
+call	.\kernel\chr_drv\keyboard.S	/^call kb_wait \/\/ 妫ｆ牕鍘涚粵澶婄窡闁款喚娲忛幒褍鍩楅崳銊ㄧ翻閸忋儳绱﹂崘鎻掓珤缁屾亽鈧拷$/;"	l
+call	.\kernel\chr_drv\keyboard.S	/^call key_table(,%eax,4) \/\/ 鐠嬪啰鏁ら柨顔碱槱閻炲棛鈻兼惔寮卐r_table + eax * 4閿涘牆寮憴浣风瑓闂堬拷502 鐞涘矉绱氶妴锟�$/;"	l
+call	.\kernel\chr_drv\keyboard.S	/^call put_queue \/\/ 鐏忓棗鐡х粭锔芥杹閸忋儳绱﹂崘鏌ユЕ閸掓ぞ鑵戦妴锟�$/;"	l
+call	.\kernel\chr_drv\rs_io.s	/^call _do_tty_interrupt \/\/ 鐠嬪啰鏁ty 娑擃厽鏌囨径鍕倞C 閸戣姤鏆熼敍鍫涒偓锟�$/;"	l
+call	.\kernel\chr_drv\rs_io.s	/^call jmp_table(,%eax,2) \/* NOTE! not *4, bit0 is 0 already *\/ \/* 娑撳秳绠�4閿涘奔缍�0 瀹稿弶妲�0*\/$/;"	l
+call	.\kernel\system_call.s	/^call *%edx # "interesting" way of handling intr.$/;"	l
+call	.\kernel\system_call.s	/^call _copy_process # 鐠嬪啰鏁 閸戣姤鏆焎opy_process()(kernel\/fork.c,68)閵嗭拷$/;"	l
+call	.\kernel\system_call.s	/^call _do_execve$/;"	l
+call	.\kernel\system_call.s	/^call _do_signal # 鐠嬪啰鏁 閸戣姤鏆熸穱鈥冲娇婢跺嫮鎮婄粙瀣碍(kernel\/signal.c,82)$/;"	l
+call	.\kernel\system_call.s	/^call _do_timer # 'do_timer(long CPL)' does everything from$/;"	l
+call	.\kernel\system_call.s	/^call _find_empty_process # 鐠嬪啰鏁ind_empty_process()(kernel\/fork.c,135)閵嗭拷$/;"	l
+call	.\kernel\system_call.s	/^call _math_emulate # 鐠嬪啰鏁 閸戣姤鏆焟ath_emulate(kernel\/math\/math_emulate.c,18)閵嗭拷$/;"	l
+call	.\kernel\system_call.s	/^call _sys_call_table(,%eax,4)$/;"	l
+call	.\mm\page.s	/^call _do_no_page # 鐠嬪啰鏁ょ紓娲€夋径鍕倞閸戣姤鏆熼敍鍧\/memory.c,365 鐞涘矉绱氶妴锟�$/;"	l
+caps	.\kernel\chr_drv\keyboard.S	/^caps: testb $0x80,mode \/\/ 濞村鐦Ο鈥崇础閺嶅洤绻攎ode 娑擃厺缍�7 閺勵垰鎯佸鑼病缂冾喕缍�(閹稿绗呴悩鑸碘偓锟�)閵嗭拷$/;"	l
+chain	.\lib\malloc.c	/^  struct bucket_desc *chain;	\/\/ 鐠囥儱鐡ㄩ崒銊︺€婇惄顔肩秿妞ゅ湱娈戝鑸靛伎鏉╂壆顑侀柧鎹愩€冮幐鍥嫛閵嗭拷$/;"	m	struct:_bucket_dir	typeref:struct:_bucket_dir::bucket_desc	file:
+change_ldt	.\fs\exec.c	/^change_ldt (unsigned long text_size, unsigned long *page)$/;"	f	file:
+change_speed	.\kernel\chr_drv\tty_ioctl.c	/^change_speed (struct tty_struct *tty)$/;"	f	file:
+check_disk_change	.\fs\buffer.c	/^check_disk_change (int dev)$/;"	f
+check_x87	.\boot\head.s	/^check_x87:$/;"	l
+chr_dev_init	.\kernel\chr_drv\tty_io.c	/^chr_dev_init (void)$/;"	f
+cld	.\boot\setup.s	/^cld ! 'direction'=0, movs moves forward$/;"	l
+clear_bit	.\fs\bitmap.c	30;"	d	file:
+clear_block	.\fs\bitmap.c	17;"	d	file:
+cli	.\boot\setup.s	/^cli ! no interrupts allowed ! ! 濮濄倖妞傛稉宥呭帒鐠侀晲鑵戦弬顓溾偓锟�$/;"	l
+cli	.\include\asm\system.h	15;"	d
+clock_t	.\include\time.h	/^typedef long clock_t;		\/\/ 娴犲氦绻樼粙瀣磻婵閮寸紒鐔虹病鏉╁洨娈戦弮鍫曟寭濠婂鐡熼弫鑸偓锟�$/;"	t
+close_on_exec	.\include\linux\sched.h	/^  unsigned long close_on_exec;$/;"	m	struct:task_struct
+clts	.\kernel\system_call.s	/^clts # clear TS so that we can use math$/;"	l
+cmd	.\kernel\blk_drv\blk.h	/^  int cmd;			\/* READ or WRITE *\/\/\/ 閸涙垝鎶�(READ 閹存湬RITE)閵嗭拷$/;"	m	struct:request
+cmp	.\boot\bootsect.s	/^cmp ax,#0$/;"	l
+cmp	.\boot\bootsect.s	/^cmp bx,#15 ! 闁告帇鍊栭弻鍥掕箛鏇ㄦ⒖闂侇剚鎸绘晶鏍礌閻戞ɑ娈堕柡鍕靛灠閹拷=15$/;"	l
+cmp	.\boot\bootsect.s	/^cmp bx,#18$/;"	l
+cmp	.\boot\setup.s	/^cmp ah,#3 ! 閺勵垳鈥栭惄妯烘偋閿涳拷(缁鐎� = 3 閿涳拷)閵嗭拷$/;"	l
+cmp	.\boot\setup.s	/^cmp ax,#0x9000 ! 瀹歌尙绮￠幎濠佺矤0x8000 濞堥潧绱戞慨瀣畱64k 娴狅絿鐖滅粔璇插З鐎瑰矉绱�$/;"	l
+cmpb	.\boot\head.s	/^cmpb $0,%al$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $'9,%al \/\/ 閼汇儴顕氱€涙顑�<='9'閿涘矁顕╅弰搴㈡Ц娑撳﹣绔存い鐐光偓浣风瑓娑撯偓妞ょ偣鈧焦褰冮崗銉﹀灗閸掔娀娅庨柨顕嗙礉$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $'a,%al \/\/ 鐏忓摳l 娑擃厾娈戠€涙顑佹稉锟�'a'濮ｆ棁绶濋妴锟�$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $'},%al \/\/ 鐏忓摳l 娑擃厾娈戠€涙顑佹稉锟�'}'濮ｆ棁绶濋妴锟�$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $0xe0,%al \/\/ 鐠囥儲澹傞幓蹇曠垳閺勶拷0xe0 閸氭绱垫俊鍌涚亯閺勵垰鍨捄瀹犳祮閸掓媽顔曠純鐢�0 閺嶅洤绻旀禒锝囩垳婢跺嫨鈧拷$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $0xe1,%al \/\/ 閹殿偅寮块惍浣规Ц0xe1 閸氭绱垫俊鍌涚亯閺勵垰鍨捄瀹犳祮閸掓媽顔曠純鐢�1 閺嶅洤绻旀禒锝囩垳婢跺嫨鈧拷$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $10,%al \/\/ 閺勵垰濮涢懗浠嬫暛F11閿涳拷$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $11,%al \/\/ 閺勵垰濮涢懗浠嬫暛F12閿涳拷$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $12,%al \/\/ 婵″倹鐏夐幍顐ｅ伎閻拷 > 0x53(0x53 - 0x47= 12)閿涘苯鍨�$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $64+32,%al \/\/ 鐏忓摳l 娑擄拷'`'(96)鐎涙顑佸В鏃囩窛(閸楀啿鍨介弬顓炵摟缁楋附澧嶇仦鐐跺瘱閸ワ拷)閵嗭拷$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $64,%al \/\/ 鐏忓摳l 娑擄拷'@'(64)鐎涙顑佸В鏃囩窛(閸楀啿鍨介弬顓炵摟缁楋附澧嶇仦鐐跺瘱閸ワ拷)閵嗭拷$/;"	l
+cmpb	.\kernel\chr_drv\keyboard.S	/^cmpb $9,%al \/\/ 閸旂喕鍏橀柨顔芥ЦF1-F10閿涳拷$/;"	l
+cmpb	.\kernel\chr_drv\rs_io.s	/^cmpb $6,%al \/* this shouldn't happen, but ... *\/ \/* 鏉╂瑤绗夋导姘絺閻㈢噦绱濇担鍡樻Ц閳ワ拷*\/$/;"	l
+cmpl	.\boot\head.s	/^cmpl %eax,0x100000$/;"	l
+cmpl	.\kernel\chr_drv\keyboard.S	/^cmpl $4,%ecx \/* check that there is enough room *\/ * 濡偓閺屻儲妲搁崥锔芥箒鐡掑啿顧勭粚娲？*\/$/;"	l
+cmpl	.\kernel\chr_drv\keyboard.S	/^cmpl tail(%edx),%ecx # buffer full - discard everything$/;"	l
+cmpl	.\kernel\chr_drv\rs_io.s	/^cmpl $startup,%ebx \/\/ 闂冪喎鍨稉顓炵摟缁楋附鏆熺搾鍛扮箖256 娑擃亷绱�$/;"	l
+cmpl	.\kernel\chr_drv\rs_io.s	/^cmpl head(%ecx),%ebx \/\/ 鐏忕偓瀵氶柦鍫滅瑢婢跺瓨瀵氶柦鍫熺槷鏉堝喛绱�$/;"	l
+cmpl	.\kernel\chr_drv\rs_io.s	/^cmpl tail(%ecx),%ebx \/\/ 缂傛挸鍟块崠鍝勩仈閹稿洭鎷℃稉搴＄啲閹稿洭鎷″В鏃囩窛閵嗭拷$/;"	l
+cmpl	.\kernel\system_call.s	/^cmpl $0,counter(%eax) # counter$/;"	l
+cmpl	.\kernel\system_call.s	/^cmpl $0,state(%eax) # state$/;"	l
+cmpl	.\kernel\system_call.s	/^cmpl $nr_system_calls-1,%eax # 鐠嬪啰鏁ら崣宄邦洤閺嬫粏绉撮崙楦垮瘱閸ュ娈戠拠婵嗘皑閸︹暋ax 娑擃厾鐤�-1 楠炲爼鈧偓閸戞亽鈧拷$/;"	l
+cmpl	.\kernel\system_call.s	/^cmpl _task,%eax$/;"	l
+cmpw	.\kernel\system_call.s	/^cmpw $0x0f,CS(%esp) # was old code segment supervisor ?$/;"	l
+cmpw	.\kernel\system_call.s	/^cmpw $0x17,OLDSS(%esp) # was stack segment = 0x17 ?$/;"	l
+command	.\kernel\blk_drv\floppy.c	/^static unsigned char command = 0;$/;"	v	file:
+con_init	.\kernel\chr_drv\console.c	/^con_init (void)$/;"	f
+con_write	.\kernel\chr_drv\console.c	/^con_write (struct tty_struct *tty)$/;"	f
+copy_buffer	.\kernel\blk_drv\floppy.c	246;"	d	file:
+copy_mem	.\kernel\fork.c	/^copy_mem (int nr, struct task_struct *p)$/;"	f
+copy_page	.\mm\memory.c	80;"	d	file:
+copy_page_tables	.\mm\memory.c	/^int copy_page_tables(unsigned long from, unsigned long to, long size) {$/;"	f
+copy_process	.\kernel\fork.c	/^copy_process (int nr, long ebp, long edi, long esi, long gs, long none,$/;"	f
+copy_strings	.\fs\exec.c	/^copy_strings (int argc, char **argv, unsigned long *page,$/;"	f	file:
+copy_to_cooked	.\kernel\chr_drv\tty_io.c	/^copy_to_cooked (struct tty_struct *tty)$/;"	f
+count	.\fs\exec.c	/^count (char **argv)$/;"	f	file:
+counter	.\include\linux\sched.h	/^  long counter;$/;"	m	struct:task_struct
+counter	.\kernel\system_call.s	/^counter = 4 # 娴犺濮熸潻鎰攽閺冨爼妫跨拋鈩冩殶(闁帒鍣�)閿涘牊娣粵鏃€鏆熼敍澶涚礉鏉╂劘顢戦弮鍫曟？閻楀洢鈧拷$/;"	d
+cp_stat	.\fs\stat.c	/^cp_stat (struct m_inode *inode, struct stat *statbuf)$/;"	f	file:
+cr	.\kernel\chr_drv\console.c	/^cr (void)$/;"	f	file:
+cr3	.\include\linux\sched.h	/^  long cr3;$/;"	m	struct:tss_struct
+create_block	.\fs\inode.c	/^create_block (struct m_inode *inode, int block)$/;"	f
+create_tables	.\fs\exec.c	/^create_tables (char *p, int argc, int envc)$/;"	f	file:
+crw_ptr	.\fs\char_dev.c	/^typedef (*crw_ptr) (int rw, unsigned minor, char *buf, int count,$/;"	t	file:
+crw_table	.\fs\char_dev.c	/^static crw_ptr crw_table[] = {$/;"	v	file:
+cs	.\include\linux\sched.h	/^  long cs;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+csi_J	.\kernel\chr_drv\console.c	/^csi_J (int par)$/;"	f	file:
+csi_K	.\kernel\chr_drv\console.c	/^csi_K (int par)$/;"	f	file:
+csi_L	.\kernel\chr_drv\console.c	/^csi_L (unsigned int nr)$/;"	f	file:
+csi_M	.\kernel\chr_drv\console.c	/^csi_M (unsigned int nr)$/;"	f	file:
+csi_P	.\kernel\chr_drv\console.c	/^csi_P (unsigned int nr)$/;"	f	file:
+csi_at	.\kernel\chr_drv\console.c	/^csi_at (unsigned int nr)$/;"	f	file:
+csi_m	.\kernel\chr_drv\console.c	/^csi_m (void)$/;"	f
+cstime	.\include\linux\sched.h	/^  long utime, stime, cutime, cstime, start_time;$/;"	m	struct:task_struct
+ctrl	.\kernel\chr_drv\keyboard.S	/^ctrl: movb $0x04,%al \/\/ 0x4 閺勵垱膩瀵繑鐖ｈ箛姊瀘de 娑擃厼涔廲trl 闁款喖顕惔鏃傛畱濮ｆ梻澹掓担锟�(娴ｏ拷2)閵嗭拷$/;"	l
+cur	.\kernel\chr_drv\keyboard.S	/^cur: movb cur_table(%eax),%al \/\/ 閸欐牕鍘滈弽鍥х摟缁楋箒銆冩稉顓犳祲鎼存棃鏁惃鍕敩鐞涖劌鐡х粭锟�??al閵嗭拷$/;"	l
+cur2	.\kernel\chr_drv\keyboard.S	/^cur2: cmpb $0x01,e0 \/* e0 forces cursor movement *\/ \/* e0 缂冾喕缍呯悰銊с仛閸忓鐖ｇ粔璇插З *\/$/;"	l
+cur_rate	.\kernel\blk_drv\floppy.c	/^static int cur_rate = -1;$/;"	v	file:
+cur_spec1	.\kernel\blk_drv\floppy.c	/^static int cur_spec1 = -1;$/;"	v	file:
+cur_table	.\kernel\chr_drv\keyboard.S	/^cur_table:$/;"	l
+current	.\kernel\sched.c	/^struct task_struct *current = &(init_task.task);	\/\/ 瑜版挸澧犳禒璇插閹稿洭鎷￠敍鍫濆灥婵瀵叉稉鍝勫灥婵鎹㈤崝鈽呯礆閵嗭拷$/;"	v	typeref:struct:task_struct
+current_DOR	.\kernel\sched.c	/^unsigned char current_DOR = 0x0C;	\/\/ 閺佹澘鐡ф潏鎾冲毉鐎靛嫬鐡ㄩ崳锟�(閸掓繂鈧》绱伴崗浣筋啅DMA 閸滃矁顕Ч鍌欒厬閺傤厹鈧礁鎯庨崝鈥礑C)閵嗭拷$/;"	v
+current_drive	.\kernel\blk_drv\floppy.c	/^static unsigned char current_drive = 0;$/;"	v	file:
+current_request	.\kernel\blk_drv\blk.h	/^  struct request *current_request;	\/\/ 鐠囬攱鐪版穱鈩冧紖缂佹挻鐎妴锟�$/;"	m	struct:blk_dev_struct	typeref:struct:blk_dev_struct::request
+current_track	.\kernel\blk_drv\floppy.c	/^static unsigned char current_track = 255;$/;"	v	file:
+cursor	.\kernel\chr_drv\keyboard.S	/^cursor:$/;"	l
+cutime	.\include\linux\sched.h	/^  long utime, stime, cutime, cstime, start_time;$/;"	m	struct:task_struct
+cwd	.\include\linux\sched.h	/^  long cwd;			\/\/ 閹貉冨煑鐎涳拷(Control word)閵嗭拷$/;"	m	struct:i387_struct
+cyl	.\include\linux\hdreg.h	/^  unsigned char cyl;		\/* ? *\/$/;"	m	struct:partition
+d_inode	.\include\linux\fs.h	/^struct d_inode$/;"	s
+d_super_block	.\include\linux\fs.h	/^struct d_super_block$/;"	s
+daddr_t	.\include\sys\types.h	/^typedef int daddr_t;$/;"	t
+data	.\include\linux\tty.h	/^  unsigned long data;		\/\/ 缁涘绶熼梼鐔峰灙缂傛挸鍟块崠杞拌厬瑜版挸澧犻弫鐗堝祦閹稿洭鎷＄€涙顑侀弫鐧�??]閿涘鈧拷$/;"	m	struct:tty_queue
+dec	.\boot\head.s	/^dec %ecx$/;"	l
+del	.\kernel\chr_drv\console.c	/^del (void)$/;"	f	file:
+delete_char	.\kernel\chr_drv\console.c	/^delete_char (void)$/;"	f	file:
+delete_line	.\kernel\chr_drv\console.c	/^delete_line (void)$/;"	f	file:
+desc_struct	.\include\linux\head.h	/^typedef struct desc_struct$/;"	s
+desc_table	.\include\linux\head.h	/^desc_table[256];$/;"	t	typeref:struct:desc_struct
+dev	.\kernel\blk_drv\blk.h	/^  int dev;			\/* -1 if no request *\/\/\/ 娴ｈ法鏁ら惃鍕啎婢跺洤褰块妴锟�$/;"	m	struct:request
+dev_t	.\include\sys\types.h	/^typedef unsigned short dev_t;	\/\/ 閻€劋绨拋鎯ь槵閸欐灚鈧拷$/;"	t
+die	.\boot\bootsect.s	/^    die: jne die ! es must be at 64kB boundary ! es 闁稿﹦鍘х换鈧銈堫唺缂嶅懏绂嶉敓锟�64KB 闁革附婢樺鍐╂綇閸︻厽娅�!$/;"	l
+die	.\kernel\chr_drv\keyboard.S	/^die: jmp die \/\/ 濮濈粯婧€閵嗭拷$/;"	l
+die	.\kernel\traps.c	/^static void die(char * str,long esp_ptr,long nr)$/;"	f	file:
+die	.\tools\build.c	/^die (char *str)$/;"	f
+dir_entry	.\include\linux\fs.h	/^struct dir_entry$/;"	s
+dir_namei	.\fs\namei.c	/^dir_namei (const char *pathname, int *namelen, const char **name)$/;"	f	file:
+div_t	.\include\sys\types.h	/^div_t;				\/\/ 閻€劋绨珼IV 閹垮秳缍旈妴锟�$/;"	t	typeref:struct:__anon2
+do_bounds	.\kernel\traps.c	/^void do_bounds(long esp, long error_code)$/;"	f
+do_coprocessor_error	.\kernel\traps.c	/^void do_coprocessor_error(long esp, long error_code)$/;"	f
+do_coprocessor_segment_overrun	.\kernel\traps.c	/^void do_coprocessor_segment_overrun(long esp, long error_code)$/;"	f
+do_debug	.\kernel\traps.c	/^void do_debug(long esp, long error_code)$/;"	f
+do_device_not_available	.\kernel\traps.c	/^void do_device_not_available(long esp, long error_code)$/;"	f
+do_div	.\kernel\vsprintf.c	43;"	d	file:
+do_divide_error	.\kernel\traps.c	/^void do_divide_error(long esp, long error_code)$/;"	f
+do_double_fault	.\kernel\traps.c	/^void do_double_fault(long esp, long error_code)$/;"	f
+do_execve	.\fs\exec.c	/^do_execve (unsigned long *eip, long tmp, char *filename,$/;"	f
+do_exit	.\kernel\exit.c	/^do_exit (long code)		\/\/ code 閺勵垶鏁婄拠顖滅垳閵嗭拷$/;"	f
+do_fd_request	.\kernel\blk_drv\floppy.c	/^do_fd_request (void)$/;"	f
+do_floppy_timer	.\kernel\sched.c	/^do_floppy_timer (void)$/;"	f
+do_general_protection	.\kernel\traps.c	/^void do_general_protection(long esp, long error_code)$/;"	f
+do_int3	.\kernel\traps.c	/^void do_int3(long * esp, long error_code,$/;"	f
+do_invalid_TSS	.\kernel\traps.c	/^void do_invalid_TSS(long esp,long error_code)$/;"	f
+do_invalid_op	.\kernel\traps.c	/^void do_invalid_op(long esp, long error_code)$/;"	f
+do_move	.\boot\setup.s	/^do_move:$/;"	l
+do_nmi	.\kernel\traps.c	/^void do_nmi(long esp, long error_code)$/;"	f
+do_no_page	.\mm\memory.c	/^void do_no_page(unsigned long error_code, unsigned long address) {$/;"	f
+do_overflow	.\kernel\traps.c	/^void do_overflow(long esp, long error_code)$/;"	f
+do_rd_request	.\kernel\blk_drv\ramdisk.c	/^do_rd_request (void)$/;"	f
+do_reserved	.\kernel\traps.c	/^void do_reserved(long esp, long error_code)$/;"	f
+do_segment_not_present	.\kernel\traps.c	/^void do_segment_not_present(long esp,long error_code)$/;"	f
+do_self	.\kernel\chr_drv\keyboard.S	/^do_self:$/;"	l
+do_signal	.\kernel\signal.c	/^do_signal (long signr, long eax, long ebx, long ecx, long edx,$/;"	f
+do_stack_segment	.\kernel\traps.c	/^void do_stack_segment(long esp,long error_code)$/;"	f
+do_timer	.\kernel\sched.c	/^do_timer (long cpl)$/;"	f
+do_tty_interrupt	.\kernel\chr_drv\tty_io.c	/^do_tty_interrupt (int tty)$/;"	f
+do_wp_page	.\mm\memory.c	/^void do_wp_page(unsigned long error_code, unsigned long address) {$/;"	f
+ds	.\include\linux\sched.h	/^  long ds;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+dupfd	.\fs\fcntl.c	/^dupfd (unsigned int fd, unsigned int arg)$/;"	f	file:
+e0	.\kernel\chr_drv\keyboard.S	/^e0: .byte 0$/;"	l
+e0_e1	.\kernel\chr_drv\keyboard.S	/^e0_e1: inb $0x61,%al \/\/ 閸欐湢PI 缁旑垰褰汢 閻樿埖鈧緤绱濋崗鏈电秴7 閻€劋绨崗浣筋啅\/缁備焦顒�(0\/1)闁款喚娲忛妴锟�$/;"	l
+eax	.\include\linux\sched.h	/^  long eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+ebp	.\include\linux\sched.h	/^  long ebp;$/;"	m	struct:tss_struct
+ebx	.\include\linux\sched.h	/^  long eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+ecx	.\include\linux\sched.h	/^  long eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+edi	.\include\linux\sched.h	/^  long edi;$/;"	m	struct:tss_struct
+edx	.\include\linux\sched.h	/^  long eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+eflags	.\include\linux\sched.h	/^  long eflags;$/;"	m	struct:tss_struct
+egid	.\include\linux\sched.h	/^  unsigned short gid, egid, sgid;$/;"	m	struct:task_struct
+eip	.\include\linux\sched.h	/^  long eip;$/;"	m	struct:tss_struct
+empty_8042	.\boot\setup.s	/^empty_8042:$/;"	l
+empty_dir	.\fs\namei.c	/^empty_dir (struct m_inode *inode)$/;"	f	file:
+end_code	.\include\linux\sched.h	/^  unsigned long start_code, end_code, end_data, brk, start_stack;$/;"	m	struct:task_struct
+end_cyl	.\include\linux\hdreg.h	/^  unsigned char end_cyl;	\/* ? *\/$/;"	m	struct:partition
+end_data	.\include\linux\sched.h	/^  unsigned long start_code, end_code, end_data, brk, start_stack;$/;"	m	struct:task_struct
+end_func	.\kernel\chr_drv\keyboard.S	/^end_func:$/;"	l
+end_head	.\include\linux\hdreg.h	/^  unsigned char end_head;	\/* ? *\/$/;"	m	struct:partition
+end_move	.\boot\setup.s	/^end_move:$/;"	l
+end_request	.\kernel\blk_drv\blk.h	/^end_request (int uptodate)$/;"	f
+end_sector	.\include\linux\hdreg.h	/^  unsigned char end_sector;	\/* ? *\/$/;"	m	struct:partition
+endbss	.\boot\bootsect.s	/^endbss:$/;"	l
+endbss	.\boot\setup.s	/^endbss:$/;"	l
+enddata	.\boot\bootsect.s	/^enddata:$/;"	l
+enddata	.\boot\setup.s	/^enddata:$/;"	l
+endtext	.\boot\bootsect.s	/^endtext:$/;"	l
+endtext	.\boot\setup.s	/^endtext:$/;"	l
+entry	.\boot\bootsect.s	/^entry start ! 闁告稑锕﹂悡鈩冩交閻愭潙澶嶇紒瀣儏缁參鏁嶅畝鈧埢鍏兼償韫囧海鐭tart 闁哄秴娲よぐ鍨嚕閳ь剚鎱ㄧ€ｎ偄鈷旈悶娑樿閳ь剨鎷�$/;"	l
+entry	.\boot\setup.s	/^entry start$/;"	l
+errno	.\lib\errno.c	/^int errno;$/;"	v
+error_code	.\kernel\asm.s	/^error_code:$/;"	l
+errors	.\kernel\blk_drv\blk.h	/^  int errors;			\/\/閹垮秳缍旈弮鏈甸獓閻㈢喓娈戦柨娆掝嚖濞嗏剝鏆熼妴锟�$/;"	m	struct:request
+es	.\include\linux\sched.h	/^  long es;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+esi	.\include\linux\sched.h	/^  long esi;$/;"	m	struct:tss_struct
+esp	.\include\linux\sched.h	/^  long esp;$/;"	m	struct:tss_struct
+esp0	.\include\linux\sched.h	/^  long esp0;$/;"	m	struct:tss_struct
+esp1	.\include\linux\sched.h	/^  long esp1;$/;"	m	struct:tss_struct
+esp2	.\include\linux\sched.h	/^  long esp2;$/;"	m	struct:tss_struct
+euid	.\include\linux\sched.h	/^  unsigned short uid, euid, suid;$/;"	m	struct:task_struct
+exec	.\include\a.out.h	/^struct exec$/;"	s
+executable	.\include\linux\sched.h	/^  struct m_inode *executable;$/;"	m	struct:task_struct	typeref:struct:task_struct::m_inode
+exit_code	.\include\linux\sched.h	/^  int exit_code;$/;"	m	struct:task_struct
+extern	.\lib\string.c	11;"	d	file:
+f_count	.\include\linux\fs.h	/^  unsigned short f_count;	\/\/ 鐎电懓绨查弬鍥︽閸欍儲鐒洪敍鍫熸瀮娴犺埖寮挎潻鎵儊閿涘鏆熼妴锟�$/;"	m	struct:file
+f_flags	.\include\linux\fs.h	/^  unsigned short f_flags;	\/\/ 閺傚洣娆㈤幍鎾崇磻閸滃本甯堕崚鍓佹畱閺嶅洤绻旈妴锟�$/;"	m	struct:file
+f_fname	.\include\sys\types.h	/^  char f_fname[6];$/;"	m	struct:ustat
+f_fpack	.\include\sys\types.h	/^  char f_fpack[6];$/;"	m	struct:ustat
+f_inode	.\include\linux\fs.h	/^  struct m_inode *f_inode;	\/\/ 閹稿洤鎮滅€电懓绨瞚 閼哄倻鍋ｉ妴锟�$/;"	m	struct:file	typeref:struct:file::m_inode
+f_mode	.\include\linux\fs.h	/^  unsigned short f_mode;	\/\/ 閺傚洣娆㈤幙宥勭稊濡€崇础閿涘湩W 娴ｅ稄绱�$/;"	m	struct:file
+f_pos	.\include\linux\fs.h	/^  off_t f_pos;			\/\/ 閺傚洣娆㈡担宥囩枂閿涘牐顕伴崘娆忎焊缁夎鈧》绱氶妴锟�$/;"	m	struct:file
+f_tfree	.\include\sys\types.h	/^  daddr_t f_tfree;$/;"	m	struct:ustat
+f_tinode	.\include\sys\types.h	/^  ino_t f_tinode;$/;"	m	struct:ustat
+father	.\include\linux\sched.h	/^  long pid, father, pgrp, session, leader;$/;"	m	struct:task_struct
+fcs	.\include\linux\sched.h	/^  long fcs;			\/\/ 閸楀繐顦╅悶鍡楁珤娴狅絿鐖滃▓闈涚槑鐎涙ê娅掗妴锟�$/;"	m	struct:i387_struct
+file	.\include\linux\fs.h	/^struct file$/;"	s
+file_read	.\fs\file_dev.c	/^file_read (struct m_inode *inode, struct file *filp, char *buf, int count)$/;"	f
+file_table	.\fs\file_table.c	/^struct file file_table[NR_FILE];	\/\/ 閺傚洣娆㈢悰銊︽殶缂侊拷(64 妞わ拷)閵嗭拷$/;"	v	typeref:struct:file
+file_write	.\fs\file_dev.c	/^file_write (struct m_inode *inode, struct file *filp, char *buf, int count)$/;"	f
+filp	.\include\linux\sched.h	/^  struct file *filp[NR_OPEN];$/;"	m	struct:task_struct	typeref:struct:task_struct::file
+find_buffer	.\fs\buffer.c	/^find_buffer (int dev, int block)$/;"	f	file:
+find_empty_process	.\kernel\fork.c	/^find_empty_process (void)$/;"	f
+find_entry	.\fs\namei.c	/^find_entry (struct m_inode **dir,$/;"	f	file:
+find_first_zero	.\fs\bitmap.c	38;"	d	file:
+fip	.\include\linux\sched.h	/^  long fip;			\/\/ 閸楀繐顦╅悶鍡楁珤娴狅絿鐖滈幐鍥嫛閵嗭拷$/;"	m	struct:i387_struct
+flock	.\include\fcntl.h	/^struct flock$/;"	s
+floppy	.\kernel\blk_drv\floppy.c	/^static struct floppy_struct *floppy = floppy_type;$/;"	v	typeref:struct:floppy_struct	file:
+floppy_change	.\kernel\blk_drv\floppy.c	/^floppy_change (unsigned int nr)$/;"	f
+floppy_deselect	.\kernel\blk_drv\floppy.c	/^floppy_deselect (unsigned int nr)$/;"	f
+floppy_init	.\kernel\blk_drv\floppy.c	/^floppy_init (void)$/;"	f
+floppy_off	.\kernel\sched.c	/^floppy_off (unsigned int nr)$/;"	f
+floppy_on	.\kernel\sched.c	/^floppy_on (unsigned int nr)$/;"	f
+floppy_on_interrupt	.\kernel\blk_drv\floppy.c	/^floppy_on_interrupt (void)$/;"	f	file:
+floppy_struct	.\kernel\blk_drv\floppy.c	/^     static struct floppy_struct$/;"	s	file:
+floppy_type	.\kernel\blk_drv\floppy.c	/^floppy_type[] =$/;"	v	typeref:struct:floppy_struct	file:
+flush	.\kernel\chr_drv\tty_ioctl.c	/^flush (struct tty_queue *queue)$/;"	f	file:
+fn	.\kernel\sched.c	/^  void (*fn) ();		\/\/ 鐎规碍妞傛径鍕倞缁嬪绨妴锟�$/;"	m	struct:timer_list	file:
+fn_ptr	.\include\linux\sched.h	/^typedef int (*fn_ptr) ();	\/\/ 鐎规矮绠熼崙鑺ユ殶閹稿洭鎷＄猾璇茬€烽妴锟�$/;"	t
+fninit	.\boot\head.s	/^fninit$/;"	l
+foo	.\include\linux\sched.h	/^  long foo;$/;"	m	struct:i387_struct
+fos	.\include\linux\sched.h	/^  long fos;$/;"	m	struct:i387_struct
+free	.\include\linux\kernel.h	22;"	d
+free_bucket_desc	.\lib\malloc.c	/^struct bucket_desc *free_bucket_desc = (struct bucket_desc *) 0;$/;"	v	typeref:struct:bucket_desc
+free_dind	.\fs\truncate.c	/^free_dind (int dev, int block)$/;"	f	file:
+free_ind	.\fs\truncate.c	/^free_ind (int dev, int block)$/;"	f	file:
+free_list	.\fs\buffer.c	/^static struct buffer_head *free_list;$/;"	v	typeref:struct:buffer_head	file:
+free_page	.\mm\memory.c	/^void free_page(unsigned long addr) {$/;"	f
+free_page_tables	.\mm\memory.c	/^int free_page_tables(unsigned long from, unsigned long size) {$/;"	f
+free_s	.\lib\malloc.c	/^free_s (void *obj, int size)$/;"	f
+free_super	.\fs\super.c	/^free_super (struct super_block *sb)$/;"	f	file:
+freeptr	.\lib\malloc.c	/^  void *freeptr;		\/\/ 閹稿洤鎮滈張顒併€婃稉顓犫敄闂傛彃鍞寸€涙ü缍呯純顔炬畱閹稿洭鎷￠妴锟�$/;"	m	struct:bucket_desc	file:
+fs	.\include\linux\sched.h	/^  long fs;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+fstsw	.\boot\head.s	/^fstsw %ax$/;"	l
+func	.\kernel\chr_drv\keyboard.S	/^func:$/;"	l
+func_table	.\kernel\chr_drv\keyboard.S	/^func_table:$/;"	l
+gap	.\kernel\blk_drv\floppy.c	/^       unsigned char gap, rate, spec1;$/;"	m	struct:floppy_struct	file:
+gate_addr	.\include\asm\system.h	/^  "o" (*((char *) (gate_addr))),$/;"	v
+gate_addr	.\include\asm\system.h	/^  "o" (*(4 + (char *) (gate_addr))), "d" ((char *) (addr)), "a" (0x00080000))$/;"	v
+gdt	.\boot\setup.s	/^gdt: ! 閸忋劌鐪幓蹇氬牚缁楋箒銆冨鈧慨瀣槱閵嗗倹寮挎潻鎵儊鐞涖劎鏁辨径姘嚋8 鐎涙濡梹璺ㄦ畱閹诲繗鍫粭锕傘€嶇紒鍕灇閵嗭拷$/;"	l
+gdt_48	.\boot\setup.s	/^gdt_48:$/;"	l
+gdt_descr	.\boot\head.s	/^gdt_descr: # 娑撳娼版稉銈堫攽閺勭棭gdt 閹稿洣鎶ら惃锟�6 鐎涙濡幙宥勭稊閺佸府绱伴梹鍨閿涘苯鐔€閸р偓閵嗭拷$/;"	l
+get_dir	.\fs\namei.c	/^get_dir (const char *pathname)$/;"	f	file:
+get_ds	.\include\asm\segment.h	/^get_ds ()$/;"	f
+get_empty_inode	.\fs\inode.c	/^get_empty_inode (void)$/;"	f
+get_empty_page	.\mm\memory.c	/^void get_empty_page(unsigned long address) {$/;"	f
+get_free_page	.\mm\memory.c	/^unsigned long get_free_page(void) {$/;"	f
+get_fs	.\include\asm\segment.h	/^get_fs ()$/;"	f
+get_fs_byte	.\include\asm\segment.h	/^get_fs_byte (const char *addr)$/;"	f
+get_fs_long	.\include\asm\segment.h	/^get_fs_long (const unsigned long *addr)$/;"	f
+get_fs_word	.\include\asm\segment.h	/^get_fs_word (const unsigned short *addr)$/;"	f
+get_hash_table	.\fs\buffer.c	/^get_hash_table (int dev, int block)$/;"	f
+get_new	.\kernel\signal.c	/^get_new (char *from, char *to)$/;"	f	file:
+get_pipe_inode	.\fs\inode.c	/^get_pipe_inode (void)$/;"	f
+get_seg_byte	.\kernel\traps.c	22;"	d	file:
+get_seg_long	.\kernel\traps.c	28;"	d	file:
+get_super	.\fs\super.c	/^get_super (int dev)$/;"	f
+get_termio	.\kernel\chr_drv\tty_ioctl.c	/^get_termio (struct tty_struct *tty, struct termio *termio)$/;"	f	file:
+get_termios	.\kernel\chr_drv\tty_ioctl.c	/^get_termios (struct tty_struct *tty, struct termios *termios)$/;"	f	file:
+getblk	.\fs\buffer.c	/^getblk (int dev, int block)$/;"	f
+gid	.\include\linux\sched.h	/^  unsigned short gid, egid, sgid;$/;"	m	struct:task_struct
+gid_t	.\include\sys\types.h	/^typedef unsigned char gid_t;	\/\/ 閻€劋绨紒鍕娇閵嗭拷$/;"	t
+go	.\boot\bootsect.s	/^go: mov ax,cs ! 閻忓繐鎽約闁靛棔韬瑂 闁告粌顔抯 闂侇喚鏅悿鍡涘箣閹邦啩鈺呭礉閵娿儲鍊靛ù鐙呯悼閻栨粓骞嶉埀顒勫捶閵娧勭暠婵炲牓娼чˇ锟�(0x9000)闁靛棴鎷�$/;"	l
+gotoxy	.\kernel\chr_drv\console.c	/^gotoxy (unsigned int new_x, unsigned int new_y)$/;"	f	file:
+gs	.\include\linux\sched.h	/^  long gs;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+hash	.\fs\buffer.c	186;"	d	file:
+hash_table	.\fs\buffer.c	/^struct buffer_head *hash_table[NR_HASH];	\/\/ NR_HASH = 307 妞ゅ箍鈧拷$/;"	v	typeref:struct:buffer_head
+head	.\boot\bootsect.s	/^head: $/;"	l
+head	.\include\linux\hdreg.h	/^  unsigned char head;		\/* ? *\/$/;"	m	struct:partition
+head	.\include\linux\tty.h	/^  unsigned long head;		\/\/ 缂傛挸鍟块崠杞拌厬閺佺増宓佹径瀛樺瘹闁藉牄鈧拷$/;"	m	struct:tty_queue
+head	.\kernel\blk_drv\floppy.c	/^       unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+head	.\kernel\blk_drv\floppy.c	/^static unsigned char head = 0;$/;"	v	file:
+head	.\kernel\chr_drv\keyboard.S	/^head = 4 \/\/ 缂傛挸鍟块崠杞拌厬婢跺瓨瀵氶柦鍫濈摟濞堥潧浜哥粔姹団偓锟�$/;"	d
+head	.\kernel\chr_drv\rs_io.s	/^head = 4 \/\/ 缂傛挸鍟块崠杞拌厬婢跺瓨瀵氶柦鍫濈摟濞堥潧浜哥粔姹団偓锟�$/;"	d
+i387	.\include\linux\sched.h	/^  struct i387_struct i387;$/;"	m	struct:tss_struct	typeref:struct:tss_struct::i387_struct
+i387_struct	.\include\linux\sched.h	/^struct i387_struct$/;"	s
+i_atime	.\include\linux\fs.h	/^  unsigned long i_atime;	\/\/ 閺堚偓閸氬氦顔栭梻顔芥闂傛番鈧拷$/;"	m	struct:m_inode
+i_count	.\include\linux\fs.h	/^  unsigned short i_count;	\/\/ i 閼哄倻鍋ｇ悮顐″▏閻€劎娈戝▎鈩冩殶閿涳拷0 鐞涖劎銇氱拠顧� 閼哄倻鍋ｇ粚娲＝閵嗭拷$/;"	m	struct:m_inode
+i_ctime	.\include\linux\fs.h	/^  unsigned long i_ctime;	\/\/ i 閼哄倻鍋ｉ懛顏囬煩娣囶喗鏁奸弮鍫曟？閵嗭拷$/;"	m	struct:m_inode
+i_dev	.\include\linux\fs.h	/^  unsigned short i_dev;		\/\/ i 閼哄倻鍋ｉ幍鈧崷銊ф畱鐠佹儳顦崣鏋偓锟�$/;"	m	struct:m_inode
+i_dirt	.\include\linux\fs.h	/^  unsigned char i_dirt;		\/\/ 瀹歌弓鎱ㄩ弨锟�(閼达拷)閺嶅洤绻旈妴锟�$/;"	m	struct:m_inode
+i_gid	.\include\linux\fs.h	/^  unsigned char i_gid;		\/\/ 缂佸埇d(閺傚洣娆㈤幏銉︽箒閼板懏澧嶉崷銊ф畱缂侊拷)閵嗭拷$/;"	m	struct:d_inode
+i_gid	.\include\linux\fs.h	/^  unsigned char i_gid;		\/\/ 缂佸埇d(閺傚洣娆㈤幏銉︽箒閼板懏澧嶉崷銊ф畱缂侊拷)閵嗭拷$/;"	m	struct:m_inode
+i_lock	.\include\linux\fs.h	/^  unsigned char i_lock;		\/\/ 闁夸礁鐣鹃弽鍥х箶閵嗭拷$/;"	m	struct:m_inode
+i_mode	.\include\linux\fs.h	/^  unsigned short i_mode;	\/\/ 閺傚洣娆㈢猾璇茬€烽崪灞界潣閹拷(rwx 娴ｏ拷)閵嗭拷$/;"	m	struct:d_inode
+i_mode	.\include\linux\fs.h	/^  unsigned short i_mode;	\/\/ 閺傚洣娆㈢猾璇茬€烽崪灞界潣閹拷(rwx 娴ｏ拷)閵嗭拷$/;"	m	struct:m_inode
+i_mount	.\include\linux\fs.h	/^  unsigned char i_mount;	\/\/ 鐎瑰顥婇弽鍥х箶閵嗭拷$/;"	m	struct:m_inode
+i_mtime	.\include\linux\fs.h	/^  unsigned long i_mtime;	\/\/ 娣囶喗鏁奸弮鍫曟？閿涘牐鍤�1970.1.1:0 缁犳鎹ｉ敍宀€顫楅敍澶堚偓锟�$/;"	m	struct:m_inode
+i_nlinks	.\include\linux\fs.h	/^  unsigned char i_nlinks;	\/\/ 闁剧偓甯撮弫甯礄婢舵艾鐨稉顏呮瀮娴犲墎娲拌ぐ鏇€€嶉幐鍥ф倻鐠囶櫙 閼哄倻鍋ｉ敍澶堚偓锟�$/;"	m	struct:d_inode
+i_nlinks	.\include\linux\fs.h	/^  unsigned char i_nlinks;	\/\/ 閺傚洣娆㈤惄顔肩秿妞ゅ綊鎽奸幒銉︽殶閵嗭拷$/;"	m	struct:m_inode
+i_num	.\include\linux\fs.h	/^  unsigned short i_num;		\/\/ i 閼哄倻鍋ｉ崣鏋偓锟�$/;"	m	struct:m_inode
+i_pipe	.\include\linux\fs.h	/^  unsigned char i_pipe;		\/\/ 缁狅繝浜鹃弽鍥х箶閵嗭拷$/;"	m	struct:m_inode
+i_seek	.\include\linux\fs.h	/^  unsigned char i_seek;		\/\/ 閹兼粌顕伴弽鍥х箶(lseek 閺冿拷)閵嗭拷$/;"	m	struct:m_inode
+i_size	.\include\linux\fs.h	/^  unsigned long i_size;		\/\/ 閺傚洣娆㈡径褍鐨敍鍫濈摟閼哄倹鏆熼敍澶堚偓锟�$/;"	m	struct:d_inode
+i_size	.\include\linux\fs.h	/^  unsigned long i_size;		\/\/ 閺傚洣娆㈡径褍鐨敍鍫濈摟閼哄倹鏆熼敍澶堚偓锟�$/;"	m	struct:m_inode
+i_time	.\include\linux\fs.h	/^  unsigned long i_time;		\/\/ 娣囶喗鏁奸弮鍫曟？閿涘牐鍤�1970.1.1:0 缁犳鎹ｉ敍宀€顫楅敍澶堚偓锟�$/;"	m	struct:d_inode
+i_uid	.\include\linux\fs.h	/^  unsigned short i_uid;		\/\/ 閻€劍鍩沬d閿涘牊鏋冩禒鑸靛閺堝鈧懏鐖ｇ拠鍡欘儊閿涘鈧拷$/;"	m	struct:d_inode
+i_uid	.\include\linux\fs.h	/^  unsigned short i_uid;		\/\/ 閻€劍鍩沬d閿涘牊鏋冩禒鑸靛閺堝鈧懏鐖ｇ拠鍡欘儊閿涘鈧拷$/;"	m	struct:m_inode
+i_update	.\include\linux\fs.h	/^  unsigned char i_update;	\/\/ 閺囧瓨鏌婇弽鍥х箶閵嗭拷$/;"	m	struct:m_inode
+i_wait	.\include\linux\fs.h	/^  struct task_struct *i_wait;	\/\/ 缁涘绶熺拠顧� 閼哄倻鍋ｉ惃鍕箻缁嬪鈧拷$/;"	m	struct:m_inode	typeref:struct:m_inode::task_struct
+i_zone	.\include\linux\fs.h	/^  unsigned short i_zone[9];	\/\/ 閻╁瓨甯�(0-6)閵嗕線妫块幒锟�(7)閹存牕寮婚柌宥夋？閹猴拷(8)闁槒绶崸妤€褰块妴锟�$/;"	m	struct:d_inode
+i_zone	.\include\linux\fs.h	/^  unsigned short i_zone[9];	\/\/ 閻╁瓨甯�(0-6)閵嗕線妫块幒锟�(7)閹存牕寮婚柌宥夋？閹猴拷(8)闁槒绶崸妤€褰块妴锟�$/;"	m	struct:m_inode
+idt_48	.\boot\setup.s	/^idt_48:$/;"	l
+idt_descr	.\boot\head.s	/^idt_descr: #娑撳娼版稉銈堫攽閺勭棭idt 閹稿洣鎶ら惃锟�6 鐎涙濡幙宥勭稊閺佸府绱伴梹鍨閿涘苯鐔€閸р偓閵嗭拷$/;"	l
+iget	.\fs\inode.c	/^iget (int dev, int nr)$/;"	f
+ignore_int	.\boot\head.s	/^ignore_int:$/;"	l
+immoutb_p	.\kernel\blk_drv\floppy.c	69;"	d	file:
+in	.\boot\setup.s	/^in al,#0x64 ! 8042 status port ! 鐠囩眲T 闁款喚娲忛幒褍鍩楅崳銊уЦ閹礁鐦庣€涙ê娅掗妴锟�$/;"	l
+in	.\kernel\chr_drv\rs_io.s	/^in tty_io.c!!! *\/$/;"	l
+inb	.\include\asm\io.h	9;"	d
+inb	.\kernel\chr_drv\keyboard.S	/^inb $0x60,%al \/\/ 鐠囪褰囬幍顐ｅ伎閻拷??al閵嗭拷$/;"	l
+inb	.\kernel\chr_drv\rs_io.s	/^inb %dx,%al # 鐠囪褰囨稉顓熸焽閸忎浇顔忕€靛嫬鐡ㄩ崳銊ｂ偓锟�$/;"	l
+inb	.\kernel\chr_drv\rs_io.s	/^inb %dx,%al \/* 鐠囪褰囩€涙顑�??al閵嗭拷$/;"	l
+inb	.\kernel\chr_drv\rs_io.s	/^inb %dx,%al \/* 闁俺绻冪拠绫眔dem 閻樿埖鈧礁鐦庣€涙ê娅掓潻娑滎攽婢跺秳缍�(0x3fe) *\/$/;"	l
+inb	.\kernel\chr_drv\rs_io.s	/^inb %dx,%al \/* 闁俺绻冪拠鑽ゅ殠鐠侯垳濮搁幀浣哥槑鐎涙ê娅掓潻娑滎攽婢跺秳缍�(0x3fd) *\/$/;"	l
+inb	.\kernel\chr_drv\rs_io.s	/^inb %dx,%al \/\/ 閸欐牔鑵戦弬顓熺垼鐠囧棗鐡ч懞鍌︾礉閻€劋浜掗崚銈嗘焽娑擃厽鏌囬弶銉︾爱(閺堬拷4 缁夊秳鑵戦弬顓熷剰閸愶拷)閵嗭拷$/;"	l
+inb_p	.\include\asm\io.h	25;"	d
+incl	.\kernel\chr_drv\keyboard.S	/^incl %ecx \/\/ 婢跺瓨瀵氶柦鍫濆缁夛拷1 鐎涙濡妴锟�$/;"	l
+incl	.\kernel\chr_drv\rs_io.s	/^incl %ebx \/\/ 鐏忓棗銇旈幐鍥嫛閸撳秶些娑撯偓鐎涙濡妴锟�$/;"	l
+incl	.\kernel\chr_drv\rs_io.s	/^incl %ebx \/\/ 鐏忕偓瀵氶柦鍫濆缁夋眹鈧拷$/;"	l
+incl	.\kernel\system_call.s	/^incl %ecx # 鐏忓棔淇婇崣鐤殶閺佺繝璐熸禒锟�1 瀵偓婵娈戦弫锟�(1-32)閵嗭拷$/;"	l
+incl	.\kernel\system_call.s	/^incl _jiffies$/;"	l
+init	.\kernel\chr_drv\serial.c	/^init (int port)$/;"	f	file:
+init_bucket_desc	.\lib\malloc.c	/^init_bucket_desc ()$/;"	f	file:
+init_task	.\kernel\sched.c	/^static union task_union init_task = { INIT_TASK, };	\/\/ 鐎规矮绠熼崚婵嗩潗娴犺濮熼惃鍕殶閹癸拷(sched.h 娑擄拷)閵嗭拷$/;"	v	typeref:union:task_union	file:
+inline	.\lib\string.c	12;"	d	file:
+ino_t	.\include\sys\types.h	/^typedef unsigned short ino_t;	\/\/ 閻€劋绨弬鍥︽鎼村繐鍨崣鏋偓锟�$/;"	t
+inode	.\include\linux\fs.h	/^  unsigned short inode;		\/\/ i 閼哄倻鍋ｉ妴锟�$/;"	m	struct:dir_entry
+inode_table	.\fs\inode.c	/^struct m_inode inode_table[NR_INODE] = { {0,}, };	\/\/ 閸愬懎鐡ㄦ稉鐠� 閼哄倻鍋ｇ悰顭掔礄NR_INODE=32 妞ょ櫢绱氶妴锟�$/;"	v	typeref:struct:m_inode
+insert_char	.\kernel\chr_drv\console.c	/^insert_char (void)$/;"	f	file:
+insert_into_queues	.\fs\buffer.c	/^insert_into_queues (struct buffer_head *bh)$/;"	f	file:
+insert_line	.\kernel\chr_drv\console.c	/^insert_line (void)$/;"	f	file:
+int	.\boot\bootsect.s	/^int 0x10 ! 闁告劖鐟ラ悺褏绮敂鑳洬妤犵偛澧庝簺闁告柣鍔岄崢婊堝冀閸ャ儮鍋撻敓锟�$/;"	l
+int	.\boot\bootsect.s	/^int 0x10$/;"	l
+int	.\boot\bootsect.s	/^int 0x13 ! read it$/;"	l
+int	.\boot\bootsect.s	/^int 0x13$/;"	l
+int	.\boot\setup.s	/^int 0x10 ! save it in known place, con_init fetches$/;"	l
+int	.\boot\setup.s	/^int 0x10$/;"	l
+int	.\boot\setup.s	/^int 0x13$/;"	l
+int	.\boot\setup.s	/^int 0x15$/;"	l
+int_msg	.\boot\head.s	/^int_msg:$/;"	l
+interruptible_sleep_on	.\kernel\sched.c	/^interruptible_sleep_on (struct task_struct **p)$/;"	f
+invalidate	.\mm\memory.c	59;"	d	file:
+invalidate_buffers	.\fs\buffer.c	/^invalidate_buffers (int dev)$/;"	f
+invalidate_inodes	.\fs\inode.c	/^invalidate_inodes (int dev)$/;"	f
+ioctl_ptr	.\fs\ioctl.c	/^typedef int (*ioctl_ptr) (int dev, int cmd, int arg);$/;"	t	file:
+ioctl_table	.\fs\ioctl.c	/^static ioctl_ptr ioctl_table[] = {$/;"	v	file:
+iput	.\fs\inode.c	/^iput (struct m_inode *inode)$/;"	f
+iret	.\boot\head.s	/^iret # 娑擃厽鏌囨潻鏂挎礀閿涘牊濡告稉顓熸焽鐠嬪啰鏁ら弮璺哄竾閸忋儲鐖ら惃鍑淧U 閺嶅洤绻旂€靛嫬鐡ㄩ崳顭掔礄32 娴ｅ稄绱氶崐闂寸瘍瀵懓鍤敍澶堚偓锟�$/;"	l
+iret	.\include\asm\system.h	17;"	d
+iret	.\kernel\asm.s	/^iret$/;"	l
+iret	.\kernel\chr_drv\keyboard.S	/^iret$/;"	l
+iret	.\kernel\chr_drv\rs_io.s	/^iret$/;"	l
+iret	.\kernel\system_call.s	/^iret$/;"	l
+iret	.\mm\page.s	/^iret$/;"	l
+is_digit	.\kernel\vsprintf.c	19;"	d	file:
+is_disk1	.\boot\setup.s	/^is_disk1:$/;"	l
+isalnum	.\include\ctype.h	17;"	d
+isalpha	.\include\ctype.h	18;"	d
+isascii	.\include\ctype.h	29;"	d
+iscntrl	.\include\ctype.h	19;"	d
+isdigit	.\include\ctype.h	20;"	d
+isgraph	.\include\ctype.h	21;"	d
+islower	.\include\ctype.h	22;"	d
+isprint	.\include\ctype.h	23;"	d
+ispunct	.\include\ctype.h	24;"	d
+isspace	.\include\ctype.h	25;"	d
+isupper	.\include\ctype.h	26;"	d
+isxdigit	.\include\ctype.h	27;"	d
+j	.\boot\bootsect.s	/^j load_setup$/;"	l
+ja	.\kernel\chr_drv\keyboard.S	/^ja 1f \/\/ 閹殿偅寮块惍浣糕偓鑹扮Т鏉╋拷83(0x53)閿涘奔绗夋径鍕倞閿涘矁绻戦崶鐐偓锟�$/;"	l
+ja	.\kernel\chr_drv\keyboard.S	/^ja 2f \/\/ 閼活櫑l 閸婏拷>'}'閿涘苯鍨潪顒佺垼閸欙拷2 婢跺嫨鈧拷$/;"	l
+ja	.\kernel\chr_drv\keyboard.S	/^ja end_func \/\/ 娑撳秵妲搁敍灞藉灟娑撳秴顦╅悶鍡礉鏉╂柨娲栭妴锟�$/;"	l
+ja	.\kernel\chr_drv\keyboard.S	/^ja ok_cur \/\/ 閸掓瑥濮涢懗钘夌摟缁楋箑绨崚妞捐厬鐟曚焦鍧婇崗銉ョ摟缁楋拷'~'閵嗭拷$/;"	l
+ja	.\kernel\chr_drv\rs_io.s	/^ja 1f \/\/ 鐡掑懓绻冮敍灞藉灟鐠哄疇娴嗘径鍕倞閵嗭拷$/;"	l
+ja	.\kernel\system_call.s	/^ja bad_sys_call$/;"	l
+jae	.\kernel\chr_drv\keyboard.S	/^jae 3f \/\/ 閼汇儱鈧拷>='`'閿涘苯鍨潪顒佺垼閸欙拷3閵嗭拷$/;"	l
+jb	.\kernel\chr_drv\keyboard.S	/^jb 1f \/\/ 婵″倹鐏夌亸蹇庣艾閸掓瑤绗夋径鍕倞閿涘矁绻戦崶鐐偓锟�$/;"	l
+jb	.\kernel\chr_drv\keyboard.S	/^jb 2f \/\/ 閼活櫑l 閸婏拷<'a'閿涘苯鍨潪顒佺垼閸欙拷2 婢跺嫨鈧拷$/;"	l
+jb	.\kernel\chr_drv\keyboard.S	/^jb 3f \/\/ 閼汇儱鈧拷<'@'閿涘苯鍨潪顒佺垼閸欙拷3閵嗭拷$/;"	l
+jb	.\kernel\chr_drv\keyboard.S	/^jb end_func \/\/ 娑撳秵妲搁敍灞藉灟娑撳秴顦╅悶鍡礉鏉╂柨娲栭妴锟�$/;"	l
+jb	.\kernel\chr_drv\keyboard.S	/^jb end_func \/\/ 婵″倹鐏夐幍顐ｅ伎閻礁鐨禍锟�0x3b閿涘苯鍨稉宥咁槱閻炲棴绱濇潻鏂挎礀閵嗭拷$/;"	l
+jbe	.\kernel\chr_drv\keyboard.S	/^jbe ok_func \/\/ 閺勵垽绱濋崚娆掔儲鏉烆兙鈧拷$/;"	l
+jc	.\boot\setup.s	/^jc no_disk1$/;"	l
+je	.\boot\bootsect.s	/^je root_defined ! 濠碘€冲€归悘澶岀驳婢跺鑹鹃柨娑樿嫰閸ㄧ棏x 濞戞搩鍘煎銊╁及椤栨氨绌块悗闈涖偢閳瑰秹宕濋妸銉︾彜闁汇劌瀚鏇熷緞閸パ冨▏闁靛棴鎷�$/;"	l
+je	.\boot\bootsect.s	/^je root_defined$/;"	l
+je	.\boot\head.s	/^je 1b # '1b'鐞涖劎銇氶崥鎴濇倵(backward)鐠哄疇娴嗛崚鐗堢垼閸欙拷1 閸樹紮绱�33 鐞涘矉绱氶妴锟�$/;"	l
+je	.\boot\head.s	/^je 1f \/* no coprocessor: have to set bits *\/$/;"	l
+je	.\boot\setup.s	/^je is_disk1$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 2f \/\/ 娑撳秵妲搁敍灞藉灟鏉烆兙鈧拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 2f \/\/ 娑撳秵妲搁崚娆掓祮閵嗭拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 2f \/\/ 鏉╂ɑ婀佺€涙顑侀崥妤嬬吹閼汇儲鐥呴張锟�(缁涘绨�0)閸掓瑨鐑︽潪顑锯偓锟�$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 2f \/\/ 濞屸剝婀侀敍灞藉灟閸氭垵澧犵捄瀹犳祮閺嶅洤褰�2 婢跺嫨鈧拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 3f \/\/ 婵″倹鐏夊鍙夊姬閿涘苯鍨崥搴ㄦ桨閺堫亝鏂侀崗銉ф畱鐎涙顑侀崗銊﹀瀵啨鈧拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 3f \/\/ 閼汇儲鐥呴張澶婂灟鏉烆剚鐖ｉ崣锟�3閵嗭拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 3f \/\/ 閺冪媴绱濋崚娆掔儲鏉烆剨绱�$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je 4f \/\/ 濞屸剝婀侀敍灞藉灟鏉烆剚鐖ｉ崣锟�4閵嗭拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je cur \/\/ 婵″倹鐏夊▽鈩冩箒缂冾喕缍�(num 閻ㄥ嚛ED 娑撳秳瀵�)閿涘苯鍨稊鐔荤箻鐞涘苯鍘滈弽鍥┬╅崝銊ヮ槱閻炲棎鈧拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je cur \/\/ 缂冾喕缍呮禍鍡礉閸掓瑨鐑︽潪顒€鍘滈弽鍥┬╅崝銊ヮ槱閻炲棗顦ヽur閵嗭拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je cur2 \/\/ 閺冪媴绱濋崚娆掔儲鏉烆兙鈧拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je none \/\/ 閼汇儲鐥呴張锟�(鐎电懓绨查惃鍑橲CII 閻拷=0)閿涘苯鍨潻鏂挎礀閵嗭拷$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je set_e0$/;"	l
+je	.\kernel\chr_drv\keyboard.S	/^je set_e1$/;"	l
+je	.\kernel\chr_drv\rs_io.s	/^je 1f # 閺冪媴绱濋崚娆忔倻閸撳秷鐑︽潪顒€鍩岄弽鍥у娇1 婢跺嫨鈧拷$/;"	l
+je	.\kernel\chr_drv\rs_io.s	/^je 1f \/\/ 閼汇儳娴夌粵澶涚礉鐞涖劎銇氱紓鎾冲暱閸栫儤寮ч敍宀冪儲鏉烆剙鍩岄弽鍥у娇1 婢跺嫨鈧拷$/;"	l
+je	.\kernel\chr_drv\rs_io.s	/^je 1f \/\/ 閺勵垳鈹栭惃鍕剁礉閸掓瑥鎮滈崜宥堢儲鏉烆剙鍩岄弽鍥у娇1 婢跺嫨鈧拷$/;"	l
+je	.\kernel\chr_drv\rs_io.s	/^je write_buffer_empty \/\/ 婵″倹鐏夋径瀛樺瘹闁斤拷 = 鐏忕偓瀵氶柦鍫礉鐠囧瓨妲戦崘娆撴Е閸掓妫ょ€涙顑侀敍宀冪儲鏉烆剙顦╅悶鍡愨偓锟�$/;"	l
+je	.\kernel\chr_drv\rs_io.s	/^je write_buffer_empty \/\/ 閼汇儳娴夌粵澶涚礉鐞涖劎銇氶梼鐔峰灙瀹歌尙鈹栭敍灞藉灟鐠哄疇娴嗛妴锟�$/;"	l
+je	.\kernel\system_call.s	/^je 3f # 婵″倹鐏夊▽鈩冩箒娣団€冲娇閸掓瑥鎮滈崜宥堢儲鏉烆剟鈧偓閸戞亽鈧拷$/;"	l
+je	.\kernel\system_call.s	/^je 3f # 閸氭垵澧�(forward)鐠哄疇娴嗛崚鐗堢垼閸欙拷3閵嗭拷$/;"	l
+je	.\kernel\system_call.s	/^je _math_state_restore # 閹笛嗩攽C 閸戣姤鏆焟ath_state_restore()(kernel\/sched.c,77)閵嗭拷$/;"	l
+je	.\kernel\system_call.s	/^je reschedule$/;"	l
+jge	.\boot\head.s	/^jge 1b # 婵″倹鐏夌亸蹇庣艾0 閸掓瑨顕╅弰搴″弿濞ｈ鍟撴總鎴掔啊閵嗭拷$/;"	l
+jiffies	.\kernel\sched.c	/^  long jiffies;			\/\/ 鐎规碍妞傚⿰瀵哥摕閺佽埇鈧拷$/;"	m	struct:timer_list	file:
+jiffies	.\kernel\sched.c	/^long volatile jiffies = 0;	\/\/ 娴犲骸绱戦張鍝勭磻婵鐣荤挧椋庢畱濠婂鐡熼弫鐗堟闂傛潙鈧》绱�10ms\/濠婂鐡熼敍澶堚偓锟�$/;"	v
+jl	.\kernel\chr_drv\keyboard.S	/^jl end_func \/\/ 闂団偓鐟曚焦鏂侀崗锟�4 娑擃亜鐡х粭锕€绨崚妤嬬礉婵″倹鐏夐弨鍙ョ瑝娑撳绱濋崚娆掔箲閸ョ偑鈧拷$/;"	l
+jmp	.\boot\bootsect.s	/^jmp undef_root$/;"	l
+jmp	.\boot\head.s	/^jmp L6 # main should never return here, but$/;"	l
+jmp	.\boot\head.s	/^jmp after_page_tables # 鐠哄疇娴嗛崚锟�135 鐞涘被鈧拷$/;"	l
+jmp	.\boot\head.s	/^jmp setup_paging # 鐠哄疇娴嗛懛宕囶儑198 鐞涘被鈧拷$/;"	l
+jmp	.\boot\setup.s	/^jmp do_move$/;"	l
+jmp	.\kernel\asm.s	/^jmp 1f # 鏉╂瑤琚辨稉顏囩儲鏉烆剚瀵氭禒銈堟崳瀵よ埖妞傛担婊呮暏閵嗭拷$/;"	l
+jmp	.\kernel\asm.s	/^jmp _coprocessor_error # _coprocessor_error 閸樼喐娼甸崷銊︽拱閺傚洣娆㈡稉顓ㄧ礉閻滄澘婀鑼病閺€鎯у煂$/;"	l
+jmp	.\kernel\asm.s	/^jmp error_code$/;"	l
+jmp	.\kernel\asm.s	/^jmp no_error_code$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp 1b$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp 1f \/\/ 瀵ゆ儼绻滄稉鈧导姘モ偓锟�$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp 1f \/\/ 閸愬秴娆㈡潻鐔剁娴兼哎鈧拷$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp 1f$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp e0_e1$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp put_queue \/\/ 楠炶泛鐨㈢€涙顑侀弨鎯у弳缂傛挸鍟块梼鐔峰灙娑擃厹鈧拷$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp put_queue \/\/ 閺€鎯у弳缂傛挸鍟块梼鐔峰灙娑擃厹鈧拷$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp put_queue \/\/ 鐏忓棜顕氱€涙顑侀弨鎯у弳缂傛挸鍟块梼鐔峰灙娑擃厹鈧拷$/;"	l
+jmp	.\kernel\chr_drv\keyboard.S	/^jmp set_leds \/\/ 閺嶈宓乴eds 閺嶅洤绻旈柌宥嗘煀瀵偓閸氼垱鍨ㄩ崗鎶芥４LED 閹稿洨銇氶崳銊ｂ偓锟�$/;"	l
+jmp	.\kernel\chr_drv\rs_io.s	/^jmp 1f # 缁嬪秳缍斿鎯扮箿閵嗭拷$/;"	l
+jmp	.\kernel\chr_drv\rs_io.s	/^jmp rep_int \/\/ 鐠哄疇娴嗛敍宀€鎴风紒顓炲灲閺傤厽婀侀弮鐘茬窡婢跺嫮鎮婃稉顓熸焽楠炲墎鎴风紒顓烆槱閻炲棎鈧拷$/;"	l
+jmp	.\kernel\chr_drv\rs_io.s	/^jmp rs_int$/;"	l
+jmp	.\kernel\system_call.s	/^jmp 1f # give port chance to breathe$/;"	l
+jmp	.\kernel\system_call.s	/^jmp _math_error # 閹笛嗩攽C 閸戣姤鏆焟ath_error()(kernel\/math\/math_emulate.c,37)$/;"	l
+jmp	.\kernel\system_call.s	/^jmp _schedule$/;"	l
+jmp	.\kernel\system_call.s	/^jmp ret_from_sys_call$/;"	l
+jmp	.\mm\page.s	/^jmp 2f$/;"	l
+jmp_table	.\kernel\chr_drv\rs_io.s	/^jmp_table:$/;"	l
+jmpi	.\boot\bootsect.s	/^jmpi 0,SETUPSEG ! 閻犲搫鐤囧ù鍡涘礆閿燂拷0x9020:0000(setup.s 缂佸顑呯花顓㈡儍閸曨偆纾诲┑顔碱儏椤︼拷)闁靛棴鎷�$/;"	l
+jmpi	.\boot\bootsect.s	/^jmpi go,INITSEG ! 闂傚倸鐡ㄧ敮瀵告崉鐎圭姵绁柕鍡楀€界换鏍煂鐎涙湝ITSEG 闁圭ǹ娲ら崵顓犳崉鐎圭姵绁柛鎺撳濞堟垵鈻撻棃娑欏嬀闁秆€鍋撻柕鍡嫹$/;"	l
+jmpi	.\boot\setup.s	/^jmpi 0,8 ! jmp offset 0 of segment 8 (cs) ! 鐠哄疇娴嗛懛鐮猻 濞堬拷8閿涘苯浜哥粔锟�0 婢跺嫨鈧拷$/;"	l
+jnc	.\boot\bootsect.s	/^jnc ok_load_setup ! ok - continue$/;"	l
+jne	.\boot\bootsect.s	/^jne root_defined$/;"	l
+jne	.\boot\head.s	/^jne rp_sidt$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne 1b \/\/ 閼汇儰绗夌粚鐚寸礉閸掓瑨鐑︽潪顒€鎯婇悳顖滅搼瀵板懌鈧拷$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne 1f \/\/ 婵″倹鐏夊鎻掝槱娴滃孩瀵滄稉瀣Ц閹緤绱濋崚娆掔箲閸ワ拷(ret)閵嗭拷$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne 1f \/\/ 閺勵垽绱濋崚娆忔倻閸撳秷鐑︽潪顒€鍩岄弽鍥у娇1 婢跺嫨鈧拷$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne 1f \/\/ 閺堝绱濋崚娆忔倻閸撳秷鐑︽潪顒€鍩岄弽鍥у娇1 婢跺嫨鈧拷$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne cur \/\/ 婵″倹鐏夐張濉籬ift 闁款喗瀵滄稉瀣剁礉閸掓瑤绡冩潻娑滎攽閸忓鐖ｇ粔璇插З婢跺嫮鎮婇妴锟�$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne cur2 \/* check for ctrl-alt-del *\/ \/* 濡偓閺屻儲妲搁崥顩塼rl-alt-del *\/$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne do_self \/\/ 濞屸剝婀侀敍灞藉灟鐠嬪啰鏁o_self 鐎电懓鍣洪崣椋庮儊鏉╂稖顢戦弲顕€鈧艾顦╅悶鍡愨偓锟�$/;"	l
+jne	.\kernel\chr_drv\keyboard.S	/^jne reboot \/\/ 閺堝绱濋崚娆掔儲鏉烆剙鍩岄柌宥呮儙閸斻劌顦╅悶鍡愨偓锟�$/;"	l
+jne	.\kernel\system_call.s	/^jne 1f # 閼汇儳鈹栭敍灞藉灟娴ｆ寧瀵氶柦鍫熷瘹閸氭厤 閸戣姤鏆焨nexpected_floppy_interrupt()閵嗭拷$/;"	l
+jne	.\kernel\system_call.s	/^jne 1f # 閼汇儳鈹栭敍灞藉灟娴ｆ寧瀵氶柦鍫熷瘹閸氭厤 閸戣姤鏆焨nexpected_hd_interrupt()閵嗭拷$/;"	l
+jne	.\kernel\system_call.s	/^jne 3f$/;"	l
+jne	.\kernel\system_call.s	/^jne reschedule$/;"	l
+jne	.\mm\page.s	/^jne 1f$/;"	l
+jnz	.\boot\setup.s	/^jnz empty_8042 ! yes - loop$/;"	l
+js	.\kernel\system_call.s	/^js 1f$/;"	l
+jz	.\boot\setup.s	/^jz end_move$/;"	l
+kb_wait	.\kernel\chr_drv\keyboard.S	/^kb_wait:$/;"	l
+kernel_mktime	.\kernel\mktime.c	/^kernel_mktime (struct tm *tm)$/;"	f
+key_map	.\kernel\chr_drv\keyboard.S	/^key_map:$/;"	l
+key_table	.\kernel\chr_drv\keyboard.S	/^key_table:$/;"	l
+kill_motor	.\boot\bootsect.s	/^kill_motor:$/;"	l
+kill_session	.\kernel\exit.c	/^kill_session (void)$/;"	f	file:
+l_len	.\include\fcntl.h	/^  off_t l_len;			\/\/ 闂冭顢ｉ柨浣哥暰閻ㄥ嫬銇囩亸蹇ョ幢婵″倹鐏夐弰锟�0 閸掓瑤璐熼崚鐗堟瀮娴犺埖婀亸淇扁偓锟�$/;"	m	struct:flock
+l_pid	.\include\fcntl.h	/^  pid_t l_pid;			\/\/ 閸旂娀鏀ｉ惃鍕箻缁嬪獢d閵嗭拷$/;"	m	struct:flock
+l_start	.\include\fcntl.h	/^  off_t l_start;		\/\/ 闂冭顢ｉ柨浣哥暰閻ㄥ嫬绱戞慨瀣槱閵嗗倻娴夌€电懓浜哥粔浼欑礄鐎涙濡弫甯礆閵嗭拷$/;"	m	struct:flock
+l_type	.\include\fcntl.h	/^  short l_type;			\/\/ 闁夸礁鐣剧猾璇茬€烽敍鍦榑RDLCK閿涘瓗_WRLCK閿涘瓗_UNLCK閿涘鈧拷$/;"	m	struct:flock
+l_whence	.\include\fcntl.h	/^  short l_whence;		\/\/ 瀵偓婵浜哥粔锟�(SEEK_SET閿涘EEK_CUR 閹存湥EEK_END)閵嗭拷$/;"	m	struct:flock
+last_pid	.\kernel\fork.c	/^long last_pid = 0;$/;"	v
+last_task_used_math	.\kernel\sched.c	/^struct task_struct *last_task_used_math = NULL;	\/\/ 娴ｈ法鏁ゆ潻鍥у礂婢跺嫮鎮婇崳銊ゆ崲閸旓紕娈戦幐鍥嫛閵嗭拷$/;"	v	typeref:struct:task_struct
+ldiv_t	.\include\sys\types.h	/^ldiv_t;				\/\/ 閻€劋绨梹绶縄V 閹垮秳缍旈妴锟�$/;"	t	typeref:struct:__anon3
+lds	.\boot\setup.s	/^lds si,[4*0x41] ! 閸欐牔鑵戦弬顓炴倻闁诧拷0x41 閻ㄥ嫬鈧》绱濇稊鐔峰祮hd0 閸欏倹鏆熺悰銊ф畱閸︽澘娼�??ds:si$/;"	l
+lds	.\boot\setup.s	/^lds si,[4*0x46] ! 閸欐牔鑵戦弬顓炴倻闁诧拷0x46 閻ㄥ嫬鈧》绱濇稊鐔峰祮hd1 閸欏倹鏆熺悰銊ф畱閸︽澘娼�??ds:si$/;"	l
+ldt	.\include\linux\sched.h	/^  long ldt;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+ldt	.\include\linux\sched.h	/^  struct desc_struct ldt[3];$/;"	m	struct:task_struct	typeref:struct:task_struct::desc_struct
+lea	.\boot\head.s	/^lea _idt,%edi # _idt 閺勵垯鑵戦弬顓熷伎鏉╂壆顑佺悰銊ф畱閸︽澘娼冮妴锟�$/;"	l
+lea	.\boot\head.s	/^lea ignore_int,%edx # 鐏忓攨gnore_int 閻ㄥ嫭婀侀弫鍫濇勾閸р偓閿涘牆浜哥粔璇测偓纭风礆閸婏拷??edx 鐎靛嫬鐡ㄩ崳锟�$/;"	l
+lea	.\kernel\asm.s	/^lea 44(%esp),%eax # offset # 缁嬪绨潻鏂挎礀閸︽澘娼冩径鍕垻閺嶅牊瀵氶柦鍫滅秴缂冾喖鈧厧鍙嗛弽鍫涒偓锟�$/;"	l
+lea	.\kernel\asm.s	/^lea 44(%esp),%edx # 閸欐牕甯拫鍐暏鏉╂柨娲栭崷鏉挎絻婢跺嫬鐖㈤弽鍫熷瘹闁藉牅缍呯純顕嗙礉楠炶泛甯囬崗銉ョ垻閺嶅牄鈧拷$/;"	l
+lea	.\kernel\chr_drv\keyboard.S	/^lea alt_map,%ebx \/\/ alt 闁款喖鎮撻弮鑸靛瘻娑撳妞傞惃鍕Ё鐏忓嫯銆冮崺鍝勬絻alt_map??ebx閵嗭拷$/;"	l
+lea	.\kernel\chr_drv\keyboard.S	/^lea key_map,%ebx \/\/ 閸氾箑鍨担璺ㄦ暏閺咁噣鈧碍妲х亸鍕€僰ey_map閵嗭拷$/;"	l
+lea	.\kernel\chr_drv\keyboard.S	/^lea shift_map,%ebx \/\/ shift 闁款喖鎮撻弮鑸靛瘻娑撳妞傞惃鍕Ё鐏忓嫯銆冮崺鍝勬絻shift_map??ebx閵嗭拷$/;"	l
+lea	.\kernel\system_call.s	/^lea EIP(%esp),%eax$/;"	l
+leader	.\include\linux\sched.h	/^  long pid, father, pgrp, session, leader;$/;"	m	struct:task_struct
+leds	.\kernel\chr_drv\keyboard.S	/^leds: .byte 2 \/* num-lock, caps, scroll-lock mode (nom-lock on) *\/$/;"	l
+lf	.\kernel\chr_drv\console.c	/^lf (void)$/;"	f	file:
+lgdt	.\boot\setup.s	/^lgdt gdt_48 ! load gdt with whatever appropriate$/;"	l
+lidt	.\boot\head.s	/^lidt idt_descr # 閸旂姾娴囨稉顓熸焽閹诲繗鍫粭锕併€冪€靛嫬鐡ㄩ崳銊モ偓绗衡偓锟�$/;"	l
+lidt	.\boot\setup.s	/^lidt idt_48 ! load idt with 0,0$/;"	l
+line_status	.\kernel\chr_drv\rs_io.s	/^line_status:$/;"	l
+ll_rw_block	.\kernel\blk_drv\ll_rw_blk.c	/^ll_rw_block (int rw, struct buffer_head *bh)$/;"	f
+lmsw	.\boot\setup.s	/^lmsw ax ! This is it! ! 鐏忚精绻栭弽宄板鏉炶姤婧€閸ｃ劎濮搁幀浣哥摟!$/;"	l
+load_setup	.\boot\bootsect.s	/^load_setup:$/;"	l
+lock_buffer	.\kernel\blk_drv\ll_rw_blk.c	/^lock_buffer (struct buffer_head *bh)$/;"	f	file:
+lock_inode	.\fs\inode.c	/^lock_inode (struct m_inode *inode)$/;"	f	file:
+lock_super	.\fs\super.c	/^lock_super (struct super_block *sb)$/;"	f	file:
+lshift	.\kernel\chr_drv\keyboard.S	/^lshift:$/;"	l
+lss	.\boot\head.s	/^lss _stack_start,%esp # 鐞涖劎銇歘stack_start??ss:esp閿涘矁顔曠純顔鹃兇缂佺喎鐖㈤弽鍫涒偓锟�$/;"	l
+lss	.\boot\head.s	/^lss _stack_start,%esp$/;"	l
+m_inode	.\include\linux\fs.h	/^struct m_inode$/;"	s
+machine	.\include\sys\utsname.h	/^  char machine[9];		\/\/ 缁崵绮烘潻鎰攽閻ㄥ嫮鈥栨禒鍓佽閸ㄥ鎮曠粔鑸偓锟�$/;"	m	struct:utsname
+main	.\tools\build.c	/^main (int argc, char **argv)$/;"	f
+make_request	.\kernel\blk_drv\ll_rw_blk.c	/^make_request (int major, int rw, struct buffer_head *bh)$/;"	f	file:
+malloc	.\lib\malloc.c	/^malloc (unsigned int len)$/;"	f
+match	.\fs\namei.c	/^match (int len, const char *name, struct dir_entry *de)$/;"	f	file:
+math_emulate	.\kernel\math\math_emulate.c	/^math_emulate (long edi, long esi, long ebp, long sys_call_ret,$/;"	f
+math_error	.\kernel\math\math_emulate.c	/^math_error (void)$/;"	f
+math_state_restore	.\kernel\sched.c	/^math_state_restore ()$/;"	f
+mem_init	.\mm\memory.c	/^void mem_init(long start_mem, long end_mem) {$/;"	f
+mem_map	.\mm\memory.c	/^static unsigned char mem_map[PAGING_PAGES] = {$/;"	v	file:
+memchr	.\include\string.h	/^memchr (const void *cs, char c, int count)$/;"	f
+memcmp	.\include\string.h	/^memcmp (const void *cs, const void *ct, int count)$/;"	f
+memcpy	.\include\asm\memory.h	17;"	d
+memcpy	.\include\string.h	/^memcpy (void *dest, const void *src, int n)$/;"	f
+memmove	.\include\string.h	/^memmove (void *dest, const void *src, int n)$/;"	f
+memset	.\include\string.h	/^memset (void *s, char c, int count)$/;"	f
+minus	.\kernel\chr_drv\keyboard.S	/^minus: cmpb $1,e0 \/\/ e0 閺嶅洤绻旂純顔荤秴娴滃棗鎮ч敍锟�$/;"	l
+mode	.\kernel\chr_drv\keyboard.S	/^mode: .byte 0 \/* caps, alt, ctrl and shift mode *\/$/;"	l
+mode_t	.\include\sys\types.h	/^typedef unsigned short mode_t;	\/\/ 閻€劋绨弻鎰昂閺傚洣娆㈢仦鐐粹偓褋鈧拷$/;"	t
+modem_status	.\kernel\chr_drv\rs_io.s	/^modem_status:$/;"	l
+modtime	.\include\utime.h	/^  time_t modtime;		\/\/ 閺傚洣娆㈡穱顔芥暭閺冨爼妫块妴鍌欑矤1970.1.1:0:0:0 瀵偓婵娈戠粔鎺撴殶閵嗭拷$/;"	m	struct:utimbuf
+moff_timer	.\kernel\sched.c	/^static int moff_timer[4] = { 0, 0, 0, 0 };$/;"	v	file:
+mon_timer	.\kernel\sched.c	/^static int mon_timer[4] = { 0, 0, 0, 0 };$/;"	v	file:
+month	.\kernel\mktime.c	/^static int month[12] = {$/;"	v	file:
+mount_root	.\fs\super.c	/^mount_root (void)$/;"	f
+mov	.\boot\bootsect.s	/^mov ah,#0x03 ! read cursor pos$/;"	l
+mov	.\boot\bootsect.s	/^mov al,#0 ! A 濡炵懓宕慨鈺呭闯椤帞绀夐柛蹇斿▕濡DC闁挎稑鐬奸々锕€顫㈤、鐙笰 闁告粌濂旈懙鎴﹀棘椤撯槅鍤炴慨鐟板亰缁辨繈宕楅幎鑺ワ紨濡炶鍓濋幓顏堝Υ閿燂拷$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#0x0000 ! reset the diskette$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#0x0200+SETUPLEN ! service 2, nr of sectors$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#0x0208 ! \/dev\/ps0 - 1.2Mb$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#0x021c ! \/dev\/PS0 - 1.44Mb$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#0x0800 ! AH=8 is get drive parameters$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#0x1301 ! write string, move cursor$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#BOOTSEG ! 閻忓繐鎽約 婵炲牓娼ч惁搴ｂ偓娑櫭▍鎺旂磾椤旀槒绀�0x7C0闁挎冻鎷�$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#INITSEG ! 閻忓繐鏀 婵炲牓娼ч惁搴ｂ偓娑櫭▍鎺旂磾椤旀槒绀�0x9000闁挎冻鎷�$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#INITSEG$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,#SYSSEG$/;"	l
+mov	.\boot\bootsect.s	/^mov ax,root_dev ! 閻忓繐妫欓悧瀵告媼閹屾У闁告瑱鎷�$/;"	l
+mov	.\boot\bootsect.s	/^mov bp,#msg1 ! 闁圭ǹ娲ら幃婊呮啺娴ｈ鈻旂紒鈧搹瑙勭暠閻庢稒顨堥浣圭▔鐏炲倵鍋撻敓锟�$/;"	l
+mov	.\boot\bootsect.s	/^mov bx,#0x0007 ! page 0, attribute 7 (normal)$/;"	l
+mov	.\boot\bootsect.s	/^mov bx,#0x0200 ! address = 512, in INITSEG$/;"	l
+mov	.\boot\bootsect.s	/^mov bx,sectors ! 闁告瑦鐗旂粭鍌炴閵忋埄鍎�88 閻炴稑濂旂换姘扁偓娑欘焽濞堟垵袙韫囨洦姊块梺顒佹尰婢ф牠宕犻悜妯绘闁靛棗鍊搁々褔寮稿〒鐒慶tors=15$/;"	l
+mov	.\boot\bootsect.s	/^mov ch,#0x00$/;"	l
+mov	.\boot\bootsect.s	/^mov cx,#0x0002 ! sector 2, track 0$/;"	l
+mov	.\boot\bootsect.s	/^mov cx,#24 ! 闁稿骏鎷�24 濞戞搩浜滈悺褏绮敂琛″亾閿燂拷$/;"	l
+mov	.\boot\bootsect.s	/^mov cx,#256 ! 缂佸顕ф慨鈺冩媼閳╁啯娈堕柛濠忔嫹=256 閻庢稒顨愮槐锟�$/;"	l
+mov	.\boot\bootsect.s	/^mov dl,#0x00$/;"	l
+mov	.\boot\bootsect.s	/^mov ds,ax 闁挎稐鑳堕弫杈ㄧ鎼达絺鏌ら幖鏉戠箣閼垫垿寮垫径濠勫灮闁哄秴鐗婇幖閿嬫媴閿燂拷(push,pop,call)闁挎稑鑻ú婊冾潰閵堝懐绠戝銈嗘椤旀洜绱旈鑲╁灮闁哄秴鐗勯埀顒婃嫹$/;"	l
+mov	.\boot\bootsect.s	/^mov ds,ax$/;"	l
+mov	.\boot\bootsect.s	/^mov dx,#0x0000 ! drive 0, head 0$/;"	l
+mov	.\boot\bootsect.s	/^mov dx,#0x0000$/;"	l
+mov	.\boot\bootsect.s	/^mov dx,#0x3f2 ! 閺夌儐鍨堕埞宥夊箳瑜嶉崺妤呭础閿涘嫭鐣卞鐟板船婵晝绮╅姘稉闁挎稑鑻ぐ褔宕樺▎宥佸亾閿燂拷$/;"	l
+mov	.\boot\bootsect.s	/^mov es,ax ! segment of 0x010000 ! es = 閻庢稒蓱閺備够ystem 闁汇劌瀚宀勫捶閺夋寧绲婚柕鍡嫹$/;"	l
+mov	.\boot\bootsect.s	/^mov es,ax ! 闁搞儳濮崇拹鐔哥▔婵犲洦妗ㄩ柛娆愮墱椤ュ棝鎯勫Ο鍝勬闁轰線顣﹂懙鎴﹀棘椤撶喐鏆柟鍝勵槷缁摣s 闁汇劌瀚埀顒傘€嬬槐婵囨交濞嗘挸娅￠梺鎻掔У閺屽﹪寮ㄩ悷鐗堢闁靛棴鎷�$/;"	l
+mov	.\boot\bootsect.s	/^mov es,ax$/;"	l
+mov	.\boot\bootsect.s	/^mov root_dev,ax ! 閻忓繐妫欓ˉ鍛村蓟閵夈劎绠栭柣銊ュ椤旀洘寰勯崶褍濞囧ǎ鍥ㄧ箓閻°劎鎸ч柨瀣檷闁靛棴鎷�$/;"	l
+mov	.\boot\bootsect.s	/^mov sectors,cx ! 濞ｅ洦绻傞悺銊バ掕箛鏇ㄦ⒖闂侇剚鎸绘晶鏍礌閻戞ɑ娈堕柕鍡嫹$/;"	l
+mov	.\boot\bootsect.s	/^mov sp,#0xFF00 ! arbitrary value >>512$/;"	l
+mov	.\boot\bootsect.s	/^mov ss,ax$/;"	l
+mov	.\boot\head.s	/^mov $256,%ecx$/;"	l
+mov	.\boot\head.s	/^mov %ax,%ds # after changing gdt. CS was already$/;"	l
+mov	.\boot\head.s	/^mov %ax,%ds$/;"	l
+mov	.\boot\head.s	/^mov %ax,%es # reloaded in 'setup_gdt'$/;"	l
+mov	.\boot\head.s	/^mov %ax,%es$/;"	l
+mov	.\boot\head.s	/^mov %ax,%fs # 閸ョ姳璐熸穱顔芥暭娴滃攦dt閿涘本澧嶆禒銉╂付鐟曚線鍣搁弬鎷岊棅鏉炶姤澧嶉張澶屾畱濞堥潧鐦庣€涙ê娅掗妴锟�$/;"	l
+mov	.\boot\head.s	/^mov %ax,%fs$/;"	l
+mov	.\boot\head.s	/^mov %ax,%gs # CS 娴狅絿鐖滃▓闈涚槑鐎涙ê娅掑鑼病閸︹暞etup_gdt 娑擃參鍣搁弬鏉垮鏉炲€熺箖娴滃棎鈧拷$/;"	l
+mov	.\boot\head.s	/^mov %ax,%gs$/;"	l
+mov	.\boot\setup.s	/^mov [0],dx ! it from 0x90000.$/;"	l
+mov	.\boot\setup.s	/^mov [10],bx ! 0x9000A = 鐎瑰顥婇惃鍕▔缁€鍝勫敶鐎涙﹫绱�0x9000B = 閺勫墽銇氶悩鑸碘偓锟�(瑜扳晞澹奬/閸楁洝澹�)$/;"	l
+mov	.\boot\setup.s	/^mov [12],cx ! 0x9000C = 閺勫墽銇氶崡锛勫閹冨棘閺佽埇鈧拷$/;"	l
+mov	.\boot\setup.s	/^mov [2],ax ! 鐏忓棙澧跨仦鏇炲敶鐎涙ɑ鏆熼崐鐓庣摠閸︼拷0x90002 婢跺嫸绱�1 娑擃亜鐡ч敍澶堚偓锟�$/;"	l
+mov	.\boot\setup.s	/^mov [4],bx ! bh = display page$/;"	l
+mov	.\boot\setup.s	/^mov [6],ax ! al = video mode, ah = window width$/;"	l
+mov	.\boot\setup.s	/^mov [8],ax ! 0x90008 = ??$/;"	l
+mov	.\boot\setup.s	/^mov ah,#0x03 ! read cursor pos$/;"	l
+mov	.\boot\setup.s	/^mov ah,#0x0f$/;"	l
+mov	.\boot\setup.s	/^mov ah,#0x12$/;"	l
+mov	.\boot\setup.s	/^mov ah,#0x88$/;"	l
+mov	.\boot\setup.s	/^mov al,#0x01 ! 8086 mode for both$/;"	l
+mov	.\boot\setup.s	/^mov al,#0x02 ! 8259-2 is slave$/;"	l
+mov	.\boot\setup.s	/^mov al,#0x04 ! 8259-1 is master$/;"	l
+mov	.\boot\setup.s	/^mov al,#0x11 ! initialization sequence$/;"	l
+mov	.\boot\setup.s	/^mov al,#0x20 ! start of hardware int's (0x20)$/;"	l
+mov	.\boot\setup.s	/^mov al,#0x28 ! start of hardware int's 2 (0x28)$/;"	l
+mov	.\boot\setup.s	/^mov al,#0xD1 ! command write ! 0xD1 閸涙垝鎶ら惍锟�-鐞涖劎銇氱憰浣稿晸閺佺増宓侀崚锟�$/;"	l
+mov	.\boot\setup.s	/^mov al,#0xDF ! A20 on ! 闁鈧20 閸︽澘娼冪痪璺ㄦ畱閸欏倹鏆熼妴锟�$/;"	l
+mov	.\boot\setup.s	/^mov al,#0xFF ! mask off all interrupts for now$/;"	l
+mov	.\boot\setup.s	/^mov ax,#0x00$/;"	l
+mov	.\boot\setup.s	/^mov ax,#0x0000$/;"	l
+mov	.\boot\setup.s	/^mov ax,#0x0001 ! protected mode (PE) bit ! 娣囨繃濮㈠Ο鈥崇础濮ｆ梻澹掓担锟�(PE)閵嗭拷$/;"	l
+mov	.\boot\setup.s	/^mov ax,#0x01500$/;"	l
+mov	.\boot\setup.s	/^mov ax,#INITSEG ! this is done in bootsect already, but...$/;"	l
+mov	.\boot\setup.s	/^mov ax,#INITSEG ! 缁楋拷2 娑擃亞鈥栭惄妯圭瑝鐎涙ê婀敍灞藉灟鐎靛湱顑�2 娑擃亞鈥栭惄妯裤€冨〒鍛存祩閵嗭拷$/;"	l
+mov	.\boot\setup.s	/^mov ax,#INITSEG$/;"	l
+mov	.\boot\setup.s	/^mov ax,#SETUPSEG ! right, forgot this at first. didn't work :-)$/;"	l
+mov	.\boot\setup.s	/^mov bl,#0x10$/;"	l
+mov	.\boot\setup.s	/^mov cx,#0x10 ! 閸忓彉绱舵潏锟�0x10 鐎涙濡妴锟�$/;"	l
+mov	.\boot\setup.s	/^mov cx,#0x10$/;"	l
+mov	.\boot\setup.s	/^mov cx,#0x8000 ! 缁夎濮�0x8000 鐎涙绱�64k 鐎涙濡敍澶堚偓锟�$/;"	l
+mov	.\boot\setup.s	/^mov di,#0x0080 ! 娴肩姾绶惃鍕窗閻ㄥ嫬婀撮崸鈧�: 0x9000:0x0080 ?? es:di$/;"	l
+mov	.\boot\setup.s	/^mov di,#0x0090 ! 娴肩姾绶惃鍕窗閻ㄥ嫬婀撮崸鈧�: 0x9000:0x0090 ?? es:di$/;"	l
+mov	.\boot\setup.s	/^mov di,#0x0090$/;"	l
+mov	.\boot\setup.s	/^mov dl,#0x81$/;"	l
+mov	.\boot\setup.s	/^mov ds,ax ! ds 閹稿洤鎮滈張顒傗柤鎼达拷(setup)濞堢偣鈧拷$/;"	l
+mov	.\boot\setup.s	/^mov ds,ax ! source segment ! ds:si??濠ф劕婀撮崸鈧�(閸掓繂顫愭稉锟�0x1000:0x0)$/;"	l
+mov	.\boot\setup.s	/^mov ds,ax$/;"	l
+mov	.\boot\setup.s	/^mov es,ax ! destination segment ! es:di??閻╊喚娈戦崷鏉挎絻(閸掓繂顫愭稉锟�0x0000:0x0)$/;"	l
+mov	.\boot\setup.s	/^mov es,ax$/;"	l
+mov	.\kernel\asm.s	/^mov %ax,%ds$/;"	l
+mov	.\kernel\asm.s	/^mov %ax,%es$/;"	l
+mov	.\kernel\asm.s	/^mov %ax,%fs$/;"	l
+mov	.\kernel\asm.s	/^mov %dx,%ds$/;"	l
+mov	.\kernel\asm.s	/^mov %dx,%es$/;"	l
+mov	.\kernel\asm.s	/^mov %dx,%fs$/;"	l
+mov	.\kernel\chr_drv\keyboard.S	/^mov %ax,%ds$/;"	l
+mov	.\kernel\chr_drv\keyboard.S	/^mov %ax,%es$/;"	l
+mov	.\kernel\system_call.s	/^mov %ax,%ds$/;"	l
+mov	.\kernel\system_call.s	/^mov %ax,%es$/;"	l
+mov	.\kernel\system_call.s	/^mov %ax,%fs$/;"	l
+mov	.\kernel\system_call.s	/^mov %dx,%ds # ds,es 閹稿洤鎮滈崘鍛壋閺佺増宓佸▓锟�(閸忋劌鐪幓蹇氬牚缁楋箒銆冩稉顓熸殶閹诡喗顔岄幓蹇氬牚缁楋拷)閵嗭拷$/;"	l
+mov	.\kernel\system_call.s	/^mov %dx,%es$/;"	l
+mov	.\kernel\system_call.s	/^mov %dx,%fs # fs 閹稿洤鎮滅仦鈧柈銊︽殶閹诡喗顔�(鐏炩偓闁劍寮挎潻鎵儊鐞涖劋鑵戦弫鐗堝祦濞堝灚寮挎潻鎵儊)閵嗭拷$/;"	l
+mov	.\mm\page.s	/^mov %dx,%ds$/;"	l
+mov	.\mm\page.s	/^mov %dx,%es$/;"	l
+mov	.\mm\page.s	/^mov %dx,%fs$/;"	l
+movb	.\kernel\asm.s	/^movb $0x20,%al$/;"	l
+movb	.\kernel\chr_drv\keyboard.S	/^movb $'~,%ah$/;"	l
+movb	.\kernel\chr_drv\keyboard.S	/^movb $0,e0 \/\/ 婢跺秳缍卐0 閺嶅洤绻旈妴锟�$/;"	l
+movb	.\kernel\chr_drv\keyboard.S	/^movb $0x20,%al \/\/ 閸氾拷8259 娑擃厽鏌囬懞顖滃閸欐垿鈧笒OI(娑擃厽鏌囩紒鎾存将)娣団€冲娇閵嗭拷$/;"	l
+movb	.\kernel\chr_drv\keyboard.S	/^movb $0xed,%al \/* set leds command *\/ \/* 鐠佸墽鐤哃ED 閻ㄥ嫬鎳℃禒锟� *\/$/;"	l
+movb	.\kernel\chr_drv\keyboard.S	/^movb $0xfc,%al \/* pulse reset and A20 low *\/$/;"	l
+movb	.\kernel\chr_drv\keyboard.S	/^movb leds,%al \/\/ 閸欐潝eds 閺嶅洤绻旈敍灞肩稊娑撳搫寮弫鑸偓锟�$/;"	l
+movb	.\kernel\chr_drv\keyboard.S	/^movb num_table(%eax),%al \/\/ 娴狀櫕ax 娴ｆ粈璐熺槐銏犵穿閸婄》绱濋崣鏍ь嚠鎼存梹鏆熺€涙鐡х粭锟�??al閵嗭拷$/;"	l
+movb	.\kernel\chr_drv\rs_io.s	/^movb %al,buf(%ecx,%ebx) \/\/ 鐏忓棗鐡х粭锔芥杹閸︺劎绱﹂崘鎻掑隘娑擃厼銇旈幐鍥嫛閹碘偓閹稿洨娈戞担宥囩枂閵嗭拷$/;"	l
+movb	.\kernel\chr_drv\rs_io.s	/^movb buf(%ecx,%ebx),%al \/\/ 娴犲海绱﹂崘韫厬鐏忕偓瀵氶柦鍫濐槱閸欐牔绔寸€涙顑�??al閵嗭拷$/;"	l
+movb	.\kernel\system_call.s	/^movb $0x20,%al # EOI to interrupt controller #1$/;"	l
+movb	.\kernel\system_call.s	/^movb $0x20,%al # 闁椒瀵�8259A 娑擃厽鏌囬幒褍鍩楅崳鈥I 閹稿洣鎶ら敍鍫㈢波閺夌喓鈥栨禒鏈佃厬閺傤叏绱氶妴锟�$/;"	l
+movb	.\kernel\system_call.s	/^movb $0x20,%al$/;"	l
+move_to_user_mode	.\include\asm\system.h	3;"	d
+movl	.\boot\head.s	/^movl $0x00080000,%eax # 鐏忓棝鈧瀚ㄧ粭锟�0x0008 缂冾喖鍙唀ax 閻ㄥ嫰鐝�16 娴ｅ秳鑵戦妴锟�$/;"	l
+movl	.\boot\head.s	/^movl $0x10,%eax # reload all the segment registers$/;"	l
+movl	.\boot\head.s	/^movl $0x10,%eax # 鐎甸€涚艾GNU 濮瑰洨绱弶銉嚛閿涘本鐦℃稉顏嗘纯閹恒儲鏆熺憰浣蜂簰'$'瀵偓婵绱濋崥锕€鍨弰顖濄€冪粈鍝勬勾閸р偓閵嗭拷$/;"	l
+movl	.\boot\head.s	/^movl $0x10,%eax # 缂冾喗顔岄柅澶嬪缁楋讣绱欐担绺焥,es,fs 閹稿洤鎮済dt 鐞涖劋鑵戦惃鍕殶閹诡喗顔岄敍澶堚偓锟�$/;"	l
+movl	.\boot\head.s	/^movl $0xfff007,%eax \/* 16Mb - 4096 + 7 (r\/w user,p) *\/$/;"	l
+movl	.\boot\head.s	/^movl $1024*5,%ecx \/* 5 pages - pg_dir+4 page tables *\/$/;"	l
+movl	.\boot\head.s	/^movl $pg0+7,_pg_dir \/* set present bit\/user r\/w *\/$/;"	l
+movl	.\boot\head.s	/^movl $pg1+7,_pg_dir+4 \/* --------- " " --------- *\/$/;"	l
+movl	.\boot\head.s	/^movl $pg2+7,_pg_dir+8 \/* --------- " " --------- *\/$/;"	l
+movl	.\boot\head.s	/^movl $pg3+4092,%edi # edi??閺堚偓閸氬簼绔存い鐢垫畱閺堚偓閸氬簼绔存い骞库偓锟�$/;"	l
+movl	.\boot\head.s	/^movl $pg3+7,_pg_dir+12 \/* --------- " " --------- *\/$/;"	l
+movl	.\boot\head.s	/^movl %cr0,%eax # check math chip$/;"	l
+movl	.\boot\head.s	/^movl %cr0,%eax # 婵″倹鐏夌€涙ê婀惃鍕灟閸氭垵澧犵捄瀹犳祮閸掔増鐖ｉ崣锟�1 婢跺嫸绱濋崥锕€鍨弨鐟板晸cr0閵嗭拷$/;"	l
+movl	.\boot\head.s	/^movl %cr0,%eax$/;"	l
+movl	.\boot\head.s	/^movl %eax,%cr0 \/* set paging (PG) bit *\/$/;"	l
+movl	.\boot\head.s	/^movl %eax,%cr0$/;"	l
+movl	.\boot\head.s	/^movl %eax,%cr3 \/* cr3 - page directory start *\/$/;"	l
+movl	.\boot\head.s	/^movl %eax,(%edi) # 鐏忓棗鎼兼稉顓熸焽闂傘劍寮挎潻鎵儊鐎涙ê鍙嗙悰銊よ厬閵嗭拷$/;"	l
+movl	.\boot\head.s	/^movl %eax,0x000000 # loop forever if it isn't$/;"	l
+movl	.\boot\head.s	/^movl %edx,4(%edi)$/;"	l
+movl	.\kernel\asm.s	/^movl $0x10,%eax # 缂冾喖鍞撮弽鍛婃殶閹诡喗顔岄柅澶嬪缁楋负鈧拷$/;"	l
+movl	.\kernel\asm.s	/^movl $0x10,%edx # 閸愬懏鐗虫禒锝囩垳閺佺増宓佸▓鐢糕偓澶嬪缁楋负鈧拷$/;"	l
+movl	.\kernel\chr_drv\keyboard.S	/^movl $'\/,%eax \/\/ 閸氾箑鍨悽锟�'\/'閺囨寧宕查崙蹇撳娇'-'??al閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\keyboard.S	/^movl $0,(%ecx) \/\/ 閺堝绱濋崚娆戠枂鐠囥儴绻樼粙瀣╄礋閸欘垵绻嶇悰灞芥皑缂侇亞濮搁幀锟�(閸炪倝鍟嬬拠銉ㄧ箻缁嬶拷)閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\keyboard.S	/^movl $0x10,%eax \/\/ 鐏忓摼s閵嗕躬s 濞堥潧鐦庣€涙ê娅掔純顔昏礋閸愬懏鐗抽弫鐗堝祦濞堢偣鈧拷$/;"	l
+movl	.\kernel\chr_drv\keyboard.S	/^movl _table_list,%edx # read-queue for console$/;"	l
+movl	.\kernel\chr_drv\keyboard.S	/^movl func_table(,%eax,4),%eax \/\/ 閸欐牕濮涢懗浠嬫暛鐎电懓绨茬€涙顑佹惔蹇撳灙閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\keyboard.S	/^movl head(%edx),%ecx \/\/ 閸欐牜绱﹂崘鏌ユЕ閸掓ぞ鑵戞径瀛樺瘹闁斤拷??ecx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\keyboard.S	/^movl proc_list(%edx),%ecx \/\/ 鐠囥儵妲﹂崚妤冩畱缁涘绶熸潻娑氣柤閹稿洭鎷￠敍锟�$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl $0,(%ebx) # 閸氾箑鍨亸鍡氱箻缁嬪鐤嗘稉鍝勫讲鏉╂劘顢戦悩鑸碘偓锟�(閸炪倝鍟嬫潻娑氣柤)閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl $0,(%ebx) \/\/ 閸氾箑鍨亸鍡氱箻缁嬪鐤嗘稉鍝勫讲鏉╂劘顢戦悩鑸碘偓锟�(閸炪倝鍟嬫潻娑氣柤)閵嗗倶鈧拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl %ebx,head(%ecx) \/\/ 娣囨繂鐡ㄦ穱顔芥暭鏉╁洨娈戞径瀛樺瘹闁藉牄鈧拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl %ebx,tail(%ecx) \/\/ 娣囨繂鐡ㄥ韫叏閺€纭呯箖閻ㄥ嫬鐔幐鍥嫛閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl %ecx,%edx \/* 瑜版挸澧犳稉鎻掑經缂傛挸鍟块梼鐔峰灙閹稿洭鎷￠崷鏉挎絻??edx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl (%ecx),%ecx # read-queue # 閸欐牞顕扮紓鎾冲暱闂冪喎鍨紒鎾寸€崷鏉挎絻??ecx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl (%edx),%edx \/\/ 閸欐牞顕伴梼鐔峰灙閹稿洭鎷�(閸︽澘娼�)??edx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl 24(%esp),%ecx \/\/ 閸愬秴褰囩紓鎾冲暱闂冪喎鍨幐鍥嫛閸︽澘娼�??ecx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl 24(%esp),%edx \/\/ 鐏忓棛绱﹂崘鏌ユЕ閸掓瀵氶柦鍫濇勾閸р偓鐎涙ê鍙唀dx 鐎靛嫬鐡ㄩ崳顭掔礉$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl 4(%ecx),%ecx # write-queue # 閸欐牕鍟撶紓鎾冲暱闂冪喎鍨紒鎾寸€崷鏉挎絻??ecx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl head(%ecx),%ebx \/\/ 閸欐牞顕伴梼鐔峰灙娑擃厾绱﹂崘鎻掋仈閹稿洭鎷�??ebx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl head(%ecx),%ebx \/\/ 閸欐牕鍟撻梼鐔峰灙婢跺瓨瀵氶柦锟�??ebx閵嗭拷$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl proc_list(%ecx),%ebx # wake up sleeping process # 閸炪倝鍟嬬粵澶婄窡閻ㄥ嫯绻樼粙瀣ㄢ偓锟�$/;"	l
+movl	.\kernel\chr_drv\rs_io.s	/^movl rs_addr(%edx),%edx \/\/ 閸欐牔瑕嗛崣锟�1 閻ㄥ嫮顏崣锝呭娇??edx閵嗭拷$/;"	l
+movl	.\kernel\system_call.s	/^movl $-1,%eax # eax 娑擃厾鐤�-1閿涘矂鈧偓閸戣桨鑵戦弬顓溾偓锟�$/;"	l
+movl	.\kernel\system_call.s	/^movl $0x10,%eax # ds,es 缂冾喕璐熼崘鍛壋閺佺増宓佸▓鐐光偓锟�$/;"	l
+movl	.\kernel\system_call.s	/^movl $0x10,%eax # ds,es 缂冾喕璐熼幐鍥ф倻閸愬懏鐗抽弫鐗堝祦濞堢偣鈧拷$/;"	l
+movl	.\kernel\system_call.s	/^movl $0x10,%edx # set up ds,es to kernel space$/;"	l
+movl	.\kernel\system_call.s	/^movl $0x17,%eax # fs 缂冾喕璐熺拫鍐暏缁嬪绨惃鍕湰闁劍鏆熼幑顔筋唽閵嗭拷$/;"	l
+movl	.\kernel\system_call.s	/^movl $0x17,%eax # fs 缂冾喕璐熼幐鍥ф倻鐏炩偓闁劍鏆熼幑顔筋唽閿涘牆鍤柨娆戔柤鎼村繒娈戦弫鐗堝祦濞堢绱氶妴锟�$/;"	l
+movl	.\kernel\system_call.s	/^movl $0x17,%edx # fs points to local data space$/;"	l
+movl	.\kernel\system_call.s	/^movl $_unexpected_floppy_interrupt,%eax$/;"	l
+movl	.\kernel\system_call.s	/^movl $_unexpected_hd_interrupt,%edx # (kernel\/blk_drv\/hdc,237)閵嗭拷$/;"	l
+movl	.\kernel\system_call.s	/^movl %cr0,%eax$/;"	l
+movl	.\kernel\system_call.s	/^movl %ebx,signal(%eax) # 闁插秵鏌婃穱婵嗙摠signal 娴ｅ秴娴樻穱鈩冧紖??current->signal閵嗭拷$/;"	l
+movl	.\kernel\system_call.s	/^movl CS(%esp),%eax$/;"	l
+movl	.\kernel\system_call.s	/^movl _current,%eax # task[0] cannot have signals$/;"	l
+movl	.\kernel\system_call.s	/^movl _current,%eax # 閸欐牕缍嬮崜宥勬崲閸斺槄绱欐潻娑氣柤閿涘鏆熼幑顔剧波閺嬪嫬婀撮崸鈧�??eax閵嗭拷$/;"	l
+movl	.\kernel\system_call.s	/^movl blocked(%eax),%ecx # 閸欐牠妯嗘繅鐑囩礄鐏炲繗鏂€閿涘淇婇崣铚傜秴閸ワ拷??ecx閵嗭拷$/;"	l
+movl	.\kernel\system_call.s	/^movl signal(%eax),%ebx # 閸欐牔淇婇崣铚傜秴閸ワ拷??ebx閿涘本鐦�1 娴ｅ秳鍞悰锟�1 缁夊秳淇婇崣鍑ょ礉閸忥拷32 娑擃亙淇婇崣鏋偓锟�$/;"	l
+movl	.\mm\page.s	/^movl $0x10,%edx # 缂冾喖鍞撮弽鍛婃殶閹诡喗顔岄柅澶嬪缁楋负鈧拷$/;"	l
+movl	.\mm\page.s	/^movl %cr2,%edx # 閸欐牕绱╃挧鐑姐€夐棃銏犵磽鐢摜娈戠痪鎸庘偓褍婀撮崸鈧�$/;"	l
+movsb	.\boot\setup.s	/^movsb$/;"	l
+movsw	.\boot\setup.s	/^movsw$/;"	l
+movw	.\boot\bootsect.s	/^movw ! 缂佸顕ф慨锟�1 濞戞搩浜滈悺褔鏁嶉敓锟�$/;"	l
+movw	.\boot\head.s	/^movw $0x8E00,%dx \/* interrupt gate - dpl=0, present *\/$/;"	l
+movw	.\boot\head.s	/^movw %dx,%ax \/* selector = 0x0008 = cs *\/$/;"	l
+movw	.\kernel\chr_drv\keyboard.S	/^movw $0x1234,0x472 \/* don't do memory check *\/$/;"	l
+movw	.\kernel\chr_drv\keyboard.S	/^movw $0x5b1b,%ax \/\/ 閸︹暆x 娑擃厽鏂侀崗锟�'esc ['鐎涙顑侀敍灞肩瑢eax 妤傛ê鐡ф稉顓炵摟缁楋妇绮嶉幋鎰╅崝銊ョ碍閸掓ぜ鈧拷$/;"	l
+msg1	.\boot\bootsect.s	/^msg1:$/;"	l
+n	.\include\asm\memory.h	/^:: "D" ((long)(_res)), "S" ((long)(src)), "c" ((long) (n)) \\$/;"	v
+n_desc	.\include\a.out.h	/^  short n_desc;$/;"	m	struct:nlist
+n_name	.\include\a.out.h	/^    char *n_name;$/;"	m	union:nlist::__anon1
+n_next	.\include\a.out.h	/^    struct nlist *n_next;$/;"	m	union:nlist::__anon1	typeref:struct:nlist::__anon1::nlist
+n_other	.\include\a.out.h	/^  char n_other;$/;"	m	struct:nlist
+n_strx	.\include\a.out.h	/^    long n_strx;$/;"	m	union:nlist::__anon1
+n_type	.\include\a.out.h	/^  unsigned char n_type;$/;"	m	struct:nlist
+n_un	.\include\a.out.h	/^  n_un;$/;"	m	struct:nlist	typeref:union:nlist::__anon1
+n_value	.\include\a.out.h	/^  unsigned long n_value;$/;"	m	struct:nlist
+name	.\include\linux\fs.h	/^  char name[NAME_LEN];		\/\/ 閺傚洣娆㈤崥宥冣偓锟�$/;"	m	struct:dir_entry
+namei	.\fs\namei.c	/^namei (const char *pathname)$/;"	f
+next	.\kernel\blk_drv\blk.h	/^  struct request *next;		\/\/ 閹稿洤鎮滄稉瀣╃鐠囬攱鐪版い骞库偓锟�$/;"	m	struct:request	typeref:struct:request::request
+next	.\kernel\sched.c	/^  struct timer_list *next;	\/\/ 娑撳绔存稉顏勭暰閺冭泛娅掗妴锟�$/;"	m	struct:timer_list	typeref:struct:timer_list::timer_list	file:
+next	.\lib\malloc.c	/^  struct bucket_desc *next;	\/\/ 娑撳绔存稉顏呭伎鏉╂壆顑侀幐鍥嫛閵嗭拷$/;"	m	struct:bucket_desc	typeref:struct:bucket_desc::bucket_desc	file:
+next_timer	.\kernel\sched.c	/^timer_list[TIME_REQUESTS], *next_timer = NULL;$/;"	v	typeref:struct:timer_list	file:
+nlink_t	.\include\sys\types.h	/^typedef unsigned char nlink_t;	\/\/ 閻€劋绨潻鐐村复鐠佲剝鏆熼妴锟�$/;"	t
+nlist	.\include\a.out.h	/^struct nlist$/;"	s
+no_disk1	.\boot\setup.s	/^no_disk1:$/;"	l
+no_error_code	.\kernel\asm.s	/^no_error_code: # 鏉╂瑩鍣烽弰顖涙￥閸戞椽鏁婇崣宄邦槱閻炲棛娈戦崗銉ュ經婢跺嫸绱濈憴浣风瑓闂堛垻顑�55 鐞涘瞼鐡戦妴锟�$/;"	l
+nodename	.\include\sys\utsname.h	/^  char nodename[9];		\/\/ 娑撳骸鐤勯悳鎵祲閸忓磭娈戠純鎴犵捕娑擃叀濡悙鐟版倳缁夎埇鈧拷$/;"	m	struct:utsname
+none	.\kernel\chr_drv\keyboard.S	/^none: ret$/;"	l
+nop	.\include\asm\system.h	16;"	d
+notl	.\kernel\system_call.s	/^notl %ecx # 濮ｅ繋缍呴崣鏍у冀閵嗭拷$/;"	l
+npar	.\kernel\chr_drv\console.c	/^static unsigned long npar, par[NPAR];	\/\/ ANSI 鏉烆兛绠熺€涙顑佹惔蹇撳灙閸欏倹鏆熸稉顏呮殶閸滃苯寮弫鐗堟殶缂佸嫨鈧拷$/;"	v	file:
+nr_sectors	.\kernel\blk_drv\blk.h	/^  unsigned long nr_sectors;	\/\/ 鐠囩睜/閸愭瑦澧栭崠鐑樻殶閵嗭拷$/;"	m	struct:request
+nr_sects	.\include\linux\hdreg.h	/^  unsigned int nr_sects;	\/* nr of sectors in partition *\/$/;"	m	struct:partition
+nr_system_calls	.\kernel\system_call.s	/^nr_system_calls = 72 # Linux 0.11 閻楀牆鍞撮弽闀愯厬閻ㄥ嫮閮寸紒鐔荤殶閻€劍鈧粯鏆熼妴锟�$/;"	d
+num	.\kernel\chr_drv\keyboard.S	/^num: xorb $2,leds \/\/ num 闁款喗瀵滄稉瀣剁礉閸掓瑧鐐曟潪鐞筫ds 閺嶅洤绻旀稉顓犳畱鐎电懓绨叉担锟�(娴ｏ拷1)閵嗭拷$/;"	l
+num_table	.\kernel\chr_drv\keyboard.S	/^num_table:$/;"	l
+number	.\kernel\vsprintf.c	/^number (char *str, int num, int base, int size, int precision, int type)$/;"	f	file:
+off_t	.\include\sys\types.h	/^typedef long off_t;		\/\/ 閻€劋绨弬鍥︽闂€鍨閿涘牆銇囩亸蹇ョ礆閵嗭拷$/;"	t
+offsetof	.\include\stddef.h	17;"	d
+ok1_read	.\boot\bootsect.s	/^ok1_read:   $/;"	l
+ok2_read	.\boot\bootsect.s	/^ok2_read:$/;"	l
+ok3_read	.\boot\bootsect.s	/^ok3_read:$/;"	l
+ok4_read	.\boot\bootsect.s	/^ok4_read:$/;"	l
+ok_cur	.\kernel\chr_drv\keyboard.S	/^ok_cur: shll $16,%eax \/\/ 鐏忓摳x 娑擃厼鍞寸€瑰湱些閸掔櫝ax 妤傛ê鐡ф稉顓溾偓锟�$/;"	l
+ok_func	.\kernel\chr_drv\keyboard.S	/^ok_func:$/;"	l
+ok_load_setup	.\boot\bootsect.s	/^ok_load_setup:$/;"	l
+oom	.\mm\memory.c	/^static inline volatile void oom(void) {$/;"	f	file:
+open	.\lib\open.c	/^open (const char *filename, int flag, ...)$/;"	f
+open_namei	.\fs\namei.c	/^open_namei (const char *pathname, int flag, int mode,$/;"	f
+orb	.\kernel\chr_drv\keyboard.S	/^orb $0x01,mode \/\/ 閺勵垰涔弒hift 闁款喗瀵滄稉瀣剁礉鐠佸墽鐤唌ode 娑擃厼顕惔鏃傛畱閺嶅洤绻旀担锟�(娴ｏ拷0)閵嗭拷$/;"	l
+orb	.\kernel\chr_drv\keyboard.S	/^orb $0x02,mode \/\/ 閺勵垰褰竤hift 闁款喗瀵滄稉瀣剁礉鐠佸墽鐤唌ode 娑擃厼顕惔鏃傛畱閺嶅洤绻旀担锟�(娴ｏ拷1)閵嗭拷$/;"	l
+orb	.\kernel\chr_drv\keyboard.S	/^orb $0x80,%al \/\/ 鐎涙顑侀惃鍕秴7 缂冾喕缍呴妴锟�$/;"	l
+orb	.\kernel\chr_drv\keyboard.S	/^orb $0x80,mode \/\/ 鐠佸墽鐤唌ode 閺嶅洤绻旀稉鐠玜ps 闁款喖鍑￠幐澶夌瑓閺嶅洤绻旀担锟�(娴ｏ拷7)閵嗭拷$/;"	l
+orb	.\kernel\chr_drv\keyboard.S	/^orb %al,%al \/\/ 濡偓濞村婀呴弰顖氭儊閺堝顕惔鏃傛畱ASCII 閻降鈧拷$/;"	l
+origin	.\kernel\chr_drv\console.c	/^static unsigned long origin;	\/* Used for EGA\/VGA fast scroll *\/\/\/ scr_start閵嗭拷$/;"	v	file:
+orl	.\boot\head.s	/^orl $0x80000000,%eax # 濞ｈ绗侾G 閺嶅洤绻旈妴锟�$/;"	l
+orl	.\boot\head.s	/^orl $2,%eax # set MP$/;"	l
+out	.\boot\setup.s	/^out #0x20,al ! send it to 8259A-1 ! 閸欐垿鈧礁鍩�8259A 娑撴槒濮遍悧鍥モ偓锟�$/;"	l
+out	.\boot\setup.s	/^out #0x21,al ! 鐏炲繗鏂€娑撴槒濮遍悧鍥ㄥ閺堝鑵戦弬顓☆嚞濮瑰倶鈧拷$/;"	l
+out	.\boot\setup.s	/^out #0x21,al ! 闁椒瀵岄懞顖滃ICW2 閸涙垝鎶ょ€涙绱濈挧宄邦潗娑擃厽鏌囬崣鍑ょ礉鐟曚線鈧礁顨岄崷鏉挎絻閵嗭拷$/;"	l
+out	.\boot\setup.s	/^out #0x21,al ! 闁椒瀵岄懞顖滃ICW3 閸涙垝鎶ょ€涙绱濇稉鏄忓П閻楀洨娈慖R2 鏉╃偘绮犻懞顖滃INT閵嗭拷$/;"	l
+out	.\boot\setup.s	/^out #0x21,al ! 闁椒瀵岄懞顖滃ICW4 閸涙垝鎶ょ€涙ぜ鈧拷8086 濡€崇础閿涙稒娅橀柅娆礝I 閺傜懓绱￠敍锟�$/;"	l
+out	.\boot\setup.s	/^out #0x60,al$/;"	l
+out	.\boot\setup.s	/^out #0x64,al ! 8042 閻ㄥ嚤2 缁旑垰褰涢妴渚�2 缁旑垰褰涢惃鍕秴1 閻€劋绨珹20 缁捐法娈戦柅澶愨偓姘モ偓锟�$/;"	l
+out	.\boot\setup.s	/^out #0xA0,al ! and to 8259A-2 ! 閸愬秴褰傞柅浣稿煂8259A 娴犲氦濮遍悧鍥モ偓锟�$/;"	l
+out	.\boot\setup.s	/^out #0xA1,al ! 闁椒绮犻懞顖滃ICW2 閸涙垝鎶ょ€涙绱濇禒搴ゅП閻楀洨娈戠挧宄邦潗娑擃厽鏌囬崣鏋偓锟�$/;"	l
+out	.\boot\setup.s	/^out #0xA1,al ! 闁椒绮犻懞顖滃ICW3 閸涙垝鎶ょ€涙绱濈悰銊с仛娴犲氦濮遍悧鍥╂畱INT 鏉╃偛鍩屾稉鏄忓П$/;"	l
+out	.\boot\setup.s	/^out #0xA1,al 閿涗礁鐫嗛拕鎴掔矤閼侯垳澧栭幍鈧張澶夎厬閺傤叀顕Ч鍌樷偓锟�$/;"	l
+out	.\boot\setup.s	/^out #0xA1,al 閿涗線鈧椒绮犻懞顖滃ICW4 閸涙垝鎶ょ€涙绱濋崘鍛啇閸氬奔绗傞妴锟�$/;"	l
+outb	.\boot\bootsect.s	/^outb ! 閻忓繐鎽砽 濞戞搩鍘惧▓鎴﹀礃閸涱収鍟囬弶鍫熸尭閸ゎ參宕氶惂鐬� 闁圭ǹ娲ら悾楣冩儍閸曨収浼傞柛娆欑到楠炴捇濡撮敓锟�$/;"	l
+outb	.\include\asm\io.h	3;"	d
+outb	.\kernel\asm.s	/^outb %al,$0x20 # 閸氾拷8259 娑撹鑵戦弬顓熷付閸掓儼濮遍悧鍥у絺闁笒OI閿涘牅鑵戦弬顓犵波閺夌噦绱氭穱鈥冲娇閵嗭拷$/;"	l
+outb	.\kernel\asm.s	/^outb %al,$0xF0 # 闁俺绻冮崘锟�0xF0 缁旑垰褰涢敍灞炬拱娑擃厽鏌囩亸鍡樼Х闂勵棭PU 閻ㄥ嚉USY 瀵ゅ墎鐢绘穱鈥冲娇閿涘苯鑻熼柌宥嗘煀$/;"	l
+outb	.\kernel\chr_drv\keyboard.S	/^outb %al,$0x20$/;"	l
+outb	.\kernel\chr_drv\keyboard.S	/^outb %al,$0x60 \/\/ 閸欐垿鈧浇顕氶崣鍌涙殶閵嗭拷$/;"	l
+outb	.\kernel\chr_drv\keyboard.S	/^outb %al,$0x60 \/\/ 閸欐垿鈧線鏁惄妯烘嚒娴狅拷0xed 閸掞拷0x60 缁旑垰褰涢妴锟�$/;"	l
+outb	.\kernel\chr_drv\keyboard.S	/^outb %al,$0x61 \/\/ 娴ｇ笅PI PB7 娴ｅ秴顦叉担宥忕礄閸忎浇顔忛柨顔炬磸瀹搞儰缍旈敍澶堚偓锟�$/;"	l
+outb	.\kernel\chr_drv\keyboard.S	/^outb %al,$0x64 \/\/ 閸氭垹閮寸紒鐔奉槻娴ｅ秴鎷癆20 缁捐儻绶崙楦跨閼村鍟块妴锟�$/;"	l
+outb	.\kernel\chr_drv\rs_io.s	/^outb %al,$0x20 \/* EOI *\/$/;"	l
+outb	.\kernel\chr_drv\rs_io.s	/^outb %al,%dx \/\/ 閸氭垹顏崣锟�0x3f8(0x2f8)闁礁鍤崚棰佺箽閹镐礁鐦庣€涙ê娅掓稉顓溾偓锟�$/;"	l
+outb	.\kernel\chr_drv\rs_io.s	/^outb %al,%dx \/\/ 閸愭瑥鍙�0x3f9(0x2f9)閵嗭拷$/;"	l
+outb	.\kernel\system_call.s	/^outb %al,$0x20 # EOI to interrupt controller #1$/;"	l
+outb	.\kernel\system_call.s	/^outb %al,$0x20 # 閹垮秳缍旈崨鎴掓姢鐎涙」CW2 闁拷0x20 缁旑垰褰涢妴锟�$/;"	l
+outb	.\kernel\system_call.s	/^outb %al,$0x20$/;"	l
+outb	.\kernel\system_call.s	/^outb %al,$0xA0 # EOI to interrupt controller #1 # 闁椒绮�8259A閵嗭拷$/;"	l
+outb_p	.\include\asm\io.h	17;"	d
+output_byte	.\kernel\blk_drv\floppy.c	/^output_byte (char byte)$/;"	f	file:
+page	.\lib\malloc.c	/^  void *page;			\/\/ 鐠囥儲銆婇幓蹇氬牚缁楋箑顕惔鏃傛畱閸愬懎鐡ㄦい鐢告桨閹稿洭鎷￠妴锟�$/;"	m	struct:bucket_desc	file:
+panic	.\kernel\panic.c	/^panic (const char *s)$/;"	f
+par	.\kernel\chr_drv\console.c	/^static unsigned long npar, par[NPAR];	\/\/ ANSI 鏉烆兛绠熺€涙顑佹惔蹇撳灙閸欏倹鏆熸稉顏呮殶閸滃苯寮弫鐗堟殶缂佸嫨鈧拷$/;"	v	file:
+partition	.\include\linux\hdreg.h	/^struct partition$/;"	s
+permission	.\fs\namei.c	/^permission (struct m_inode *inode, int mask)$/;"	f	file:
+pg0	.\boot\head.s	/^pg0:$/;"	l
+pg1	.\boot\head.s	/^pg1:$/;"	l
+pg2	.\boot\head.s	/^pg2:$/;"	l
+pg3	.\boot\head.s	/^pg3:$/;"	l
+pgrp	.\include\linux\sched.h	/^  long pid, father, pgrp, session, leader;$/;"	m	struct:task_struct
+pgrp	.\include\linux\tty.h	/^  int pgrp;			\/\/ 閹碘偓鐏炵偠绻樼粙瀣矋閵嗭拷$/;"	m	struct:tty_struct
+pid	.\include\linux\sched.h	/^  long pid, father, pgrp, session, leader;$/;"	m	struct:task_struct
+pid_t	.\include\sys\types.h	/^typedef int pid_t;		\/\/ 閻€劋绨潻娑氣柤閸欏嘲鎷版潻娑氣柤缂佸嫬褰块妴锟�$/;"	t
+pop	.\boot\bootsect.s	/^    pop dx$/;"	d
+pop	.\boot\bootsect.s	/^pop dx$/;"	d
+pop	.\boot\head.s	/^pop %ds$/;"	l
+pop	.\boot\head.s	/^pop %es$/;"	l
+pop	.\boot\head.s	/^pop %fs$/;"	l
+pop	.\kernel\asm.s	/^pop %ds$/;"	l
+pop	.\kernel\asm.s	/^pop %es$/;"	l
+pop	.\kernel\asm.s	/^pop %fs$/;"	l
+pop	.\kernel\chr_drv\keyboard.S	/^pop %ds$/;"	l
+pop	.\kernel\chr_drv\keyboard.S	/^pop %es$/;"	l
+pop	.\kernel\chr_drv\rs_io.s	/^pop %ds \/* 閻㈠彉绨潻娆愭Ц娑撯偓娑擃亙鑵戦弬顓犫柤鎼村骏绱濋幋鎴滄粦娑撳秶鐓￠柆鎻箂 閺勵垰鎯佸锝団€橀敍锟�*\/$/;"	l
+pop	.\kernel\chr_drv\rs_io.s	/^pop %ds$/;"	l
+pop	.\kernel\chr_drv\rs_io.s	/^pop %es$/;"	l
+pop	.\kernel\system_call.s	/^pop %ds$/;"	l
+pop	.\kernel\system_call.s	/^pop %es$/;"	l
+pop	.\kernel\system_call.s	/^pop %fs # 娑撳﹤褰炵拫鍐暏do_floppy 閹稿洤鎮滈惃鍕毐閺佽埇鈧拷$/;"	l
+pop	.\kernel\system_call.s	/^pop %fs # 娑撳﹤褰炵拫鍐暏do_hd 閹稿洤鎮滈惃鍑� 閸戣姤鏆熼妴锟�$/;"	l
+pop	.\kernel\system_call.s	/^pop %fs$/;"	l
+pop	.\mm\page.s	/^pop %ds$/;"	l
+pop	.\mm\page.s	/^pop %es$/;"	l
+pop	.\mm\page.s	/^pop %fs$/;"	l
+popl	.\boot\head.s	/^popl %eax$/;"	l
+popl	.\boot\head.s	/^popl %ecx$/;"	l
+popl	.\boot\head.s	/^popl %edx$/;"	l
+popl	.\kernel\asm.s	/^popl %eax # 瀵懓鍤崢鐔告降eax 娑擃厾娈戦崘鍛啇閵嗭拷$/;"	l
+popl	.\kernel\asm.s	/^popl %eax$/;"	l
+popl	.\kernel\asm.s	/^popl %ebp$/;"	l
+popl	.\kernel\asm.s	/^popl %ebx$/;"	l
+popl	.\kernel\asm.s	/^popl %ecx$/;"	l
+popl	.\kernel\asm.s	/^popl %edi$/;"	l
+popl	.\kernel\asm.s	/^popl %edx$/;"	l
+popl	.\kernel\asm.s	/^popl %esi$/;"	l
+popl	.\kernel\chr_drv\keyboard.S	/^popl %eax$/;"	l
+popl	.\kernel\chr_drv\keyboard.S	/^popl %ebx$/;"	l
+popl	.\kernel\chr_drv\keyboard.S	/^popl %ecx$/;"	l
+popl	.\kernel\chr_drv\keyboard.S	/^popl %edx$/;"	l
+popl	.\kernel\chr_drv\rs_io.s	/^popl %eax$/;"	l
+popl	.\kernel\chr_drv\rs_io.s	/^popl %ebx$/;"	l
+popl	.\kernel\chr_drv\rs_io.s	/^popl %ecx$/;"	l
+popl	.\kernel\chr_drv\rs_io.s	/^popl %edx \/\/ 瀵懓鍤稉顓熸焽閺嶅洩鐦戠€靛嫬鐡ㄩ崳銊ь伂閸欙絽褰�0x3fa閿涘牊鍨�0x2fa閿涘鈧拷$/;"	l
+popl	.\kernel\chr_drv\rs_io.s	/^popl %edx$/;"	l
+popl	.\kernel\system_call.s	/^popl %eax # 瀵懓鍤穱鈥冲娇閸婄鈧拷$/;"	l
+popl	.\kernel\system_call.s	/^popl %eax$/;"	l
+popl	.\kernel\system_call.s	/^popl %ebp$/;"	l
+popl	.\kernel\system_call.s	/^popl %ebx$/;"	l
+popl	.\kernel\system_call.s	/^popl %ecx$/;"	l
+popl	.\kernel\system_call.s	/^popl %edi$/;"	l
+popl	.\kernel\system_call.s	/^popl %edx$/;"	l
+popl	.\kernel\system_call.s	/^popl %esi$/;"	l
+popl	.\mm\page.s	/^popl %eax$/;"	l
+popl	.\mm\page.s	/^popl %ecx$/;"	l
+popl	.\mm\page.s	/^popl %edx$/;"	l
+pos	.\kernel\chr_drv\console.c	/^static unsigned long pos;	\/\/ 瑜版挸澧犻崗澶嬬垼鐎电懓绨查惃鍕▔缁€鍝勫敶鐎涙ü缍呯純顔衡偓锟�$/;"	v	file:
+printbuf	.\init\main.c	/^    static char printbuf[1024];  \/\/ 闂傚牊鐟﹂埀顑跨閻⊙呯箔閿旇儻顩柡浣瑰缁秹濡撮敓锟�$/;"	v	file:
+printk	.\kernel\printk.c	/^printk (const char *fmt, ...)$/;"	f
+priority	.\include\linux\sched.h	/^  long priority;$/;"	m	struct:task_struct
+priority	.\kernel\system_call.s	/^priority = 8 \/\/ 鏉╂劘顢戞导妯哄帥閺佽埇鈧倷鎹㈤崝鈥崇磻婵绻嶇悰灞炬counter=priority閿涘矁绉烘径褍鍨潻鎰攽閺冨爼妫跨搾濠囨毐閵嗭拷$/;"	d
+proc_list	.\include\linux\tty.h	/^  struct task_struct *proc_list;	\/\/ 缁涘绶熸潻娑氣柤閸掓銆冮妴锟�$/;"	m	struct:tty_queue	typeref:struct:tty_queue::task_struct
+proc_list	.\kernel\chr_drv\keyboard.S	/^proc_list = 12 \/\/ 缁涘绶熺拠銉х处閸愭煡妲﹂崚妤冩畱鏉╂稓鈻肩€涙顔岄崑蹇曅╅妴锟�$/;"	d
+proc_list	.\kernel\chr_drv\rs_io.s	/^proc_list = 12 \/\/ 缁涘绶熺拠銉х处閸愯尙娈戞潻娑氣柤鐎涙顔岄崑蹇曅╅妴锟�$/;"	d
+ptrdiff_t	.\include\stddef.h	/^typedef long ptrdiff_t;		\/\/ 娑撱倓閲滈幐鍥嫛閻╃ǹ鍣虹紒鎾寸亯閻ㄥ嫮琚崹瀣ㄢ偓锟�$/;"	t
+ptrdiff_t	.\include\sys\types.h	/^typedef long ptrdiff_t;$/;"	t
+push	.\boot\bootsect.s	/^    push dx$/;"	d
+push	.\boot\bootsect.s	/^push dx$/;"	d
+push	.\boot\head.s	/^push %ds # 鏉╂瑩鍣风拠閿嬫暈閹板骏绱掗敍涔╯,es,fs,gs 缁涘娅ч悞鑸垫Ц16 娴ｅ秶娈戠€靛嫬鐡ㄩ崳顭掔礉娴ｅ棗鍙嗛弽鍫濇倵$/;"	l
+push	.\boot\head.s	/^push %es$/;"	l
+push	.\boot\head.s	/^push %fs$/;"	l
+push	.\kernel\asm.s	/^push %ds # 閿涗緤绱�16 娴ｅ秶娈戝▓闈涚槑鐎涙ê娅掗崗銉︾垽閸氬簼绡冪憰浣稿窗閻拷4 娑擃亜鐡ч懞鍌樷偓锟�$/;"	l
+push	.\kernel\asm.s	/^push %ds$/;"	l
+push	.\kernel\asm.s	/^push %es$/;"	l
+push	.\kernel\asm.s	/^push %fs$/;"	l
+push	.\kernel\chr_drv\keyboard.S	/^push %ds$/;"	l
+push	.\kernel\chr_drv\keyboard.S	/^push %es$/;"	l
+push	.\kernel\chr_drv\rs_io.s	/^push %ds \/* as this is an interrupt, we cannot *\/$/;"	l
+push	.\kernel\chr_drv\rs_io.s	/^push %es$/;"	l
+push	.\kernel\system_call.s	/^push %ds # save ds,es and put kernel data space$/;"	l
+push	.\kernel\system_call.s	/^push %ds # 娣囨繂鐡ㄩ崢鐔割唽鐎靛嫬鐡ㄩ崳銊モ偓绗衡偓锟�$/;"	l
+push	.\kernel\system_call.s	/^push %ds$/;"	l
+push	.\kernel\system_call.s	/^push %es # into them. %fs is used by _system_call$/;"	l
+push	.\kernel\system_call.s	/^push %es$/;"	l
+push	.\kernel\system_call.s	/^push %fs$/;"	l
+push	.\kernel\system_call.s	/^push %gs$/;"	l
+push	.\mm\page.s	/^push %ds$/;"	l
+push	.\mm\page.s	/^push %es$/;"	l
+push	.\mm\page.s	/^push %fs$/;"	l
+pushl	.\boot\head.s	/^pushl $0 # These are the parameters to main :-)$/;"	l
+pushl	.\boot\head.s	/^pushl $0 # 鏉╂瑤绨洪弰顖濈殶閻⑩暕ain 缁嬪绨惃鍕棘閺佸府绱欓幐鍣刵it\/main.c閿涘鈧拷$/;"	l
+pushl	.\boot\head.s	/^pushl $0$/;"	l
+pushl	.\boot\head.s	/^pushl $L6 # return address for main, if it decides to.$/;"	l
+pushl	.\boot\head.s	/^pushl $_main # '_main'閺勵垳绱拠鎴犫柤鎼村繐顕甿ain 閻ㄥ嫬鍞撮柈銊ㄣ€冪粈鐑樻煙濞夋洏鈧拷$/;"	l
+pushl	.\boot\head.s	/^pushl $int_msg # 閹跺﹨鐨熼悽鈺瑀intk 閸戣姤鏆熼惃鍕棘閺佺増瀵氶柦鍫礄閸︽澘娼冮敍澶婂弳閺嶅牄鈧拷$/;"	l
+pushl	.\boot\head.s	/^pushl %eax$/;"	l
+pushl	.\boot\head.s	/^pushl %ecx$/;"	l
+pushl	.\boot\head.s	/^pushl %edx$/;"	l
+pushl	.\kernel\asm.s	/^pushl $0 # "error code" # 鐏忓棗鍤柨娆戠垳閸忋儲鐖ら妴锟�$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_bounds$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_coprocessor_segment_overrun$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_divide_error # 妫ｆ牕鍘涢幎濠傜殺鐟曚浇鐨熼悽銊ф畱閸戣姤鏆熼崷鏉挎絻閸忋儲鐖ら妴鍌濈箹濞堢數鈻兼惔蹇曟畱閸戞椽鏁婇崣铚傝礋0閵嗭拷$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_double_fault # C 閸戣姤鏆熼崷鏉挎絻閸忋儲鐖ら妴锟�$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_general_protection$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_int3 # _do_debug C 閸戣姤鏆熼幐鍥嫛閸忋儲鐖ら妴鍌欎簰娑撳鎮撻妴锟�$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_int3$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_invalid_TSS$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_invalid_op$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_nmi$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_overflow$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_reserved$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_segment_not_present$/;"	l
+pushl	.\kernel\asm.s	/^pushl $_do_stack_segment$/;"	l
+pushl	.\kernel\asm.s	/^pushl %eax # error code # 閸戞椽鏁婇崣宄板弳閺嶅牄鈧拷$/;"	l
+pushl	.\kernel\asm.s	/^pushl %eax$/;"	l
+pushl	.\kernel\asm.s	/^pushl %ebp$/;"	l
+pushl	.\kernel\asm.s	/^pushl %ebx$/;"	l
+pushl	.\kernel\asm.s	/^pushl %ecx$/;"	l
+pushl	.\kernel\asm.s	/^pushl %edi$/;"	l
+pushl	.\kernel\asm.s	/^pushl %edx$/;"	l
+pushl	.\kernel\asm.s	/^pushl %esi$/;"	l
+pushl	.\kernel\chr_drv\keyboard.S	/^pushl $0 \/\/ 閹貉冨煑閸欑殞ty 閸欙拷=0閿涘奔缍旀稉鍝勫棘閺佹澘鍙嗛弽鍫涒偓锟�$/;"	l
+pushl	.\kernel\chr_drv\keyboard.S	/^pushl %eax$/;"	l
+pushl	.\kernel\chr_drv\keyboard.S	/^pushl %ebx$/;"	l
+pushl	.\kernel\chr_drv\keyboard.S	/^pushl %ecx \/\/ 娣囨繂鐡╡cx閿涘當dx 閸愬懎顔愰妴锟�$/;"	l
+pushl	.\kernel\chr_drv\keyboard.S	/^pushl %ecx$/;"	l
+pushl	.\kernel\chr_drv\keyboard.S	/^pushl %edx \/\/ 閸欐牗甯堕崚璺哄酱tty 缂佹挻鐎稉顓☆嚢缂傛挸鍟块梼鐔峰灙閹稿洭鎷￠妴锟�$/;"	l
+pushl	.\kernel\chr_drv\keyboard.S	/^pushl %edx$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl $0x10 \/* know that bs is ok. Load it *\/$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl $0x10 \/* 閹碘偓娴犮儱濮炴潪钘夌暊娴狅拷(鐠併兙s閵嗕躬s 閹稿洤鎮滈崘鍛壋閺佺増宓佸▓锟� *\/$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl $_table_list+16 \/\/ tty 鐞涖劋鑵戠€电懓绨叉稉鎻掑經2 閻ㄥ嫯顕伴崘娆戠处閸愭煡妲﹂崚妤佸瘹闁藉牏娈戦崷鏉挎絻閸忋儲鐖ら妴锟�$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl $_table_list+8 \/\/ tty 鐞涖劋鑵戠€电懓绨叉稉鎻掑經1 閻ㄥ嫯顕伴崘娆戠处閸愬弶瀵氶柦鍫㈡畱閸︽澘娼冮崗銉︾垽(tty_io.c閿涳拷99)閵嗭拷$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl %eax$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl %ebx$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl %ecx$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl %edx \/\/ 鐏忓棛顏崣锝呭娇0x3fa(0x2fa)閸忋儲鐖ら妴锟�$/;"	l
+pushl	.\kernel\chr_drv\rs_io.s	/^pushl %edx$/;"	l
+pushl	.\kernel\system_call.s	/^pushl $ret_from_sys_call # 閹跺﹣绗呴棃銏ｇ殶閻€劏绻戦崶鐐垫畱閸︽澘娼冮崗銉︾垽閵嗭拷$/;"	l
+pushl	.\kernel\system_call.s	/^pushl $ret_from_sys_call # 閹跺﹣绗呴棃銏ｇ儲鏉烆剚鍨ㄧ拫鍐暏閻ㄥ嫯绻戦崶鐐叉勾閸р偓閸忋儲鐖ら妴锟�$/;"	l
+pushl	.\kernel\system_call.s	/^pushl $ret_from_sys_call # 鐏忓敃et_from_sys_call 閻ㄥ嫬婀撮崸鈧崗銉︾垽閿涳拷101 鐞涘矉绱氶妴锟�$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %eax # 閹跺﹦閮寸紒鐔荤殶閻€劌褰块崗銉︾垽閵嗭拷$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %eax$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ebp$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ebx # is saved as we use that in ret_sys_call$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ebx # to the system call$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ebx$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ecx # push %ebx,%ecx,%edx as parameters$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ecx # save those across function calls. %ebx$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ecx # 娣団€冲娇閸婄厧鍙嗛弽鍫滅稊娑撻缚鐨熼悽鈺爋_signal 閻ㄥ嫬寮弫棰佺娑撯偓閵嗭拷$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %ecx$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %edi$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %edx # ebx,ecx,edx 娑擃厽鏂侀惈鈧化鑽ょ埠鐠嬪啰鏁ら惄绋跨安閻ㄥ嚋 鐠囶叀鈻堥崙鑺ユ殶閻ㄥ嫯鐨熼悽銊ュ棘閺佽埇鈧拷$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %edx # we save %eax,%ecx,%edx as gcc doesn't$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %edx$/;"	l
+pushl	.\kernel\system_call.s	/^pushl %esi$/;"	l
+pushl	.\mm\page.s	/^pushl %eax$/;"	l
+pushl	.\mm\page.s	/^pushl %ecx$/;"	l
+pushl	.\mm\page.s	/^pushl %edx # 鐏忓棜顕氱痪鎸庘偓褍婀撮崸鈧崪灞藉毉闁挎瑧鐖滈崢瀣弳閸棙鐖ら敍灞肩稊娑撻缚鐨熼悽銊ュ毐閺佹壆娈戦崣鍌涙殶閵嗭拷$/;"	l
+pushl	.\mm\page.s	/^pushl %edx$/;"	l
+put_fs_byte	.\include\asm\segment.h	/^put_fs_byte (char val, char *addr)$/;"	f
+put_fs_long	.\include\asm\segment.h	/^put_fs_long (unsigned long val, unsigned long *addr)$/;"	f
+put_fs_word	.\include\asm\segment.h	/^put_fs_word (short val, short *addr)$/;"	f
+put_page	.\mm\memory.c	/^unsigned long put_page(unsigned long page, unsigned long address) {$/;"	f
+put_queue	.\kernel\chr_drv\keyboard.S	/^put_queue:$/;"	l
+put_super	.\fs\super.c	/^put_super (int dev)$/;"	f
+pwd	.\include\linux\sched.h	/^  struct m_inode *pwd;$/;"	m	struct:task_struct	typeref:struct:task_struct::m_inode
+ques	.\kernel\chr_drv\console.c	/^static unsigned long ques = 0;$/;"	v	file:
+quot	.\include\sys\types.h	/^  int quot, rem;$/;"	m	struct:__anon2
+quot	.\include\sys\types.h	/^  long quot, rem;$/;"	m	struct:__anon3
+quotient	.\kernel\chr_drv\tty_ioctl.c	/^static unsigned short quotient[] = {$/;"	v	file:
+r_address	.\include\a.out.h	/^  int r_address;$/;"	m	struct:relocation_info
+r_extern	.\include\a.out.h	/^  unsigned int r_extern:1;$/;"	m	struct:relocation_info
+r_length	.\include\a.out.h	/^  unsigned int r_length:2;$/;"	m	struct:relocation_info
+r_pad	.\include\a.out.h	/^  unsigned int r_pad:4;$/;"	m	struct:relocation_info
+r_pcrel	.\include\a.out.h	/^  unsigned int r_pcrel:1;$/;"	m	struct:relocation_info
+r_symbolnum	.\include\a.out.h	/^  unsigned int r_symbolnum:24;$/;"	m	struct:relocation_info
+rate	.\kernel\blk_drv\floppy.c	/^       unsigned char gap, rate, spec1;$/;"	m	struct:floppy_struct	file:
+rd_init	.\kernel\blk_drv\ramdisk.c	/^rd_init (long mem_start, int length)$/;"	f
+rd_length	.\kernel\blk_drv\ramdisk.c	/^int rd_length = 0;		\/\/ 閾忔碍瀚欓惄妯诲閸楃姴鍞寸€涙ê銇囩亸蹇ョ礄鐎涙濡敍澶堚偓锟�$/;"	v
+rd_load	.\kernel\blk_drv\ramdisk.c	/^rd_load (void)$/;"	f
+rd_start	.\kernel\blk_drv\ramdisk.c	/^char *rd_start;			\/\/ 閾忔碍瀚欓惄妯烘躬閸愬懎鐡ㄦ稉顓犳畱鐠у嘲顫愭担宥囩枂閵嗗倸婀�52 鐞涘苯鍨垫慨瀣閸戣姤鏆焤d_init()娑擄拷$/;"	v
+read_char	.\kernel\chr_drv\rs_io.s	/^read_char:$/;"	l
+read_inode	.\fs\inode.c	/^read_inode (struct m_inode *inode)$/;"	f	file:
+read_it	.\boot\bootsect.s	/^read_it:$/;"	l
+read_pipe	.\fs\pipe.c	/^read_pipe (struct m_inode *inode, char *buf, int count)$/;"	f
+read_q	.\include\linux\tty.h	/^  struct tty_queue read_q;	\/\/ tty 鐠囧妲﹂崚妞尖偓锟�$/;"	m	struct:tty_struct	typeref:struct:tty_struct::tty_queue
+read_super	.\fs\super.c	/^read_super (int dev)$/;"	f	file:
+read_track	.\boot\bootsect.s	/^read_track:$/;"	l
+reboot	.\kernel\chr_drv\keyboard.S	/^reboot:$/;"	l
+recal_interrupt	.\kernel\blk_drv\floppy.c	/^recal_interrupt (void)$/;"	f	file:
+recalibrate	.\kernel\blk_drv\floppy.c	/^static int recalibrate = 0;	\/\/ 閺嶅洤绻旈敍姘舵付鐟曚線鍣搁弬鐗堢墡濮濓絻鈧拷$/;"	v	file:
+recalibrate_floppy	.\kernel\blk_drv\floppy.c	/^recalibrate_floppy (void)$/;"	f	file:
+refcnt	.\lib\malloc.c	/^  unsigned short refcnt;	\/\/ 瀵洜鏁ょ拋鈩冩殶閵嗭拷$/;"	m	struct:bucket_desc	file:
+release	.\include\sys\utsname.h	/^  char release[9];		\/\/ 閺堫剙鐤勯悳鎵畱瑜版挸澧犻崣鎴ｎ攽缁狙冨焼閵嗭拷$/;"	m	struct:utsname
+release	.\kernel\exit.c	/^release (struct task_struct *p)$/;"	f
+relocation_info	.\include\a.out.h	/^struct relocation_info$/;"	s
+rem	.\include\sys\types.h	/^  int quot, rem;$/;"	m	struct:__anon2
+rem	.\include\sys\types.h	/^  long quot, rem;$/;"	m	struct:__anon3
+remove_from_queues	.\fs\buffer.c	/^remove_from_queues (struct buffer_head *bh)$/;"	f	file:
+rep	.\boot\bootsect.s	/^rep ! 闂佹彃绉撮ˇ鏌ュ箥瑜戦、鎴︽晬瀹€鈧ú鍧楀礆閻х湣 = 0$/;"	l
+rep	.\boot\setup.s	/^rep$/;"	l
+rep_int	.\kernel\chr_drv\rs_io.s	/^rep_int: \/\/ 娑擃厽鏌囬弽鍥槕鐎靛嫬鐡ㄩ崳銊ь伂閸欙絾妲�0x3fa閿涳拷0x2fa閿涘绱濋崣鍌濐潌娑撳﹨濡崚妤勩€冮崥搴濅繆閹垬鈧拷$/;"	l
+reply_buffer	.\kernel\blk_drv\floppy.c	/^     static unsigned char reply_buffer[MAX_REPLIES];	\/\/ 鐎涙ɑ鏂丗DC 鏉╂柨娲栭惃鍕波閺嬫粈淇婇幁顖樷偓锟�$/;"	v	file:
+request	.\kernel\blk_drv\blk.h	/^struct request$/;"	s
+request	.\kernel\blk_drv\ll_rw_blk.c	/^struct request request[NR_REQUEST];$/;"	v	typeref:struct:request
+request_fn	.\kernel\blk_drv\blk.h	/^  void (*request_fn) (void);	\/\/ 鐠囬攱鐪伴幙宥勭稊閻ㄥ嫬鍤遍弫鐗堝瘹闁藉牄鈧拷$/;"	m	struct:blk_dev_struct
+reschedule	.\kernel\system_call.s	/^reschedule:$/;"	l
+reset	.\kernel\blk_drv\floppy.c	/^static int reset = 0;		\/\/ 閺嶅洤绻旈敍姘舵付鐟曚浇绻樼悰灞筋槻娴ｅ秵鎼锋担婧库偓锟�$/;"	v	file:
+reset_floppy	.\kernel\blk_drv\floppy.c	/^reset_floppy (void)$/;"	f	file:
+reset_interrupt	.\kernel\blk_drv\floppy.c	/^reset_interrupt (void)$/;"	f	file:
+respond	.\kernel\chr_drv\console.c	/^respond (struct tty_struct *tty)$/;"	f	file:
+restore_cur	.\kernel\chr_drv\console.c	/^restore_cur (void)$/;"	f	file:
+result	.\kernel\blk_drv\floppy.c	/^result (void)$/;"	f	file:
+ret	.\boot\bootsect.s	/^ret$/;"	l
+ret	.\boot\head.s	/^ret \/* this also flushes prefetch-queue *\/$/;"	l
+ret	.\boot\head.s	/^ret$/;"	l
+ret	.\boot\setup.s	/^ret$/;"	l
+ret	.\kernel\chr_drv\keyboard.S	/^ret$/;"	l
+ret	.\kernel\chr_drv\rs_io.s	/^ret$/;"	l
+ret	.\kernel\system_call.s	/^ret # 鏉╂瑩鍣烽惃鍓卐t 鐏忓棜鐑︽潪顒€鍩宺et_from_sys_call(101 鐞涳拷)閵嗭拷$/;"	l
+ret	.\kernel\system_call.s	/^ret$/;"	l
+ret_from_sys_call	.\kernel\system_call.s	/^ret_from_sys_call:$/;"	l
+ri	.\kernel\chr_drv\console.c	/^ri (void)$/;"	f	file:
+root	.\include\linux\sched.h	/^  struct m_inode *root;$/;"	m	struct:task_struct	typeref:struct:task_struct::m_inode
+root_defined	.\boot\bootsect.s	/^root_defined:$/;"	l
+root_dev	.\boot\bootsect.s	/^root_dev:$/;"	l
+rp_read	.\boot\bootsect.s	/^rp_read:$/;"	l
+rp_sidt	.\boot\head.s	/^rp_sidt:$/;"	l
+rs_addr	.\kernel\chr_drv\rs_io.s	/^rs_addr = 0 \/\/ 娑撹尪顢戠粩顖氬經閸欏嘲鐡у▓闈涗焊缁変紮绱欑粩顖氬經閸欓攱妲�0x3f8 閹达拷0x2f8閿涘鈧拷$/;"	d
+rs_init	.\kernel\chr_drv\serial.c	/^rs_init (void)$/;"	f
+rs_int	.\kernel\chr_drv\rs_io.s	/^rs_int:$/;"	l
+rs_write	.\kernel\chr_drv\serial.c	/^rs_write (struct tty_struct *tty)$/;"	f
+rshift	.\kernel\chr_drv\keyboard.S	/^rshift:$/;"	l
+rw_char	.\fs\char_dev.c	/^rw_char (int rw, int dev, char *buf, int count, off_t * pos)$/;"	f
+rw_interrupt	.\kernel\blk_drv\floppy.c	/^rw_interrupt (void)$/;"	f	file:
+rw_kmem	.\fs\char_dev.c	/^rw_kmem (int rw, char *buf, int count, off_t * pos)$/;"	f	file:
+rw_mem	.\fs\char_dev.c	/^rw_mem (int rw, char *buf, int count, off_t * pos)$/;"	f	file:
+rw_memory	.\fs\char_dev.c	/^rw_memory (int rw, unsigned minor, char *buf, int count, off_t * pos)$/;"	f	file:
+rw_port	.\fs\char_dev.c	/^rw_port (int rw, char *buf, int count, off_t * pos)$/;"	f	file:
+rw_ram	.\fs\char_dev.c	/^rw_ram (int rw, char *buf, int count, off_t * pos)$/;"	f	file:
+rw_tty	.\fs\char_dev.c	/^rw_tty (int rw, unsigned minor, char *buf, int count, off_t * pos)$/;"	f	file:
+rw_ttyx	.\fs\char_dev.c	/^rw_ttyx (int rw, unsigned minor, char *buf, int count, off_t * pos)$/;"	f	file:
+s_dev	.\include\linux\fs.h	/^  unsigned short s_dev;		\/\/ 鐡掑懐楠囬崸妤佸閸︺劎娈戠拋鎯ь槵閸欐灚鈧拷$/;"	m	struct:super_block
+s_dirt	.\include\linux\fs.h	/^  unsigned char s_dirt;		\/\/ 瀹歌弓鎱ㄩ弨锟�(閼达拷)閺嶅洤绻旈妴锟�$/;"	m	struct:super_block
+s_firstdatazone	.\include\linux\fs.h	/^  unsigned short s_firstdatazone;	\/\/ 缁楊兛绔存稉顏呮殶閹诡噣鈧槒绶崸妞尖偓锟�$/;"	m	struct:d_super_block
+s_firstdatazone	.\include\linux\fs.h	/^  unsigned short s_firstdatazone;	\/\/ 缁楊兛绔存稉顏呮殶閹诡噣鈧槒绶崸妤€褰块妴锟�$/;"	m	struct:super_block
+s_imap	.\include\linux\fs.h	/^  struct buffer_head *s_imap[8];	\/\/ i 閼哄倻鍋ｆ担宥呮禈缂傛挸鍟块崸妤佸瘹闁藉牊鏆熺紒锟�(閸楃姷鏁�8 閸ф绱濋崣顖濄€冪粈锟�64M)閵嗭拷$/;"	m	struct:super_block	typeref:struct:super_block::buffer_head
+s_imap_blocks	.\include\linux\fs.h	/^  unsigned short s_imap_blocks;	\/\/ i 閼哄倻鍋ｆ担宥呮禈閹碘偓閸楃姷鏁ら惃鍕殶閹诡喖娼￠弫鑸偓锟�$/;"	m	struct:d_super_block
+s_imap_blocks	.\include\linux\fs.h	/^  unsigned short s_imap_blocks;	\/\/ i 閼哄倻鍋ｆ担宥呮禈閹碘偓閸楃姷鏁ら惃鍕殶閹诡喖娼￠弫鑸偓锟�$/;"	m	struct:super_block
+s_imount	.\include\linux\fs.h	/^  struct m_inode *s_imount;	\/\/ 鐞氼偄鐣ㄧ憗鍛煂閻ㄥ埇 閼哄倻鍋ｉ妴锟�$/;"	m	struct:super_block	typeref:struct:super_block::m_inode
+s_isup	.\include\linux\fs.h	/^  struct m_inode *s_isup;	\/\/ 鐞氼偄鐣ㄧ憗鍛畱閺傚洣娆㈢化鑽ょ埠閺嶅湱娲拌ぐ鏇犳畱i 閼哄倻鍋ｉ妴锟�(isup-super i)$/;"	m	struct:super_block	typeref:struct:super_block::m_inode
+s_lock	.\include\linux\fs.h	/^  unsigned char s_lock;		\/\/ 鐞氼偊鏀ｇ€规碍鐖ｈ箛妞尖偓锟�$/;"	m	struct:super_block
+s_log_zone_size	.\include\linux\fs.h	/^  unsigned short s_log_zone_size;	\/\/ log(閺佺増宓侀崸妤佹殶\/闁槒绶崸锟�)閵嗗偊绱欐禒锟�2 娑撳搫绨抽敍澶堚偓锟�$/;"	m	struct:d_super_block
+s_log_zone_size	.\include\linux\fs.h	/^  unsigned short s_log_zone_size;	\/\/ log(閺佺増宓侀崸妤佹殶\/闁槒绶崸锟�)閵嗗偊绱欐禒锟�2 娑撳搫绨抽敍澶堚偓锟�$/;"	m	struct:super_block
+s_magic	.\include\linux\fs.h	/^  unsigned short s_magic;	\/\/ 閺傚洣娆㈢化鑽ょ埠姒勬梹鏆熼妴锟�$/;"	m	struct:d_super_block
+s_magic	.\include\linux\fs.h	/^  unsigned short s_magic;	\/\/ 閺傚洣娆㈢化鑽ょ埠姒勬梹鏆熼妴锟�$/;"	m	struct:super_block
+s_max_size	.\include\linux\fs.h	/^  unsigned long s_max_size;	\/\/ 閺傚洣娆㈤張鈧径褔鏆辨惔锔衡偓锟�$/;"	m	struct:d_super_block
+s_max_size	.\include\linux\fs.h	/^  unsigned long s_max_size;	\/\/ 閺傚洣娆㈤張鈧径褔鏆辨惔锔衡偓锟�$/;"	m	struct:super_block
+s_ninodes	.\include\linux\fs.h	/^  unsigned short s_ninodes;	\/\/ 閼哄倻鍋ｉ弫鑸偓锟�$/;"	m	struct:d_super_block
+s_ninodes	.\include\linux\fs.h	/^  unsigned short s_ninodes;	\/\/ 閼哄倻鍋ｉ弫鑸偓锟�$/;"	m	struct:super_block
+s_nzones	.\include\linux\fs.h	/^  unsigned short s_nzones;	\/\/ 闁槒绶崸妤佹殶閵嗭拷$/;"	m	struct:d_super_block
+s_nzones	.\include\linux\fs.h	/^  unsigned short s_nzones;	\/\/ 闁槒绶崸妤佹殶閵嗭拷$/;"	m	struct:super_block
+s_rd_only	.\include\linux\fs.h	/^  unsigned char s_rd_only;	\/\/ 閸欘亣顕伴弽鍥х箶閵嗭拷$/;"	m	struct:super_block
+s_time	.\include\linux\fs.h	/^  unsigned long s_time;		\/\/ 娣囶喗鏁奸弮鍫曟？閵嗭拷$/;"	m	struct:super_block
+s_wait	.\include\linux\fs.h	/^  struct task_struct *s_wait;	\/\/ 缁涘绶熺拠銉ㄧТ缁狙冩健閻ㄥ嫯绻樼粙瀣ㄢ偓锟�$/;"	m	struct:super_block	typeref:struct:super_block::task_struct
+s_zmap	.\include\linux\fs.h	/^  struct buffer_head *s_zmap[8];	\/\/ 闁槒绶崸妞剧秴閸ュ墽绱﹂崘鎻掓健閹稿洭鎷￠弫鎵矋閿涘牆宕伴悽锟�8 閸ф绱氶妴锟�$/;"	m	struct:super_block	typeref:struct:super_block::buffer_head
+s_zmap_blocks	.\include\linux\fs.h	/^  unsigned short s_zmap_blocks;	\/\/ 闁槒绶崸妞剧秴閸ョ偓澧嶉崡鐘垫暏閻ㄥ嫭鏆熼幑顔兼健閺佽埇鈧拷$/;"	m	struct:d_super_block
+s_zmap_blocks	.\include\linux\fs.h	/^  unsigned short s_zmap_blocks;	\/\/ 闁槒绶崸妞剧秴閸ョ偓澧嶉崡鐘垫暏閻ㄥ嫭鏆熼幑顔兼健閺佽埇鈧拷$/;"	m	struct:super_block
+sa_flags	.\include\signal.h	/^  int sa_flags;$/;"	m	struct:sigaction
+sa_flags	.\kernel\system_call.s	/^sa_flags = 8 \/\/ 娣団€冲娇闂嗗棎鈧拷$/;"	d
+sa_handler	.\include\signal.h	/^  void (*sa_handler) (int);$/;"	m	struct:sigaction
+sa_handler	.\kernel\system_call.s	/^sa_handler = 0 \/\/ 娣団€冲娇婢跺嫮鎮婃潻鍥┾柤閻ㄥ嫬褰為弻鍕剁礄閹诲繗鍫粭锔肩礆閵嗭拷$/;"	d
+sa_mask	.\include\signal.h	/^  sigset_t sa_mask;$/;"	m	struct:sigaction
+sa_mask	.\kernel\system_call.s	/^sa_mask = 4 \/\/ 娣団€冲娇闁插繐鐫嗛拕鐣岀垳$/;"	d
+sa_restorer	.\include\signal.h	/^  void (*sa_restorer) (void);$/;"	m	struct:sigaction
+sa_restorer	.\kernel\system_call.s	/^sa_restorer = 12 \/\/ 鏉╂柨娲栭幁銏狀槻閹笛嗩攽閻ㄥ嫬婀撮崸鈧担宥囩枂閵嗭拷$/;"	d
+save_cur	.\kernel\chr_drv\console.c	/^save_cur (void)$/;"	f	file:
+save_old	.\kernel\signal.c	/^save_old (char *from, char *to)$/;"	f	file:
+saved_x	.\kernel\chr_drv\console.c	/^static int saved_x = 0;		\/\/ 娣囨繂鐡ㄩ惃鍕帨閺嶅洤鍨崣鏋偓锟�$/;"	v	file:
+saved_y	.\kernel\chr_drv\console.c	/^static int saved_y = 0;		\/\/ 娣囨繂鐡ㄩ惃鍕帨閺嶅洩顢戦崣鏋偓锟�$/;"	v	file:
+sched_init	.\kernel\sched.c	/^sched_init (void)$/;"	f
+schedule	.\kernel\sched.c	/^schedule (void)$/;"	f
+scr_end	.\kernel\chr_drv\console.c	/^static unsigned long scr_end;	\/* Used for EGA\/VGA fast scroll *\/$/;"	v	file:
+scrdown	.\kernel\chr_drv\console.c	/^scrdown (void)$/;"	f	file:
+scroll	.\kernel\chr_drv\keyboard.S	/^scroll:$/;"	l
+scrup	.\kernel\chr_drv\console.c	/^scrup (void)$/;"	f	file:
+secondary	.\include\linux\tty.h	/^  struct tty_queue secondary;	\/\/ tty 鏉堝懎濮梼鐔峰灙(鐎涙ɑ鏂佺憴鍕瘱濡€崇础鐎涙顑佹惔蹇撳灙)閿涳拷$/;"	m	struct:tty_struct	typeref:struct:tty_struct::tty_queue
+sect	.\kernel\blk_drv\floppy.c	/^       unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+sector	.\include\linux\hdreg.h	/^  unsigned char sector;		\/* ? *\/$/;"	m	struct:partition
+sector	.\kernel\blk_drv\blk.h	/^  unsigned long sector;		\/\/ 鐠у嘲顫愰幍鍥у隘閵嗭拷(1 閸э拷=2 閹靛洤灏�)$/;"	m	struct:request
+sector	.\kernel\blk_drv\floppy.c	/^static unsigned char sector = 0;$/;"	v	file:
+sectors	.\boot\bootsect.s	/^sectors:$/;"	l
+seek	.\kernel\blk_drv\floppy.c	/^static int seek = 0;		\/\/ 鐎靛浜鹃妴锟�$/;"	v	file:
+seek_interrupt	.\kernel\blk_drv\floppy.c	/^seek_interrupt (void)$/;"	f	file:
+seek_track	.\kernel\blk_drv\floppy.c	/^static unsigned char seek_track = 0;$/;"	v	file:
+seg	.\boot\bootsect.s	/^seg cs ! 閻炴稏鍔庨妵姘▔鐎ｂ晝顏遍柡澹溿値鍤旈柛娆嶅劤濞堟垿骞欏鍕▕闁轰焦婢樺﹢鐚歴 婵炲牓娼ч惁搴ｂ偓娑櫭▍鎺楀箥閳ь剟骞愰崶鈺傜暠婵炲牆鍚€閼垫垿濡撮敓锟�$/;"	l
+seg	.\boot\bootsect.s	/^seg cs$/;"	l
+selected	.\kernel\blk_drv\floppy.c	/^unsigned char selected = 0;$/;"	v
+send_break	.\kernel\chr_drv\tty_ioctl.c	/^send_break (struct tty_struct *tty)$/;"	f	file:
+send_sig	.\kernel\exit.c	/^send_sig (long sig, struct task_struct *p, int priv)$/;"	f	file:
+session	.\include\linux\sched.h	/^  long pid, father, pgrp, session, leader;$/;"	m	struct:task_struct
+set_bit	.\fs\bitmap.c	23;"	d	file:
+set_bit	.\fs\super.c	34;"	d	file:
+set_cursor	.\kernel\chr_drv\console.c	/^set_cursor (void)$/;"	f	file:
+set_e0	.\kernel\chr_drv\keyboard.S	/^set_e0: movb $1,e0 \/\/ 閺€璺哄煂閹殿偅寮块崜宥咁嚤閻拷0xe0 閺冭绱濈拋鍓х枂e0 閺嶅洤绻旈敍鍫滅秴0閿涘鈧拷$/;"	l
+set_e1	.\kernel\chr_drv\keyboard.S	/^set_e1: movb $2,e0 \/\/ 閺€璺哄煂閹殿偅寮块崜宥咁嚤閻拷0xe1 閺冭绱濈拋鍓х枂e1 閺嶅洤绻旈敍鍫滅秴1閿涘鈧拷$/;"	l
+set_fs	.\include\asm\segment.h	/^set_fs (unsigned long val)$/;"	f
+set_intr_gate	.\include\asm\system.h	33;"	d
+set_leds	.\kernel\chr_drv\keyboard.S	/^set_leds:$/;"	l
+set_origin	.\kernel\chr_drv\console.c	/^set_origin (void)$/;"	f	file:
+set_system_gate	.\include\asm\system.h	43;"	d
+set_termio	.\kernel\chr_drv\tty_ioctl.c	/^set_termio (struct tty_struct *tty, struct termio *termio)$/;"	f	file:
+set_termios	.\kernel\chr_drv\tty_ioctl.c	/^set_termios (struct tty_struct *tty, struct termios *termios)$/;"	f	file:
+set_trap_gate	.\include\asm\system.h	38;"	d
+setup_DMA	.\kernel\blk_drv\floppy.c	/^setup_DMA (void)$/;"	f	file:
+setup_idt	.\boot\head.s	/^setup_idt:$/;"	l
+setup_paging	.\boot\head.s	/^setup_paging: # 妫ｆ牕鍘涚€碉拷5 妞ら潧鍞寸€涙﹫绱�1 妞ょ數娲拌ぐ锟� + 4 妞ょ敻銆夌悰顭掔礆濞撳懘娴�$/;"	l
+setup_rw_floppy	.\kernel\blk_drv\floppy.c	/^setup_rw_floppy (void)$/;"	f
+sgid	.\include\linux\sched.h	/^  unsigned short gid, egid, sgid;$/;"	m	struct:task_struct
+share_page	.\mm\memory.c	/^static int share_page(unsigned long address) {$/;"	f	file:
+shift_map	.\kernel\chr_drv\keyboard.S	/^shift_map:$/;"	l
+show_stat	.\kernel\sched.c	/^show_stat (void)$/;"	f
+show_task	.\kernel\sched.c	/^show_task (int nr, struct task_struct *p)$/;"	f
+shrdl	.\kernel\chr_drv\keyboard.S	/^shrdl $8,%ebx,%eax \/\/ 鐏忓攢bx 娑擄拷8 娴ｅ秵鐦悧閫涚秴閸欏磭些8 娴ｅ秴鍩宔ax 娑擃叏绱濇担鍞€bx 娑撳秴褰夐妴锟�$/;"	l
+shrl	.\kernel\chr_drv\keyboard.S	/^shrl $8,%ebx \/\/ 鐏忓攢bx 娑擃厽鐦悧閫涚秴閸欏磭些8 娴ｅ稄绱濋獮鎯扮儲鏉烆剙鍩岄弽鍥у娇1 缂佈呯敾閹垮秳缍旈妴锟�$/;"	l
+shrl	.\kernel\chr_drv\rs_io.s	/^shrl $3,%edx \/\/ 瀹割喖鈧唱/8閵嗗倸顕禍搴濊閸欙拷1 閺勶拷1閿涘苯顕禍搴濊閸欙拷2 閺勶拷2閵嗭拷$/;"	l
+sig_atomic_t	.\include\signal.h	/^typedef int sig_atomic_t;	\/\/ 鐎规矮绠熸穱鈥冲娇閸樼喎鐡欓幙宥勭稊缁鐎烽妴锟�$/;"	t
+sigaction	.\include\linux\sched.h	/^  struct sigaction sigaction[32];$/;"	m	struct:task_struct	typeref:struct:task_struct::sigaction
+sigaction	.\include\signal.h	/^struct sigaction$/;"	s
+sigaction	.\kernel\system_call.s	/^sigaction = 16 # MUST be 16 (=len of sigaction) \/\/ sigaction 缂佹挻鐎梹鍨韫囧懘銆忛弰锟�16 鐎涙濡妴锟�$/;"	d
+signal	.\include\linux\sched.h	/^  long signal;$/;"	m	struct:task_struct
+signal	.\kernel\system_call.s	/^signal = 12 \/\/ 閺勵垯淇婇崣铚傜秴閸ユ拝绱濆В蹇庨嚋濮ｆ梻澹掓担宥勫敩鐞涖劋绔寸粔宥勪繆閸欏嚖绱濇穱鈥冲娇閸婏拷=娴ｅ秴浜哥粔璇测偓锟�+1閵嗭拷$/;"	d
+sigset_t	.\include\signal.h	/^typedef unsigned int sigset_t;	\/* 32 bits *\/\/\/ 鐎规矮绠熸穱鈥冲娇闂嗗棛琚崹瀣ㄢ偓锟�$/;"	t
+size	.\kernel\blk_drv\floppy.c	/^       unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+size	.\kernel\chr_drv\keyboard.S	/^size = 1024 \/* must be a power of two ! And MUST be the same$/;"	d
+size	.\kernel\chr_drv\rs_io.s	/^size = 1024 \/* must be power of two ! 韫囧懘銆忛弰锟�2 閻ㄥ嫭顐奸弬鐟拌嫙娑撴棃娓�$/;"	d
+size	.\lib\malloc.c	/^  int size;			\/\/ 鐠囥儱鐡ㄩ崒銊︺€婇惃鍕亣鐏忥拷(鐎涙濡弫锟�)閵嗭拷$/;"	m	struct:_bucket_dir	file:
+size_t	.\include\stddef.h	/^typedef unsigned long size_t;	\/\/ sizeof 鏉╂柨娲栭惃鍕閸ㄥ鈧拷$/;"	t
+size_t	.\include\string.h	/^typedef unsigned int size_t;$/;"	t
+size_t	.\include\sys\types.h	/^typedef unsigned int size_t;	\/\/ 閻€劋绨€电钖勯惃鍕亣鐏忓骏绱欓梹鍨閿涘鈧拷$/;"	t
+size_t	.\include\time.h	/^typedef unsigned int size_t;$/;"	t
+skip_atoi	.\kernel\vsprintf.c	/^skip_atoi (const char **s)$/;"	f	file:
+sleep_if_empty	.\kernel\chr_drv\tty_io.c	/^sleep_if_empty (struct tty_queue *queue)$/;"	f	file:
+sleep_if_full	.\kernel\chr_drv\tty_io.c	/^sleep_if_full (struct tty_queue *queue)$/;"	f	file:
+sleep_on	.\kernel\sched.c	/^sleep_on (struct task_struct **p)$/;"	f
+spec1	.\kernel\blk_drv\floppy.c	/^       unsigned char gap, rate, spec1;$/;"	m	struct:floppy_struct	file:
+speed_t	.\include\termios.h	/^typedef int speed_t;		\/\/ 濞夈垻澹掗悳鍥ㄦ殶閸婅偐琚崹瀣ㄢ偓锟�$/;"	t
+src	.\include\asm\memory.h	/^:: "D" ((long)(_res)), "S" ((long)(src)), "c" ((long) (n)) \\$/;"	v
+sread	.\boot\bootsect.s	/^sread: .word 1+SETUPLEN ! sectors read of current track$/;"	l
+ss	.\include\linux\sched.h	/^  long ss;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+ss0	.\include\linux\sched.h	/^  long ss0;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+ss1	.\include\linux\sched.h	/^  long ss1;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+ss2	.\include\linux\sched.h	/^  long ss2;			\/* 16 high bits zero *\/$/;"	m	struct:tss_struct
+st_atime	.\include\sys\stat.h	/^  time_t st_atime;		\/\/ 娑撳﹥顐奸敍鍫熸付閸氬函绱氱拋鍧楁６閺冨爼妫块妴锟�$/;"	m	struct:stat
+st_ctime	.\include\sys\stat.h	/^  time_t st_ctime;		\/\/ 閺堚偓閸氬氦濡悙閫涙叏閺€瑙勬闂傛番鈧拷$/;"	m	struct:stat
+st_dev	.\include\sys\stat.h	/^  dev_t st_dev;			\/\/ 閸氼偅婀侀弬鍥︽閻ㄥ嫯顔曟径鍥у娇閵嗭拷$/;"	m	struct:stat
+st_gid	.\include\sys\stat.h	/^  gid_t st_gid;			\/\/ 閺傚洣娆㈤惃鍕矋閸欐灚鈧拷$/;"	m	struct:stat
+st_ino	.\include\sys\stat.h	/^  ino_t st_ino;			\/\/ 閺傚洣娆 閼哄倻鍋ｉ崣鏋偓锟�$/;"	m	struct:stat
+st_mode	.\include\sys\stat.h	/^  umode_t st_mode;		\/\/ 閺傚洣娆㈢仦鐐粹偓褝绱欑憴浣风瑓闂堫澁绱氶妴锟�$/;"	m	struct:stat
+st_mtime	.\include\sys\stat.h	/^  time_t st_mtime;		\/\/ 閺堚偓閸氬簼鎱ㄩ弨瑙勬闂傛番鈧拷$/;"	m	struct:stat
+st_nlink	.\include\sys\stat.h	/^  nlink_t st_nlink;		\/\/ 閹稿洤鐣鹃弬鍥︽閻ㄥ嫯绻涢幒銉︽殶閵嗭拷$/;"	m	struct:stat
+st_rdev	.\include\sys\stat.h	/^  dev_t st_rdev;		\/\/ 鐠佹儳顦崣锟�(婵″倹鐏夐弬鍥︽閺勵垳澹掑▓濠勬畱鐎涙顑侀弬鍥︽閹存牕娼￠弬鍥︽)閵嗭拷$/;"	m	struct:stat
+st_size	.\include\sys\stat.h	/^  off_t st_size;		\/\/ 閺傚洣娆㈡径褍鐨敍鍫濈摟閼哄倹鏆熼敍澶涚礄婵″倹鐏夐弬鍥︽閺勵垰鐖剁憴鍕瀮娴犺绱氶妴锟�$/;"	m	struct:stat
+st_space	.\include\linux\sched.h	/^  long st_space[20];		\/* 8*10 bytes for each FP-reg = 80 bytes *\/$/;"	m	struct:i387_struct
+st_uid	.\include\sys\stat.h	/^  uid_t st_uid;			\/\/ 閺傚洣娆㈤惃鍕暏閹达拷(閺嶅洩鐦�)閸欐灚鈧拷$/;"	m	struct:stat
+stack	.\kernel\sched.c	/^  char stack[PAGE_SIZE];	\/\/ 娴犲骸鐖㈤弽鍫燁唽鐎靛嫬鐡ㄩ崳鈺痵 閸欘垯浜掗懢宄扮繁閸忚埖鏆熼幑顔筋唽闁瀚ㄧ粭锔衡偓锟�$/;"	m	union:task_union	file:
+stack_start	.\kernel\sched.c	/^stack_start =$/;"	v	typeref:struct:__anon4
+start	.\boot\bootsect.s	/^start: ! 47--56 閻炴稑濂旂紞鏃堟偨閵婏附笑閻忓繐妫滈崵婊堢叕閿燂拷(bootsect)濞寸姴娴峰ú浼村礈瀹ュ棭鍞藉ù锝呯Ф閻わ拷0x07c0(31k)$/;"	l
+start	.\boot\setup.s	/^start:$/;"	l
+start_buffer	.\fs\buffer.c	/^struct buffer_head *start_buffer = (struct buffer_head *) &end;$/;"	v	typeref:struct:buffer_head
+start_code	.\include\linux\sched.h	/^  unsigned long start_code, end_code, end_data, brk, start_stack;$/;"	m	struct:task_struct
+start_sect	.\include\linux\hdreg.h	/^  unsigned int start_sect;	\/* starting sector counting from 0 *\/$/;"	m	struct:partition
+start_stack	.\include\linux\sched.h	/^  unsigned long start_code, end_code, end_data, brk, start_stack;$/;"	m	struct:task_struct
+start_time	.\include\linux\sched.h	/^  long utime, stime, cutime, cstime, start_time;$/;"	m	struct:task_struct
+startup	.\kernel\chr_drv\rs_io.s	/^startup = 256 \/* chars left in write queue when we restart it *\/$/;"	d
+startup_32	.\boot\head.s	/^startup_32: # 18-22 鐞涘矁顔曠純顔兼倗娑擃亝鏆熼幑顔筋唽鐎靛嫬鐡ㄩ崳銊ｂ偓锟�$/;"	l
+startup_time	.\kernel\sched.c	/^long startup_time = 0;		\/\/ 瀵偓閺堢儤妞傞梻娣偓鍌欑矤1970:0:0:0 瀵偓婵顓搁弮鍓佹畱缁夋帗鏆熼妴锟�$/;"	v
+stat	.\include\sys\stat.h	/^struct stat$/;"	s
+state	.\include\linux\sched.h	/^  long state;			\/* -1 unrunnable, 0 runnable, >0 stopped *\/$/;"	m	struct:task_struct
+state	.\kernel\chr_drv\console.c	/^static unsigned long state = 0;	\/\/ ANSI 鏉烆兛绠熺€涙顑佹惔蹇撳灙婢跺嫮鎮婇悩鑸碘偓浣碘偓锟�$/;"	v	file:
+state	.\kernel\system_call.s	/^state = 0 # these are offsets into the task-struct. # 鏉╂稓鈻奸悩鑸碘偓浣虹垳$/;"	d
+std	.\boot\head.s	/^std # 閺傜懓鎮滄担宥囩枂娴ｅ稄绱漞di 閸婂ジ鈧帒鍣�(4 鐎涙濡�)閵嗭拷$/;"	l
+sti	.\include\asm\system.h	14;"	d
+stime	.\include\linux\sched.h	/^  long utime, stime, cutime, cstime, start_time;$/;"	m	struct:task_struct
+stopped	.\include\linux\tty.h	/^  int stopped;			\/\/ 閸嬫粍顒涢弽鍥х箶閵嗭拷$/;"	m	struct:tty_struct
+stosb	.\boot\setup.s	/^stosb$/;"	l
+strcat	.\include\string.h	/^strcat (char *dest, const char *src)$/;"	f
+strchr	.\include\string.h	/^strchr (const char *s, char c)$/;"	f
+strcmp	.\include\string.h	/^strcmp (const char *cs, const char *ct)$/;"	f
+strcpy	.\include\string.h	/^strcpy (char *dest, const char *src)$/;"	f
+strcspn	.\include\string.h	/^strcspn (const char *cs, const char *ct)$/;"	f
+stretch	.\kernel\blk_drv\floppy.c	/^       unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+strlen	.\include\string.h	/^strlen (const char *s)$/;"	f
+strncat	.\include\string.h	/^strncat (char *dest, const char *src, int count)$/;"	f
+strncmp	.\include\string.h	/^strncmp (const char *cs, const char *ct, int count)$/;"	f
+strncpy	.\include\string.h	/^strncpy (char *dest, const char *src, int count)$/;"	f
+strpbrk	.\include\string.h	/^strpbrk (const char *cs, const char *ct)$/;"	f
+strrchr	.\include\string.h	/^strrchr (const char *s, char c)$/;"	f
+strspn	.\include\string.h	/^strspn (const char *cs, const char *ct)$/;"	f
+strstr	.\include\string.h	/^strstr (const char *cs, const char *ct)$/;"	f
+strtok	.\include\string.h	/^strtok (char *s, const char *ct)$/;"	f
+sub	.\boot\bootsect.s	/^sub di,di ! 闁烩晩鍠氬▓鎴﹀捶閺夋寧绲� es:di = 0x9000:0x0000$/;"	l
+sub	.\boot\bootsect.s	/^sub si,si ! 婵犙勫姇濠€鎾锤閳э拷 ds:si = 0x07C0:0x0000$/;"	l
+sub	.\boot\setup.s	/^sub di,di$/;"	l
+sub	.\boot\setup.s	/^sub si,si$/;"	l
+subb	.\kernel\chr_drv\keyboard.S	/^subb $0x3B,%al \/\/ 閸旂喕鍏橀柨锟�'F1'閻ㄥ嫭澹傞幓蹇曠垳閺勶拷0x3B閿涘苯娲滃銈嗩劃閺冪Ψl 娑擃厽妲搁崝鐔诲厴闁款喚鍌ㄥ鏇炲娇閵嗭拷$/;"	l
+subb	.\kernel\chr_drv\keyboard.S	/^subb $0x47,%al \/\/ 閹殿偅寮块惍浣规Ц鐏忓繑鏆熺€涙鏁惄妯圭瑐閻ㄥ嫰鏁�(閸忚埖澹傞幓蹇曠垳>=0x47)閸欐垵鍤惃鍕剁吹$/;"	l
+subb	.\kernel\chr_drv\keyboard.S	/^subb $18,%al \/\/ 閺勵垰濮涢懗浠嬫暛F11閿涘瓗12 閸氭绱�$/;"	l
+subb	.\kernel\chr_drv\keyboard.S	/^subb $32,%al \/\/ 鐏忓摳l 鏉烆剚宕叉稉鍝勩亣閸愭瑥鐡х粭锟�(閸戯拷0x20)閵嗭拷$/;"	l
+subb	.\kernel\chr_drv\keyboard.S	/^subb $64,%al \/\/ 閸氾箑鍨痑l 閸婄厧鍣�0x40閿涳拷$/;"	l
+subl	.\boot\head.s	/^subl $0x1000,%eax # 濮ｅ繐锝為崘娆忋偨娑撯偓妞ょ櫢绱濋悧鈺冩倞閸︽澘娼冮崐鐓庡櫤0x1000閵嗭拷$/;"	l
+subl	.\kernel\chr_drv\rs_io.s	/^subl $2,%edx \/\/ 0x3f8(0x2f8)閵嗭拷$/;"	l
+subl	.\kernel\chr_drv\rs_io.s	/^subl $_table_list,%edx \/\/ 缂傛挸鍟块梼鐔峰灙閹稿洭鎷＄悰銊╊浕閸р偓 - 瑜版挸澧犳稉鎻掑經闂冪喎鍨幐鍥嫛閸︽澘娼�??edx閿涳拷$/;"	l
+subl	.\kernel\chr_drv\rs_io.s	/^subl tail(%ecx),%ebx \/\/ 婢跺瓨瀵氶柦锟� - 鐏忕偓瀵氶柦锟� = 闂冪喎鍨稉顓炵摟缁楋附鏆熼妴锟�$/;"	l
+suid	.\include\linux\sched.h	/^  unsigned short uid, euid, suid;$/;"	m	struct:task_struct
+super_block	.\fs\super.c	/^struct super_block super_block[NR_SUPER];	\/\/ 鐡掑懐楠囬崸妤冪波閺嬪嫭鏆熺紒鍕剁礄閸忥拷8 妞ょ櫢绱氶妴锟�$/;"	v	typeref:struct:super_block
+super_block	.\include\linux\fs.h	/^struct super_block$/;"	s
+suser	.\include\linux\kernel.h	37;"	d
+swd	.\include\linux\sched.h	/^  long swd;			\/\/ 閻樿埖鈧礁鐡�(Status word)閵嗭拷$/;"	m	struct:i387_struct
+sync_dev	.\fs\buffer.c	/^sync_dev (int dev)$/;"	f
+sync_inodes	.\fs\inode.c	/^sync_inodes (void)$/;"	f
+sys_access	.\fs\open.c	/^sys_access (const char *filename, int mode)$/;"	f
+sys_acct	.\kernel\sys.c	/^sys_acct ()$/;"	f
+sys_alarm	.\kernel\sched.c	/^sys_alarm (long seconds)$/;"	f
+sys_break	.\kernel\sys.c	/^sys_break ()$/;"	f
+sys_brk	.\kernel\sys.c	/^sys_brk (unsigned long end_data_seg)$/;"	f
+sys_call_table	.\include\linux\sys.h	/^fn_ptr sys_call_table[] = { sys_setup, sys_exit, sys_fork, sys_read,$/;"	v
+sys_chdir	.\fs\open.c	/^sys_chdir (const char *filename)$/;"	f
+sys_chmod	.\fs\open.c	/^sys_chmod (const char *filename, int mode)$/;"	f
+sys_chown	.\fs\open.c	/^sys_chown (const char *filename, int uid, int gid)$/;"	f
+sys_chroot	.\fs\open.c	/^sys_chroot (const char *filename)$/;"	f
+sys_close	.\fs\open.c	/^sys_close (unsigned int fd)$/;"	f
+sys_creat	.\fs\open.c	/^sys_creat (const char *pathname, int mode)$/;"	f
+sys_dup	.\fs\fcntl.c	/^sys_dup (unsigned int fildes)$/;"	f
+sys_dup2	.\fs\fcntl.c	/^sys_dup2 (unsigned int oldfd, unsigned int newfd)$/;"	f
+sys_exit	.\kernel\exit.c	/^sys_exit (int error_code)$/;"	f
+sys_fcntl	.\fs\fcntl.c	/^sys_fcntl (unsigned int fd, unsigned int cmd, unsigned long arg)$/;"	f
+sys_fstat	.\fs\stat.c	/^sys_fstat (unsigned int fd, struct stat *statbuf)$/;"	f
+sys_ftime	.\kernel\sys.c	/^sys_ftime ()$/;"	f
+sys_getegid	.\kernel\sched.c	/^sys_getegid (void)$/;"	f
+sys_geteuid	.\kernel\sched.c	/^sys_geteuid (void)$/;"	f
+sys_getgid	.\kernel\sched.c	/^sys_getgid (void)$/;"	f
+sys_getpgrp	.\kernel\sys.c	/^sys_getpgrp (void)$/;"	f
+sys_getpid	.\kernel\sched.c	/^sys_getpid (void)$/;"	f
+sys_getppid	.\kernel\sched.c	/^sys_getppid (void)$/;"	f
+sys_getuid	.\kernel\sched.c	/^sys_getuid (void)$/;"	f
+sys_gtty	.\kernel\sys.c	/^sys_gtty ()$/;"	f
+sys_ind	.\include\linux\hdreg.h	/^  unsigned char sys_ind;	\/* ? *\/$/;"	m	struct:partition
+sys_ioctl	.\fs\ioctl.c	/^sys_ioctl (unsigned int fd, unsigned int cmd, unsigned long arg)$/;"	f
+sys_kill	.\kernel\exit.c	/^sys_kill (int pid, int sig)$/;"	f
+sys_link	.\fs\namei.c	/^sys_link (const char *oldname, const char *newname)$/;"	f
+sys_lock	.\kernel\sys.c	/^sys_lock ()$/;"	f
+sys_lseek	.\fs\read_write.c	/^sys_lseek (unsigned int fd, off_t offset, int origin)$/;"	f
+sys_mkdir	.\fs\namei.c	/^sys_mkdir (const char *pathname, int mode)$/;"	f
+sys_mknod	.\fs\namei.c	/^sys_mknod (const char *filename, int mode, int dev)$/;"	f
+sys_mount	.\fs\super.c	/^sys_mount (char *dev_name, char *dir_name, int rw_flag)$/;"	f
+sys_mpx	.\kernel\sys.c	/^sys_mpx ()$/;"	f
+sys_nice	.\kernel\sched.c	/^sys_nice (long increment)$/;"	f
+sys_open	.\fs\open.c	/^sys_open (const char *filename, int flag, int mode)$/;"	f
+sys_pause	.\kernel\sched.c	/^sys_pause (void)$/;"	f
+sys_phys	.\kernel\sys.c	/^sys_phys ()$/;"	f
+sys_pipe	.\fs\pipe.c	/^sys_pipe (unsigned long *fildes)$/;"	f
+sys_prof	.\kernel\sys.c	/^sys_prof ()$/;"	f
+sys_ptrace	.\kernel\sys.c	/^sys_ptrace ()$/;"	f
+sys_read	.\fs\read_write.c	/^sys_read (unsigned int fd, char *buf, int count)$/;"	f
+sys_rename	.\kernel\sys.c	/^sys_rename ()$/;"	f
+sys_rmdir	.\fs\namei.c	/^sys_rmdir (const char *name)$/;"	f
+sys_setgid	.\kernel\sys.c	/^sys_setgid (int gid)$/;"	f
+sys_setpgid	.\kernel\sys.c	/^sys_setpgid (int pid, int pgid)$/;"	f
+sys_setregid	.\kernel\sys.c	/^sys_setregid (int rgid, int egid)$/;"	f
+sys_setreuid	.\kernel\sys.c	/^sys_setreuid (int ruid, int euid)$/;"	f
+sys_setsid	.\kernel\sys.c	/^sys_setsid (void)$/;"	f
+sys_setuid	.\kernel\sys.c	/^sys_setuid (int uid)$/;"	f
+sys_sgetmask	.\kernel\signal.c	/^sys_sgetmask ()$/;"	f
+sys_sigaction	.\kernel\signal.c	/^sys_sigaction (int signum, const struct sigaction *action,$/;"	f
+sys_signal	.\kernel\signal.c	/^sys_signal (int signum, long handler, long restorer)$/;"	f
+sys_ssetmask	.\kernel\signal.c	/^sys_ssetmask (int newmask)$/;"	f
+sys_stat	.\fs\stat.c	/^sys_stat (char *filename, struct stat *statbuf)$/;"	f
+sys_stime	.\kernel\sys.c	/^sys_stime (long *tptr)$/;"	f
+sys_stty	.\kernel\sys.c	/^sys_stty ()$/;"	f
+sys_sync	.\fs\buffer.c	/^sys_sync (void)$/;"	f
+sys_time	.\kernel\sys.c	/^sys_time (long *tloc)$/;"	f
+sys_times	.\kernel\sys.c	/^sys_times (struct tms *tbuf)$/;"	f
+sys_ulimit	.\kernel\sys.c	/^sys_ulimit ()$/;"	f
+sys_umask	.\kernel\sys.c	/^sys_umask (int mask)$/;"	f
+sys_umount	.\fs\super.c	/^sys_umount (char *dev_name)$/;"	f
+sys_uname	.\kernel\sys.c	/^sys_uname (struct utsname *name)$/;"	f
+sys_unlink	.\fs\namei.c	/^sys_unlink (const char *name)$/;"	f
+sys_ustat	.\fs\open.c	/^sys_ustat (int dev, struct ustat *ubuf)$/;"	f
+sys_utime	.\fs\open.c	/^sys_utime (char *filename, struct utimbuf *times)$/;"	f
+sys_waitpid	.\kernel\exit.c	/^sys_waitpid (pid_t pid, unsigned long *stat_addr, int options)$/;"	f
+sys_write	.\fs\read_write.c	/^sys_write (unsigned int fd, char *buf, int count)$/;"	f
+sysbeep	.\kernel\chr_drv\console.c	/^sysbeep (void)$/;"	f	file:
+sysbeepstop	.\kernel\chr_drv\console.c	/^sysbeepstop (void)$/;"	f
+sysname	.\include\sys\utsname.h	/^  char sysname[9];		\/\/ 閺堫剛澧楅張顒佹惙娴ｆ粎閮寸紒鐔烘畱閸氬秶袨閵嗭拷$/;"	m	struct:utsname
+system	.\boot\bootsect.s	/^system 婵☆垪鈧櫕鍋�$/;"	l
+table_list	.\kernel\chr_drv\tty_io.c	/^struct tty_queue *table_list[] = {$/;"	v	typeref:struct:tty_queue
+tail	.\include\linux\tty.h	/^  unsigned long tail;		\/\/ 缂傛挸鍟块崠杞拌厬閺佺増宓佺亸鐐瘹闁藉牄鈧拷$/;"	m	struct:tty_queue
+tail	.\kernel\chr_drv\keyboard.S	/^tail = 8 \/\/ 缂傛挸鍟块崠杞拌厬鐏忕偓瀵氶柦鍫濈摟濞堥潧浜哥粔姹団偓锟�$/;"	d
+tail	.\kernel\chr_drv\rs_io.s	/^tail = 8 \/\/ 缂傛挸鍟块崠杞拌厬鐏忕偓瀵氶柦鍫濈摟濞堥潧浜哥粔姹団偓锟�$/;"	d
+task	.\kernel\sched.c	/^  struct task_struct task;	\/\/ 閸ョ姳璐熸稉鈧稉顏冩崲閸斺剝鏆熼幑顔剧波閺嬪嫪绗岄崗璺虹垻閺嶅牊鏂侀崷銊ユ倱娑撯偓閸愬懎鐡ㄦい鍏歌厬閿涘本澧嶆禒锟�$/;"	m	union:task_union	typeref:struct:task_union::task_struct	file:
+task	.\kernel\sched.c	/^struct task_struct *task[NR_TASKS] = { &(init_task.task), };	\/\/ 鐎规矮绠熸禒璇插閹稿洭鎷￠弫鎵矋閵嗭拷$/;"	v	typeref:struct:task_struct
+task_struct	.\include\linux\sched.h	/^struct task_struct$/;"	s
+task_union	.\kernel\sched.c	/^union task_union$/;"	u	file:
+tell_father	.\kernel\exit.c	/^tell_father (int pid)$/;"	f	file:
+termio	.\include\termios.h	/^struct termio$/;"	s
+termios	.\include\linux\tty.h	/^  struct termios termios;	\/\/ 缂佸牏顏琲o 鐏炵偞鈧冩嫲閹貉冨煑鐎涙顑侀弫鐗堝祦缂佹挻鐎妴锟�$/;"	m	struct:tty_struct	typeref:struct:tty_struct::termios
+termios	.\include\termios.h	/^struct termios$/;"	s
+test	.\boot\setup.s	/^test al,#2 ! is input buffer full? ! 濞村鐦担锟�2閿涘矁绶崗銉х处閸愭彃娅掑⿰鈽呯吹$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x02,%al \/\/ 濞村鐦潏鎾冲弳缂傛挸鍟块崳銊︽Ц閸氾缚璐熺粚锟�(缁涘绨�0)閵嗭拷$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x02,leds \/* not num-lock forces cursor *\/ \/* num-lock 闁款喖鍨稉宥堫啅 *\/$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x03,mode \/* shift forces cursor *\/ \/* shift 闁款喕绡冩担鍨帨閺嶅洨些閸旓拷 *\/$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x03,mode \/\/ 閺堝』hift 闁款喖鎮撻弮鑸靛瘻娑撳绨￠崥妤嬬吹$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x0c,mode \/\/ 閺堝々trl 闁款喗瀵滄稉瀣偋閿涳拷$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x20,mode \/* alt-gr *\/ \/* 閸欑牑lt 闁款喖鎮撻弮鑸靛瘻娑撳绨�? *\/$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x30,mode \/\/ 閺堝¨lt 闁款喗瀵滄稉瀣偋閿涳拷$/;"	l
+testb	.\kernel\chr_drv\keyboard.S	/^testb $0x4c,mode \/* ctrl or caps *\/ \/* 閹貉冨煑闁款喖鍑￠幐澶夌瑓閹存溈aps 娴滎噯绱�*\/$/;"	l
+testb	.\kernel\chr_drv\rs_io.s	/^testb $1,%al \/\/ 妫ｆ牕鍘涢崚銈嗘焽閺堝妫ゅ鍛槱閻炲棛娈戞稉顓熸焽(娴ｏ拷0=1 閺冪姳鑵戦弬顓ㄧ幢=0 閺堝鑵戦弬锟�)閵嗭拷$/;"	l
+testl	.\kernel\chr_drv\keyboard.S	/^testl %ecx,%ecx \/\/ 濡偓濞村鎹㈤崝锛勭波閺嬪嫭瀵氶柦鍫熸Ц閸氾缚璐熺粚锟�(閺堝鐡戝鍛邦嚉闂冪喎鍨惃鍕箻缁嬪鎮ч敍锟�)閵嗭拷$/;"	l
+testl	.\kernel\chr_drv\rs_io.s	/^testl %ebx,%ebx # is there any? # 閺堝鐡戝鍛畱鏉╂稓鈻奸崥妤嬬吹$/;"	l
+testl	.\kernel\system_call.s	/^testl $0x4,%eax # EM (math emulation bit)$/;"	l
+testl	.\kernel\system_call.s	/^testl %eax,%eax # 濞村鐦崙鑺ユ殶閹稿洭鎷￠弰顖氭儊=NULL?$/;"	l
+testl	.\kernel\system_call.s	/^testl %eax,%eax$/;"	l
+testl	.\kernel\system_call.s	/^testl %edx,%edx # 濞村鐦崙鑺ユ殶閹稿洭鎷￠弰顖氭儊娑撶瘶ull閵嗭拷$/;"	l
+testl	.\mm\page.s	/^testl $1,%eax # 濞村鐦弽鍥х箶P閿涘苯顩ч弸婊€绗夐弰顖滃繁妞ら潧绱╃挧椋庢畱瀵倸鐖堕崚娆掔儲鏉烆兙鈧拷$/;"	l
+ticks_to_floppy_on	.\kernel\sched.c	/^ticks_to_floppy_on (unsigned int nr)$/;"	f
+time_t	.\include\sys\types.h	/^typedef long time_t;		\/\/ 閻€劋绨弮鍫曟？閿涘牅浜掔粔鎺曨吀閿涘鈧拷$/;"	t
+time_t	.\include\time.h	/^typedef long time_t;		\/\/ 娴犲定MT 1970 楠烇拷1 閺堬拷1 閺冦儱绱戞慨瀣畱娴犮儳顫楃拋鈩冩殶閻ㄥ嫭妞傞梻杈剧礄閺冦儱宸婚弮鍫曟？閿涘鈧拷$/;"	t
+timer_list	.\kernel\sched.c	/^static struct timer_list$/;"	s	file:
+timer_list	.\kernel\sched.c	/^timer_list[TIME_REQUESTS], *next_timer = NULL;$/;"	v	typeref:struct:timer_list	file:
+tm	.\include\time.h	/^struct tm$/;"	s
+tm_hour	.\include\time.h	/^  int tm_hour;			\/\/ 鐏忓繑妞傞弫锟� [0閿涳拷59]閵嗭拷$/;"	m	struct:tm
+tm_isdst	.\include\time.h	/^  int tm_isdst;			\/\/ 婢跺繋鎶ら弮鑸电垼韫囨ぜ鈧拷$/;"	m	struct:tm
+tm_mday	.\include\time.h	/^  int tm_mday;			\/\/ 1 娑擃亝婀€閻ㄥ嫬銇夐弫锟� [0閿涳拷31]閵嗭拷$/;"	m	struct:tm
+tm_min	.\include\time.h	/^  int tm_min;			\/\/ 閸掑棝鎸撻弫锟� [ 0閿涳拷59]閵嗭拷$/;"	m	struct:tm
+tm_mon	.\include\time.h	/^  int tm_mon;			\/\/ 1 楠炵繝鑵戦張鍫滃敜 [0閿涳拷11]閵嗭拷$/;"	m	struct:tm
+tm_sec	.\include\time.h	/^  int tm_sec;			\/\/ 缁夋帗鏆� [0閿涳拷59]閵嗭拷$/;"	m	struct:tm
+tm_wday	.\include\time.h	/^  int tm_wday;			\/\/ 1 閺勭喐婀℃稉顓犳畱閺屾劕銇� [0閿涳拷6]閿涘牊妲﹂張鐔枫亯 =0閿涘鈧拷$/;"	m	struct:tm
+tm_yday	.\include\time.h	/^  int tm_yday;			\/\/ 1 楠炵繝鑵戦惃鍕厙婢讹拷 [0閿涳拷365]閵嗭拷$/;"	m	struct:tm
+tm_year	.\include\time.h	/^  int tm_year;			\/\/ 娴狅拷1900 楠炴潙绱戞慨瀣畱楠炲瓨鏆熼妴锟�$/;"	m	struct:tm
+tms	.\include\sys\times.h	/^struct tms$/;"	s
+tms_cstime	.\include\sys\times.h	/^  time_t tms_cstime;		\/\/ 瀹歌尙绮撳銏㈡畱鐎涙劘绻樼粙瀣╁▏閻€劎娈戠化鑽ょ埠CPU 閺冨爼妫块妴锟�$/;"	m	struct:tms
+tms_cutime	.\include\sys\times.h	/^  time_t tms_cutime;		\/\/ 瀹歌尙绮撳銏㈡畱鐎涙劘绻樼粙瀣╁▏閻€劎娈戦悽銊﹀煕CPU 閺冨爼妫块妴锟�$/;"	m	struct:tms
+tms_stime	.\include\sys\times.h	/^  time_t tms_stime;		\/\/ 缁崵绮洪敍鍫濆敶閺嶉潻绱欳PU 閺冨爼妫块妴锟�$/;"	m	struct:tms
+tms_utime	.\include\sys\times.h	/^  time_t tms_utime;		\/\/ 閻€劍鍩涙担璺ㄦ暏閻ㄥ嚋PU 閺冨爼妫块妴锟�$/;"	m	struct:tms
+toascii	.\include\ctype.h	30;"	d
+tolower	.\include\ctype.h	32;"	d
+top	.\kernel\chr_drv\console.c	/^static unsigned long top, bottom;	\/\/ 濠婃艾濮╅弮鍫曘€婄悰宀冾攽閸欏嚖绱辨惔鏇☆攽鐞涘苯褰块妴锟�$/;"	v	file:
+toupper	.\include\ctype.h	33;"	d
+trace_bitmap	.\include\linux\sched.h	/^  long trace_bitmap;		\/* bits: trace 0, bitmap 16-31 *\/$/;"	m	struct:tss_struct
+track	.\boot\bootsect.s	/^track: $/;"	l
+track	.\kernel\blk_drv\floppy.c	/^       unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+track	.\kernel\blk_drv\floppy.c	/^static unsigned char track = 0;$/;"	v	file:
+transfer	.\kernel\blk_drv\floppy.c	/^transfer (void)$/;"	f	file:
+trap_init	.\kernel\traps.c	/^void trap_init(void)$/;"	f
+truncate	.\fs\truncate.c	/^truncate (struct m_inode *inode)$/;"	f
+try_to_share	.\mm\memory.c	/^static int try_to_share(unsigned long address, struct task_struct *p) {$/;"	f	file:
+tss	.\include\linux\sched.h	/^  struct tss_struct tss;$/;"	m	struct:task_struct	typeref:struct:task_struct::tss_struct
+tss_struct	.\include\linux\sched.h	/^struct tss_struct$/;"	s
+tty	.\include\linux\sched.h	/^  int tty;			\/* -1 if no tty, so it must be signed *\/$/;"	m	struct:task_struct
+tty_init	.\kernel\chr_drv\tty_io.c	/^tty_init (void)$/;"	f
+tty_intr	.\kernel\chr_drv\tty_io.c	/^tty_intr (struct tty_struct *tty, int mask)$/;"	f
+tty_ioctl	.\kernel\chr_drv\tty_ioctl.c	/^tty_ioctl (int dev, int cmd, int arg)$/;"	f
+tty_queue	.\include\linux\tty.h	/^struct tty_queue$/;"	s
+tty_read	.\kernel\chr_drv\tty_io.c	/^tty_read (unsigned channel, char *buf, int nr)$/;"	f
+tty_struct	.\include\linux\tty.h	/^struct tty_struct$/;"	s
+tty_table	.\kernel\chr_drv\tty_io.c	/^struct tty_struct tty_table[] = {$/;"	v	typeref:struct:tty_struct
+tty_write	.\kernel\chr_drv\tty_io.c	/^tty_write (unsigned channel, char *buf, int nr)$/;"	f
+twd	.\include\linux\sched.h	/^  long twd;			\/\/ 閺嶅洩顔囩€涳拷(Tag word)閵嗭拷$/;"	m	struct:i387_struct
+u_char	.\include\sys\types.h	/^typedef unsigned char u_char;	\/\/ 閺冪姷顑侀崣宄扮摟缁楋妇琚崹瀣ㄢ偓锟�$/;"	t
+uid	.\include\linux\sched.h	/^  unsigned short uid, euid, suid;$/;"	m	struct:task_struct
+uid_t	.\include\sys\types.h	/^typedef unsigned short uid_t;	\/\/ 閻€劋绨悽銊﹀煕閸欏嚖绱欓悽銊﹀煕閺嶅洩鐦戦崣鍑ょ礆閵嗭拷$/;"	t
+umask	.\include\linux\sched.h	/^  unsigned short umask;$/;"	m	struct:task_struct
+umode_t	.\include\sys\types.h	/^typedef unsigned short umode_t;	\/\/$/;"	t
+un_wp_page	.\mm\memory.c	/^void un_wp_page(unsigned long *table_entry) {$/;"	f
+unalt	.\kernel\chr_drv\keyboard.S	/^unalt: movb $0x10,%al \/\/ 0x10 閺勵垱膩瀵繑鐖ｈ箛姊瀘de 娑擃厼涔廰lt 闁款喖顕惔鏃傛畱濮ｆ梻澹掓担锟�(娴ｏ拷4)閵嗭拷$/;"	l
+uncaps	.\kernel\chr_drv\keyboard.S	/^uncaps: andb $0x7f,mode \/\/ caps 闁款喗婢楀鈧敍灞藉灟婢跺秳缍呭Ο鈥崇础閺嶅洤绻攎ode 娑擃厾娈戠€电懓绨叉担锟�(娴ｏ拷7)閵嗭拷$/;"	l
+unctrl	.\kernel\chr_drv\keyboard.S	/^unctrl: movb $0x04,%al \/\/ 濡€崇础閺嶅洤绻攎ode 娑擃厼涔廲trl 闁款喖顕惔鏃傛畱濮ｆ梻澹掓担锟�(娴ｏ拷2)閵嗭拷$/;"	l
+undef_root	.\boot\bootsect.s	/^undef_root: ! 濠碘€冲€归悘澶愭焾閹存帞鐟濆☉鎾亾闁哄秴鍤栫槐婵嬪礆濞嗘劦鍔ョ€甸偊浜為獮鍡涙晬閸噥鍔ラ柡鍫㈠皑缁辨岸濡撮敓锟�$/;"	l
+unexpected_floppy_interrupt	.\kernel\blk_drv\floppy.c	/^unexpected_floppy_interrupt (void)$/;"	f
+unlock_buffer	.\kernel\blk_drv\blk.h	/^unlock_buffer (struct buffer_head *bh)$/;"	f
+unlock_buffer	.\kernel\blk_drv\ll_rw_blk.c	/^unlock_buffer (struct buffer_head *bh)$/;"	f	file:
+unlock_inode	.\fs\inode.c	/^unlock_inode (struct m_inode *inode)$/;"	f	file:
+unlshift	.\kernel\chr_drv\keyboard.S	/^unlshift:$/;"	l
+unrshift	.\kernel\chr_drv\keyboard.S	/^unrshift:$/;"	l
+usage	.\tools\build.c	/^usage (void)$/;"	f
+used_math	.\include\linux\sched.h	/^  unsigned short used_math;$/;"	m	struct:task_struct
+user_stack	.\kernel\sched.c	/^long user_stack[PAGE_SIZE >> 2];	\/\/ 鐎规矮绠熺化鑽ょ埠閸棙鐖ら幐鍥嫛閿涳拷4K閵嗗倹瀵氶柦鍫熷瘹閸︺劍娓堕崥搴濈妞ゅ箍鈧拷$/;"	v
+ushort	.\include\sys\types.h	/^typedef unsigned short ushort;	\/\/ 閺冪姷顑侀崣椋庣叚閺佸瓨鏆熺猾璇茬€烽妴锟�$/;"	t
+ustat	.\include\sys\types.h	/^struct ustat$/;"	s
+utimbuf	.\include\utime.h	/^struct utimbuf$/;"	s
+utime	.\include\linux\sched.h	/^  long utime, stime, cutime, cstime, start_time;$/;"	m	struct:task_struct
+utsname	.\include\sys\utsname.h	/^struct utsname$/;"	s
+va_arg	.\include\stdarg.h	40;"	d
+va_end	.\include\stdarg.h	32;"	d
+va_list	.\include\stdarg.h	/^typedef char *va_list;		\/\/ 鐎规矮绠焩a_list 閺勵垯绔存稉顏勭摟缁楋附瀵氶柦鍫㈣閸ㄥ鈧拷$/;"	t
+va_start	.\include\stdarg.h	21;"	d
+va_start	.\include\stdarg.h	24;"	d
+verify_area	.\kernel\fork.c	/^verify_area (void *addr, int size)$/;"	f
+version	.\include\sys\utsname.h	/^  char version[9];		\/\/ 閺堫剚顐奸崣鎴ｎ攽閻ㄥ嫮澧楅張顒傞獓閸掝偁鈧拷$/;"	m	struct:utsname
+video_erase_char	.\kernel\chr_drv\console.c	/^static unsigned short video_erase_char;	\/* Char+Attrib to erase with *\/$/;"	v	file:
+video_mem_end	.\kernel\chr_drv\console.c	/^static unsigned long video_mem_end;	\/* End of video RAM (sort of) *\/$/;"	v	file:
+video_mem_start	.\kernel\chr_drv\console.c	/^static unsigned long video_mem_start;	\/* Start of video RAM *\/$/;"	v	file:
+video_num_columns	.\kernel\chr_drv\console.c	/^static unsigned long video_num_columns;	\/* Number of text columns *\/$/;"	v	file:
+video_num_lines	.\kernel\chr_drv\console.c	/^static unsigned long video_num_lines;	\/* Number of test lines *\/$/;"	v	file:
+video_page	.\kernel\chr_drv\console.c	/^static unsigned char video_page;	\/* Initial video page *\/$/;"	v	file:
+video_port_reg	.\kernel\chr_drv\console.c	/^static unsigned short video_port_reg;	\/* Video register select port *\/$/;"	v	file:
+video_port_val	.\kernel\chr_drv\console.c	/^static unsigned short video_port_val;	\/* Video register value port *\/$/;"	v	file:
+video_size_row	.\kernel\chr_drv\console.c	/^static unsigned long video_size_row;	\/* Bytes per row *\/$/;"	v	file:
+video_type	.\kernel\chr_drv\console.c	/^static unsigned char video_type;	\/* Type of display being used *\/$/;"	v	file:
+vsprintf	.\kernel\vsprintf.c	/^vsprintf (char *buf, const char *fmt, va_list args)$/;"	f
+wait	.\lib\wait.c	/^     pid_t wait (int *wait_stat)$/;"	f
+wait_for_keypress	.\kernel\chr_drv\tty_io.c	/^wait_for_keypress (void)$/;"	f
+wait_for_request	.\kernel\blk_drv\ll_rw_blk.c	/^struct task_struct *wait_for_request = NULL;$/;"	v	typeref:struct:task_struct
+wait_motor	.\kernel\sched.c	/^static struct task_struct *wait_motor[4] = { NULL, NULL, NULL, NULL };$/;"	v	typeref:struct:task_struct	file:
+wait_on_buffer	.\fs\buffer.c	/^wait_on_buffer (struct buffer_head *bh)$/;"	f	file:
+wait_on_floppy_select	.\kernel\blk_drv\floppy.c	/^struct task_struct *wait_on_floppy_select = NULL;$/;"	v	typeref:struct:task_struct
+wait_on_inode	.\fs\inode.c	/^wait_on_inode (struct m_inode *inode)$/;"	f	file:
+wait_on_super	.\fs\super.c	/^wait_on_super (struct super_block *sb)$/;"	f	file:
+wait_until_sent	.\kernel\chr_drv\tty_ioctl.c	/^wait_until_sent (struct tty_struct *tty)$/;"	f	file:
+waiting	.\kernel\blk_drv\blk.h	/^  struct task_struct *waiting;	\/\/ 娴犺濮熺粵澶婄窡閹垮秳缍旈幍褑顢戠€瑰本鍨氶惃鍕勾閺傚箍鈧拷$/;"	m	struct:request	typeref:struct:request::task_struct
+wake_up	.\kernel\sched.c	/^wake_up (struct task_struct **p)$/;"	f
+winsize	.\include\termios.h	/^struct winsize$/;"	s
+write	.\include\linux\tty.h	/^  void (*write) (struct tty_struct * tty);	\/\/ tty 閸愭瑥鍤遍弫鐗堝瘹闁藉牄鈧拷$/;"	m	struct:tty_struct
+write_buffer_empty	.\kernel\chr_drv\rs_io.s	/^write_buffer_empty:$/;"	l
+write_char	.\kernel\chr_drv\rs_io.s	/^write_char:$/;"	l
+write_inode	.\fs\inode.c	/^write_inode (struct m_inode *inode)$/;"	f	file:
+write_pipe	.\fs\pipe.c	/^write_pipe (struct m_inode *inode, char *buf, int count)$/;"	f
+write_q	.\include\linux\tty.h	/^  struct tty_queue write_q;	\/\/ tty 閸愭瑩妲﹂崚妞尖偓锟�$/;"	m	struct:tty_struct	typeref:struct:tty_struct::tty_queue
+write_verify	.\mm\memory.c	/^void write_verify(unsigned long address) {$/;"	f
+ws_col	.\include\termios.h	/^  unsigned short ws_col;	\/\/ 缁愭褰涚€涙顑侀崚妤佹殶閵嗭拷$/;"	m	struct:winsize
+ws_row	.\include\termios.h	/^  unsigned short ws_row;	\/\/ 缁愭褰涚€涙顑佺悰灞炬殶閵嗭拷$/;"	m	struct:winsize
+ws_xpixel	.\include\termios.h	/^  unsigned short ws_xpixel;	\/\/ 缁愭褰涚€硅棄瀹抽敍宀冭杽缁辩姴鈧鈧拷$/;"	m	struct:winsize
+ws_ypixel	.\include\termios.h	/^  unsigned short ws_ypixel;	\/\/ 缁愭褰涙妯哄閿涘矁钖勭槐鐘测偓绗衡偓锟�$/;"	m	struct:winsize
+x	.\kernel\chr_drv\console.c	/^static unsigned long x, y;	\/\/ 瑜版挸澧犻崗澶嬬垼娴ｅ秶鐤嗛妴锟�$/;"	v	file:
+xchgl	.\kernel\asm.s	/^xchgl %eax,(%esp) # _do_divide_error 閻ㄥ嫬婀撮崸鈧� ?? eax閿涘當ax 鐞氼偂姘﹂幑銏犲弳閺嶅牄鈧拷$/;"	l
+xchgl	.\kernel\asm.s	/^xchgl %eax,4(%esp) # error code <-> %eax閿涘當ax 閸樼喐娼甸惃鍕偓鑹邦潶娣囨繂鐡ㄩ崷銊ョ垻閺嶅牅绗傞妴锟�$/;"	l
+xchgl	.\kernel\asm.s	/^xchgl %ebx,(%esp) # &function <-> %ebx閿涘當bx 閸樼喐娼甸惃鍕偓鑹邦潶娣囨繂鐡ㄩ崷銊ョ垻閺嶅牅绗傞妴锟�$/;"	l
+xchgl	.\kernel\system_call.s	/^xchgl _do_floppy,%eax # do_floppy 娑撹桨绔撮崙鑺ユ殶閹稿洭鎷￠敍灞界殺鐞氼偉绁撮崐鐓庣杽闂勫懎顦╅悶鍜� 閸戣姤鏆熺粙瀣碍閿涳拷$/;"	l
+xchgl	.\kernel\system_call.s	/^xchgl _do_hd,%edx # do_hd 鐎规矮绠熸稉杞扮娑擃亜鍤遍弫鐗堝瘹闁藉牞绱濈亸鍡氼潶鐠у鈧磧ead_intr()閹达拷$/;"	l
+xchgl	.\mm\page.s	/^xchgl %eax,(%esp) # 閸欐牕鍤柨娆戠垳閸掔櫝ax閵嗭拷$/;"	l
+xor	.\boot\bootsect.s	/^xor bh,bh ! 閻犲洩顕ч崢婊堝冀閸ワ妇绉寸紓鍐惧枔閳ь剨鎷�$/;"	l
+xor	.\boot\setup.s	/^xor bh,bh$/;"	l
+xorb	.\kernel\asm.s	/^xorb %al,%al # 80387 閸︺劍澧界悰宀冾吀缁犳妞傞敍瀛婸U 娴兼氨鐡戝鍛従閹垮秳缍旈惃鍕暚閹存劑鈧拷$/;"	l
+xorb	.\kernel\chr_drv\keyboard.S	/^xorb $0x40,mode \/\/ 缂堟槒娴唌ode 閺嶅洤绻旀稉鐠玜ps 闁款喗瀵滄稉瀣畱濮ｆ梻澹掓担锟�(娴ｏ拷6)閵嗭拷$/;"	l
+xorb	.\kernel\chr_drv\keyboard.S	/^xorb $1,leds \/\/ scroll 闁款喗瀵滄稉瀣剁礉閸掓瑧鐐曟潪鐞筫ds 閺嶅洤绻旀稉顓犳畱鐎电懓绨叉担锟�(娴ｏ拷0)閵嗭拷$/;"	l
+xorb	.\kernel\chr_drv\keyboard.S	/^xorb $4,leds \/\/ 缂堟槒娴唋eds 閺嶅洤绻旀稉鐠玜ps-lock 濮ｆ梻澹掓担锟�(娴ｏ拷2)閵嗭拷$/;"	l
+xorl	.\boot\head.s	/^xorl $6,%eax \/* reset MP, set EM *\/$/;"	l
+xorl	.\boot\head.s	/^xorl %eax,%eax \/* pg_dir is at 0x0000 *\/ # 妞ょ數娲拌ぐ鏇°€冮崷锟�0x0000 婢跺嫨鈧拷$/;"	l
+xorl	.\boot\head.s	/^xorl %eax,%eax$/;"	l
+xorl	.\boot\head.s	/^xorl %edi,%edi \/* pg_dir is at 0x000 *\/$/;"	l
+xorl	.\kernel\chr_drv\keyboard.S	/^xorl %al,%al \/* %eax is scan code *\/ \/* eax 娑擃厽妲搁幍顐ｅ伎閻拷 *\/$/;"	l
+xorl	.\kernel\chr_drv\keyboard.S	/^xorl %ebx,%ebx \/\/ 閸氾箑鍨弻銉嚄閹殿偅鏆熺€涙銆�(199 鐞涳拷)閿涘苯褰囩€电懓绨查柨顔炬畱閺佹澘鐡SCII 閻降鈧拷$/;"	l
+xorl	.\kernel\chr_drv\keyboard.S	/^xorl %ebx,%ebx \/\/ 濞撳崘bx閵嗭拷$/;"	l
+xorl	.\kernel\chr_drv\keyboard.S	/^xorl %ebx,%ebx$/;"	l
+xorl	.\kernel\chr_drv\rs_io.s	/^xorl %eax,%eax \/\/ eax 濞撳懘娴傞妴锟�$/;"	l
+xorl	.\kernel\system_call.s	/^xorl %eax,%eax$/;"	l
+y	.\kernel\chr_drv\console.c	/^static unsigned long x, y;	\/\/ 瑜版挸澧犻崗澶嬬垼娴ｅ秶鐤嗛妴锟�$/;"	v	file:
 .tags
 .tags_sorted_by_file
+cscope.out
+.tags_sorted_by_file
+cscope.out
